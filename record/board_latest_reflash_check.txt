@@ -1,0 +1,25 @@
+echo PRECHECK; uptime; cat /sys/fs/ext4/mmcblk0p2/errors_count; dmesg | grep -E 'EXT4-fs error|I/O error|Delayed block|failed checksum' | tail -n 5; ls -la /boot; ls -ld ~/lesion_fpga; echo PRECHECK_END
+[?2004lPRECHECK
+ 16:46:51 up 3 min,  1 user,  load average: 1.03, 1.06, 0.46
+0
+total 8160
+drwxr-xr-x  3 root root   16384 Jan  1  1970  .
+drwxr-xr-x 18 root root    4096 May  3 16:45  ..
+-rwxr-xr-x  1 root root 1165852 Sep 24  2025  BOOT.BIN
+-rwxr-xr-x  1 root root     991 Sep 24  2025  boot.py
+-rwxr-xr-x  1 root root    3473 Sep 24  2025  boot.scr
+-rwxr-xr-x  1 root root 7147780 Sep 24  2025  image.ub
+-rwxr-xr-x  1 root root     197 Sep 24  2025  REVISION
+drwxr-xr-x  2 root root    4096 Sep 27  2026 'System Volume Information'
+ls: cannot access '/home/xilinx/lesion_fpga': No such file or directory
+PRECHECK_END
+[?2004hxilinx@pynq:~$ 
+
+
+
+python3 -c "import base64;exec(base64.b64decode('aW1wb3J0IG9zLHRlbXBmaWxlLGhhc2hsaWIKZmQscD10ZW1wZmlsZS5ta3N0ZW1wKHByZWZpeD0nc2RfcHJvYmVfJyxkaXI9b3MucGF0aC5leHBhbmR1c2VyKCd+JykpCnRyeToKIGRhdGE9b3MudXJhbmRvbSg4KjEwMjQqMTAyNCkKIHdpdGggb3MuZmRvcGVuKGZkLCd3YicpIGFzIGY6CiAgZi53cml0ZShkYXRhKTtmLmZsdXNoKCk7b3MuZnN5bmMoZi5maWxlbm8oKSkKIHdpdGggb3BlbihwLCdyYicpIGFzIGY6IGFzc2VydCBoYXNobGliLnNoYTI1NihmLnJlYWQoKSkuZGlnZXN0KCk9PWhhc2hsaWIuc2hhMjU2KGRhdGEpLmRpZ2VzdCgpCiBwcmludCgnOE1pQl9XUklURV9GU1lOQ19SRUFEX1BBU1MnLGZsdXNoPVRydWUpCmZpbmFsbHk6IG9zLnVubGluayhwKQ=='))"; cat /sys/fs/ext4/mmcblk0p2/errors_count; echo TEST_END
+[?2004l
+8MiB_WRITE_FSYNC_READ_PASS
+0
+TEST_END
+[?2004hxilinx@pynq:~$ 

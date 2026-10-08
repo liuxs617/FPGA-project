@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/Xilinx/PYNQ",
+  "tag": "3.1.1",
+  "commit": "bae140919443940cccd1c7761d59ceed1d8dfc70",
+  "base_tcl_sha256": "ab0a99865ce597b68e72f4db71b8d5d3d60929613183fae27ef44db6a985cfe3",
+  "stage": "C:\\temp\\lesion_fpga",
+  "adaptation": "video + PS preset only; no MicroBlaze/audio/trace cores"
+}

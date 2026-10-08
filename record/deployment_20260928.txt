@@ -1,0 +1,55 @@
+ls -la /boot; ls -ld ~/lesion_fpga; cat /sys/fs/ext4/mmcblk0p2/errors_count; echo PROBE_END
+[?2004ltotal 8164
+drwxr-xr-x  4 root root   16384 Jan  1  1970  .
+drwxr-xr-x 18 root root    4096 May  3 16:45  ..
+-rwxr-xr-x  1 root root 1165852 Sep 24  2025  BOOT.BIN
+-rwxr-xr-x  1 root root     991 Sep 24  2025  boot.py
+-rwxr-xr-x  1 root root    3473 Sep 24  2025  boot.scr
+-rwxr-xr-x  1 root root 7147780 Sep 24  2025  image.ub
+drwxr-xr-x  9 root root    4096 Sep 27  2026  lesion_deploy_20260928
+-rwxr-xr-x  1 root root     197 Sep 24  2025  REVISION
+drwxr-xr-x  2 root root    4096 Sep 28  2026 'System Volume Information'
+ls: cannot access '/home/xilinx/lesion_fpga': No such file or directory
+0
+PROBE_END
+[?2004hxilinx@pynq:~$ 
+python3 -c "import base64;exec(base64.b64decode('ZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCmltcG9ydCBqc29uLGhhc2hsaWIsc2h1dGlsLG9zCnM9UGF0aCgnL2Jvb3QvbGVzaW9uX2RlcGxveV8yMDI2MDkyOCcpOyBkPVBhdGguaG9tZSgpLydsZXNpb25fZnBnYScKbT1qc29uLmxvYWRzKChzLydyZWxlYXNlX21hbmlmZXN0Lmpzb24nKS5yZWFkX3RleHQoKSkKZmlsZXM9e246aCBmb3IgbixoIGluIG1bJ2ZpbGVzJ10uaXRlbXMoKSBpZiBub3Qgbi5zdGFydHN3aXRoKCdkb2NzLycpfQpiYWQ9W10KZm9yIG4saCBpbiBmaWxlcy5pdGVtcygpOgogcD1zL24KIGlmIG5vdCBwLmlzX2ZpbGUoKSBvciBoYXNobGliLnNoYTI1NihwLnJlYWRfYnl0ZXMoKSkuaGV4ZGlnZXN0KCkhPWg6IGJhZC5hcHBlbmQobikKYXNzZXJ0IG5vdCBiYWQsYmFkCmFzc2VydCBub3QgZC5leGlzdHMoKSwnRGVzdGluYXRpb24gYWxyZWFkeSBleGlzdHMnCnByaW50KCdTT1VSQ0VfQ0hFQ0tfUEFTUycsbGVuKGZpbGVzKSxmbHVzaD1UcnVlKQpkLm1rZGlyKCkKZm9yIG4gaW4gZmlsZXM6CiBwPWQvbjtwLnBhcmVudC5ta2RpcihwYXJlbnRzPVRydWUsZXhpc3Rfb2s9VHJ1ZSk7c2h1dGlsLmNvcHlmaWxlKHMvbixwKQpzaHV0aWwuY29weWZpbGUocy8ncmVsZWFzZV9tYW5pZmVzdC5qc29uJyxkLydyZWxlYXNlX21hbmlmZXN0X29yaWdpbmFsLmpzb24nKQptWydmaWxlcyddPWZpbGVzO21bJ2RlcGxveW1lbnRfbm90ZSddPSdEb2N1bWVudGF0aW9uIG9taXR0ZWQgZm9yIGJvYXJkIGRlcGxveW1lbnQ7IGFsbCByZXRhaW5lZCBoYXNoZXMgdmVyaWZpZWQgYWdhaW5zdCBvcmlnaW5hbCBtYW5pZmVzdC4nCihkLydyZWxlYXNlX21hbmlmZXN0Lmpzb24nKS53cml0ZV90ZXh0KGpzb24uZHVtcHMobSxpbmRlbnQ9MikrJ1xuJykKb3Muc3luYygpCmJhZD1bbiBmb3IgbixoIGluIGZpbGVzLml0ZW1zKCkgaWYgaGFzaGxpYi5zaGEyNTYoKGQvbikucmVhZF9ieXRlcygpKS5oZXhkaWdlc3QoKSE9aF0KYXNzZXJ0IG5vdCBiYWQsYmFkCihkLydyZWNvcmQnKS5ta2RpcihleGlzdF9vaz1UcnVlKQpwcmludCgnREVQTE9ZX1BBU1MnLHN0cihkKSxsZW4oZmlsZXMpLGZsdXNoPVRydWUp'))"; cat /sys/fs/ext4/mmcblk0p2/errors_count; echo DEPLOY_END
+[?2004l
+
+SOURCE_CHECK_PASS 83
+
+
+
+DEPLOY_PASS /home/xilinx/lesion_fpga 83
+0
+DEPLOY_END
+[?2004hxilinx@pynq:~$ 
+cd ~/lesion_fpga; export BOARD_PY=$(command -v python3); export PYTHONPATH=$PWD/software; python3 -c "import base64;exec(base64.b64decode('aW1wb3J0IGltcG9ydGxpYixqc29uLGhhc2hsaWIsc3lzCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aApwPVBhdGguaG9tZSgpLydsZXNpb25fZnBnYScKc3lzLnBhdGguaW5zZXJ0KDAsc3RyKHAvJ3NvZnR3YXJlJykpCnI9e30KZm9yIG4gaW4gWydweW5xJywnbnVtcHknLCdQSUwnLCdjdjInLCdldmRldiddOgogdHJ5OgogIG09aW1wb3J0bGliLmltcG9ydF9tb2R1bGUobik7cltuXT1nZXRhdHRyKG0sJ19fdmVyc2lvbl9fJywnaW1wb3J0IE9LJykKIGV4Y2VwdCBFeGNlcHRpb24gYXMgZTpyW25dPXN0cihlKQpoPWpzb24ubG9hZHMoKHAvJ2FydGlmYWN0cy9oYXJkd2FyZS9oYXJkd2FyZV9tYW5pZmVzdC5qc29uJykucmVhZF90ZXh0KCkpCmFzc2VydCBhbGwoaGFzaGxpYi5zaGEyNTYoKHAvJ2FydGlmYWN0cy9oYXJkd2FyZScvbikucmVhZF9ieXRlcygpKS5oZXhkaWdlc3QoKT09diBmb3Igbix2IGluIGhbJ2ZpbGVzJ10uaXRlbXMoKSkKclsnaGFyZHdhcmVfaWQnXT1oWydoYXJkd2FyZV9pZCddO3JbJ2hhcmR3YXJlX2hhc2hlcyddPSdQQVNTJwoocC8ncmVjb3JkL2RlcGxveW1lbnRfY2hlY2suanNvbicpLndyaXRlX3RleHQoanNvbi5kdW1wcyhyLGluZGVudD0yKSkKcHJpbnQoanNvbi5kdW1wcyhyKSxmbHVzaD1UcnVlKQ=='))"; cat /sys/fs/ext4/mmcblk0p2/errors_count; echo DEPENDENCY_END
+[?2004l
+
+
+
+
+
+
+
+
+
+
+
+cat ~/lesion_fpga/record/deployment_check.json; cat /sys/fs/ext4/mmcblk0p2/errors_count; echo RECOVER_END
+[?2004l{
+  "pynq": "3.1.1",
+  "numpy": "1.21.5",
+  "PIL": "9.0.1",
+  "cv2": "4.5.4",
+  "evdev": "No module named 'evdev'",
+  "hardware_id": "8a111a4f13c4f851",
+  "hardware_hashes": "PASS"
+}0
+RECOVER_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+
+
+
+

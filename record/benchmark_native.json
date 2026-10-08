@@ -1,0 +1,824 @@
+{
+  "model_id": "6d085046c29974f6",
+  "backend": "native-cpp-reference",
+  "runs": 100,
+  "environment": {
+    "python": "3.14.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "logical_cpus": 16
+  },
+  "includes_hdmi_submission": false,
+  "boundary": "file read through result; optional HDMI frame submission (not physical photon latency)",
+  "throughput_fps": 4.796607877281483,
+  "samples": [
+    {
+      "inference_ms": 211.96690000215312,
+      "cached_inference_ms": 211.96690000215312,
+      "network_reused": false,
+      "postprocess_ms": 2.486700002918951,
+      "processing_ms": 222.53639999689767,
+      "total_ms": 222.7232000004733
+    },
+    {
+      "inference_ms": 205.30850000068313,
+      "cached_inference_ms": 205.30850000068313,
+      "network_reused": false,
+      "postprocess_ms": 2.908700000261888,
+      "processing_ms": 215.50500000012107,
+      "total_ms": 215.71620000031544
+    },
+    {
+      "inference_ms": 191.65989999601152,
+      "cached_inference_ms": 191.65989999601152,
+      "network_reused": false,
+      "postprocess_ms": 2.469099999871105,
+      "processing_ms": 201.16459999553626,
+      "total_ms": 201.29029999952763
+    },
+    {
+      "inference_ms": 210.61080000072252,
+      "cached_inference_ms": 210.61080000072252,
+      "network_reused": false,
+      "postprocess_ms": 2.923600004578475,
+      "processing_ms": 221.0211000056006,
+      "total_ms": 221.44180000032065
+    },
+    {
+      "inference_ms": 188.8567999994848,
+      "cached_inference_ms": 188.8567999994848,
+      "network_reused": false,
+      "postprocess_ms": 2.3628999988432042,
+      "processing_ms": 198.80239999474725,
+      "total_ms": 198.90760000271257
+    },
+    {
+      "inference_ms": 195.0663999959943,
+      "cached_inference_ms": 195.0663999959943,
+      "network_reused": false,
+      "postprocess_ms": 4.735299997264519,
+      "processing_ms": 206.57930000015767,
+      "total_ms": 206.867399996554
+    },
+    {
+      "inference_ms": 200.6032999997842,
+      "cached_inference_ms": 200.6032999997842,
+      "network_reused": false,
+      "postprocess_ms": 2.3570999983348884,
+      "processing_ms": 214.67309999570716,
+      "total_ms": 214.8248000012245
+    },
+    {
+      "inference_ms": 196.08090000110678,
+      "cached_inference_ms": 196.08090000110678,
+      "network_reused": false,
+      "postprocess_ms": 2.6350999978603795,
+      "processing_ms": 206.71869999932824,
+      "total_ms": 206.87999999790918
+    },
+    {
+      "inference_ms": 188.91399999847636,
+      "cached_inference_ms": 188.91399999847636,
+      "network_reused": false,
+      "postprocess_ms": 2.7235999950789846,
+      "processing_ms": 199.86120000248775,
+      "total_ms": 200.03949999954784
+    },
+    {
+      "inference_ms": 202.97670000582002,
+      "cached_inference_ms": 202.97670000582002,
+      "network_reused": false,
+      "postprocess_ms": 2.322300002560951,
+      "processing_ms": 214.31070000107866,
+      "total_ms": 214.4616999939899
+    },
+    {
+      "inference_ms": 199.2586999986088,
+      "cached_inference_ms": 199.2586999986088,
+      "network_reused": false,
+      "postprocess_ms": 3.7981999994372018,
+      "processing_ms": 212.14089999557473,
+      "total_ms": 212.32310000050347
+    },
+    {
+      "inference_ms": 201.31949999631615,
+      "cached_inference_ms": 201.31949999631615,
+      "network_reused": false,
+      "postprocess_ms": 2.4482999942847528,
+      "processing_ms": 211.7383000004338,
+      "total_ms": 211.90009999554604
+    },
+    {
+      "inference_ms": 202.79710000613704,
+      "cached_inference_ms": 202.79710000613704,
+      "network_reused": false,
+      "postprocess_ms": 3.074899999774061,
+      "processing_ms": 213.36280000105035,
+      "total_ms": 213.52560000377707
+    },
+    {
+      "inference_ms": 194.94159999885596,
+      "cached_inference_ms": 194.94159999885596,
+      "network_reused": false,
+      "postprocess_ms": 2.4539000005461276,
+      "processing_ms": 205.43850000103703,
+      "total_ms": 205.57360000384506
+    },
+    {
+      "inference_ms": 194.31970000005094,
+      "cached_inference_ms": 194.31970000005094,
+      "network_reused": false,
+      "postprocess_ms": 2.4044000019785017,
+      "processing_ms": 203.90739999857033,
+      "total_ms": 204.17499999894062
+    },
+    {
+      "inference_ms": 201.6321000046446,
+      "cached_inference_ms": 201.6321000046446,
+      "network_reused": false,
+      "postprocess_ms": 2.713099995162338,
+      "processing_ms": 214.50190000177827,
+      "total_ms": 214.66510000027483
+    },
+    {
+      "inference_ms": 200.97420000092825,
+      "cached_inference_ms": 200.97420000092825,
+      "network_reused": false,
+      "postprocess_ms": 2.6874000031966716,
+      "processing_ms": 211.8135999990045,
+      "total_ms": 211.97949999623233
+    },
+    {
+      "inference_ms": 195.7196999937878,
+      "cached_inference_ms": 195.7196999937878,
+      "network_reused": false,
+      "postprocess_ms": 2.3108000023057684,
+      "processing_ms": 205.49960000062129,
+      "total_ms": 205.67389999632724
+    },
+    {
+      "inference_ms": 203.2197999942582,
+      "cached_inference_ms": 203.2197999942582,
+      "network_reused": false,
+      "postprocess_ms": 2.568500000052154,
+      "processing_ms": 214.2422000033548,
+      "total_ms": 214.4230999983847
+    },
+    {
+      "inference_ms": 195.4388000012841,
+      "cached_inference_ms": 195.4388000012841,
+      "network_reused": false,
+      "postprocess_ms": 2.2540999998454936,
+      "processing_ms": 205.6499000027543,
+      "total_ms": 205.79480000014883
+    },
+    {
+      "inference_ms": 202.203400003782,
+      "cached_inference_ms": 202.203400003782,
+      "network_reused": false,
+      "postprocess_ms": 2.6805999950738624,
+      "processing_ms": 213.34740000020247,
+      "total_ms": 213.51460000005318
+    },
+    {
+      "inference_ms": 197.64410000061616,
+      "cached_inference_ms": 197.64410000061616,
+      "network_reused": false,
+      "postprocess_ms": 2.263499998662155,
+      "processing_ms": 208.14779999636812,
+      "total_ms": 208.30950000527082
+    },
+    {
+      "inference_ms": 198.40649999969173,
+      "cached_inference_ms": 198.40649999969173,
+      "network_reused": false,
+      "postprocess_ms": 2.3318999956245534,
+      "processing_ms": 210.01560000149766,
+      "total_ms": 210.19250000244938
+    },
+    {
+      "inference_ms": 201.10480000585085,
+      "cached_inference_ms": 201.10480000585085,
+      "network_reused": false,
+      "postprocess_ms": 2.834300001268275,
+      "processing_ms": 211.56510000582784,
+      "total_ms": 211.73429999907967
+    },
+    {
+      "inference_ms": 196.55280000006314,
+      "cached_inference_ms": 196.55280000006314,
+      "network_reused": false,
+      "postprocess_ms": 2.536399995733518,
+      "processing_ms": 207.0252999983495,
+      "total_ms": 207.1630999998888
+    },
+    {
+      "inference_ms": 189.1821999961394,
+      "cached_inference_ms": 189.1821999961394,
+      "network_reused": false,
+      "postprocess_ms": 2.3145000013755634,
+      "processing_ms": 199.40979999955744,
+      "total_ms": 199.56689999526134
+    },
+    {
+      "inference_ms": 198.4450999952969,
+      "cached_inference_ms": 198.4450999952969,
+      "network_reused": false,
+      "postprocess_ms": 2.795799999148585,
+      "processing_ms": 211.48679999896558,
+      "total_ms": 211.6052999990643
+    },
+    {
+      "inference_ms": 191.31650000053924,
+      "cached_inference_ms": 191.31650000053924,
+      "network_reused": false,
+      "postprocess_ms": 2.7393000054871663,
+      "processing_ms": 202.207800000906,
+      "total_ms": 202.43390000541694
+    },
+    {
+      "inference_ms": 194.54929999483284,
+      "cached_inference_ms": 194.54929999483284,
+      "network_reused": false,
+      "postprocess_ms": 2.741800002695527,
+      "processing_ms": 208.11060000414727,
+      "total_ms": 208.27509999799076
+    },
+    {
+      "inference_ms": 194.98749999911524,
+      "cached_inference_ms": 194.98749999911524,
+      "network_reused": false,
+      "postprocess_ms": 3.0893000002834015,
+      "processing_ms": 206.7151000010199,
+      "total_ms": 206.9982000029995
+    },
+    {
+      "inference_ms": 199.42509999964386,
+      "cached_inference_ms": 199.42509999964386,
+      "network_reused": false,
+      "postprocess_ms": 2.77730000379961,
+      "processing_ms": 210.3720999948564,
+      "total_ms": 210.60900000156835
+    },
+    {
+      "inference_ms": 208.03080000041518,
+      "cached_inference_ms": 208.03080000041518,
+      "network_reused": false,
+      "postprocess_ms": 3.1568999984301627,
+      "processing_ms": 221.3701000000583,
+      "total_ms": 221.51039999880595
+    },
+    {
+      "inference_ms": 189.03420000424376,
+      "cached_inference_ms": 189.03420000424376,
+      "network_reused": false,
+      "postprocess_ms": 3.7521999984164722,
+      "processing_ms": 200.42670000111684,
+      "total_ms": 200.53520000510616
+    },
+    {
+      "inference_ms": 197.92730000335723,
+      "cached_inference_ms": 197.92730000335723,
+      "network_reused": false,
+      "postprocess_ms": 2.4446000024909154,
+      "processing_ms": 207.31959999829996,
+      "total_ms": 207.45239999814657
+    },
+    {
+      "inference_ms": 203.60039999650326,
+      "cached_inference_ms": 203.60039999650326,
+      "network_reused": false,
+      "postprocess_ms": 2.2104000017861836,
+      "processing_ms": 213.14780000102473,
+      "total_ms": 213.4178999986034
+    },
+    {
+      "inference_ms": 197.49659999797586,
+      "cached_inference_ms": 197.49659999797586,
+      "network_reused": false,
+      "postprocess_ms": 2.4943999960669316,
+      "processing_ms": 209.58819999941625,
+      "total_ms": 209.74659999774303
+    },
+    {
+      "inference_ms": 195.4861999984132,
+      "cached_inference_ms": 195.4861999984132,
+      "network_reused": false,
+      "postprocess_ms": 2.783700001600664,
+      "processing_ms": 206.02010000584414,
+      "total_ms": 206.28349999606144
+    },
+    {
+      "inference_ms": 190.1482000030228,
+      "cached_inference_ms": 190.1482000030228,
+      "network_reused": false,
+      "postprocess_ms": 3.6705000020447187,
+      "processing_ms": 202.73379999707686,
+      "total_ms": 203.01029999973252
+    },
+    {
+      "inference_ms": 193.84379999974044,
+      "cached_inference_ms": 193.84379999974044,
+      "network_reused": false,
+      "postprocess_ms": 3.1750999987707473,
+      "processing_ms": 203.9844999962952,
+      "total_ms": 204.11220000096364
+    },
+    {
+      "inference_ms": 202.29590000235476,
+      "cached_inference_ms": 202.29590000235476,
+      "network_reused": false,
+      "postprocess_ms": 2.448999999614898,
+      "processing_ms": 211.4990000045509,
+      "total_ms": 211.64459999999963
+    },
+    {
+      "inference_ms": 204.5090999963577,
+      "cached_inference_ms": 204.5090999963577,
+      "network_reused": false,
+      "postprocess_ms": 2.242599999590311,
+      "processing_ms": 213.8866000022972,
+      "total_ms": 214.05349999986356
+    },
+    {
+      "inference_ms": 195.7890999983647,
+      "cached_inference_ms": 195.7890999983647,
+      "network_reused": false,
+      "postprocess_ms": 2.4621000047773123,
+      "processing_ms": 206.264899999951,
+      "total_ms": 206.4576000047964
+    },
+    {
+      "inference_ms": 186.0921999978018,
+      "cached_inference_ms": 186.0921999978018,
+      "network_reused": false,
+      "postprocess_ms": 5.157400002644863,
+      "processing_ms": 199.0284000057727,
+      "total_ms": 199.3259000009857
+    },
+    {
+      "inference_ms": 198.37939999706578,
+      "cached_inference_ms": 198.37939999706578,
+      "network_reused": false,
+      "postprocess_ms": 2.8883999984827824,
+      "processing_ms": 208.71949999855133,
+      "total_ms": 208.91390000178944
+    },
+    {
+      "inference_ms": 198.83870000194293,
+      "cached_inference_ms": 198.83870000194293,
+      "network_reused": false,
+      "postprocess_ms": 3.2414000015705824,
+      "processing_ms": 210.5597999980091,
+      "total_ms": 210.68910000030883
+    },
+    {
+      "inference_ms": 213.75800000532763,
+      "cached_inference_ms": 213.75800000532763,
+      "network_reused": false,
+      "postprocess_ms": 2.991900000779424,
+      "processing_ms": 223.91040000366047,
+      "total_ms": 224.20359999523498
+    },
+    {
+      "inference_ms": 204.45189999736613,
+      "cached_inference_ms": 204.45189999736613,
+      "network_reused": false,
+      "postprocess_ms": 2.3199999995995313,
+      "processing_ms": 214.70399999816436,
+      "total_ms": 214.86169999843696
+    },
+    {
+      "inference_ms": 196.1116000020411,
+      "cached_inference_ms": 196.1116000020411,
+      "network_reused": false,
+      "postprocess_ms": 2.998799995111767,
+      "processing_ms": 206.78179999958957,
+      "total_ms": 206.94819999334868
+    },
+    {
+      "inference_ms": 206.94340000045486,
+      "cached_inference_ms": 206.94340000045486,
+      "network_reused": false,
+      "postprocess_ms": 2.169100000173785,
+      "processing_ms": 217.36489999602782,
+      "total_ms": 217.5442999941879
+    },
+    {
+      "inference_ms": 207.41040000575595,
+      "cached_inference_ms": 207.41040000575595,
+      "network_reused": false,
+      "postprocess_ms": 2.595199999632314,
+      "processing_ms": 217.8633000003174,
+      "total_ms": 218.03519999957643
+    },
+    {
+      "inference_ms": 196.60229999863077,
+      "cached_inference_ms": 196.60229999863077,
+      "network_reused": false,
+      "postprocess_ms": 3.3485000021755695,
+      "processing_ms": 207.36480000050506,
+      "total_ms": 207.57539999613073
+    },
+    {
+      "inference_ms": 201.88609999604523,
+      "cached_inference_ms": 201.88609999604523,
+      "network_reused": false,
+      "postprocess_ms": 2.1095999982208014,
+      "processing_ms": 211.7863000021316,
+      "total_ms": 212.04620000207797
+    },
+    {
+      "inference_ms": 190.58619999850634,
+      "cached_inference_ms": 190.58619999850634,
+      "network_reused": false,
+      "postprocess_ms": 3.451399999903515,
+      "processing_ms": 203.99239999824204,
+      "total_ms": 204.28399999946123
+    },
+    {
+      "inference_ms": 189.2193000021507,
+      "cached_inference_ms": 189.2193000021507,
+      "network_reused": false,
+      "postprocess_ms": 2.7595999999903142,
+      "processing_ms": 201.13199999468634,
+      "total_ms": 201.29450000240467
+    },
+    {
+      "inference_ms": 202.42209999560146,
+      "cached_inference_ms": 202.42209999560146,
+      "network_reused": false,
+      "postprocess_ms": 2.6031999950646423,
+      "processing_ms": 213.35450000333367,
+      "total_ms": 213.51860000140732
+    },
+    {
+      "inference_ms": 191.02679999923566,
+      "cached_inference_ms": 191.02679999923566,
+      "network_reused": false,
+      "postprocess_ms": 2.946100001281593,
+      "processing_ms": 201.58129999617813,
+      "total_ms": 201.73259999864968
+    },
+    {
+      "inference_ms": 193.58120000106283,
+      "cached_inference_ms": 193.58120000106283,
+      "network_reused": false,
+      "postprocess_ms": 4.058500002429355,
+      "processing_ms": 205.80530000006547,
+      "total_ms": 205.9949999966193
+    },
+    {
+      "inference_ms": 191.2125000017113,
+      "cached_inference_ms": 191.2125000017113,
+      "network_reused": false,
+      "postprocess_ms": 2.227899996796623,
+      "processing_ms": 203.52660000207834,
+      "total_ms": 203.69139999820618
+    },
+    {
+      "inference_ms": 198.1785000025411,
+      "cached_inference_ms": 198.1785000025411,
+      "network_reused": false,
+      "postprocess_ms": 2.748500002780929,
+      "processing_ms": 211.5466000032029,
+      "total_ms": 211.70859999983804
+    },
+    {
+      "inference_ms": 199.55789999949047,
+      "cached_inference_ms": 199.55789999949047,
+      "network_reused": false,
+      "postprocess_ms": 2.5936000020010397,
+      "processing_ms": 210.1191999972798,
+      "total_ms": 210.34579999832204
+    },
+    {
+      "inference_ms": 200.28710000042338,
+      "cached_inference_ms": 200.28710000042338,
+      "network_reused": false,
+      "postprocess_ms": 2.5569999997969717,
+      "processing_ms": 210.07290000125067,
+      "total_ms": 210.42509999824688
+    },
+    {
+      "inference_ms": 192.12929999775952,
+      "cached_inference_ms": 192.12929999775952,
+      "network_reused": false,
+      "postprocess_ms": 2.5700999976834282,
+      "processing_ms": 202.6038999974844,
+      "total_ms": 202.7620000008028
+    },
+    {
+      "inference_ms": 192.82109999767272,
+      "cached_inference_ms": 192.82109999767272,
+      "network_reused": false,
+      "postprocess_ms": 2.0586999962688424,
+      "processing_ms": 202.6525999972364,
+      "total_ms": 202.96850000158884
+    },
+    {
+      "inference_ms": 194.4699000014225,
+      "cached_inference_ms": 194.4699000014225,
+      "network_reused": false,
+      "postprocess_ms": 3.160699998261407,
+      "processing_ms": 210.4881999985082,
+      "total_ms": 210.65140000428073
+    },
+    {
+      "inference_ms": 198.62739999371115,
+      "cached_inference_ms": 198.62739999371115,
+      "network_reused": false,
+      "postprocess_ms": 2.1863000001758337,
+      "processing_ms": 208.0474000031245,
+      "total_ms": 208.22319999570027
+    },
+    {
+      "inference_ms": 203.44800000020768,
+      "cached_inference_ms": 203.44800000020768,
+      "network_reused": false,
+      "postprocess_ms": 2.2599000003538094,
+      "processing_ms": 213.55629999743542,
+      "total_ms": 213.7152000068454
+    },
+    {
+      "inference_ms": 190.82909999997355,
+      "cached_inference_ms": 190.82909999997355,
+      "network_reused": false,
+      "postprocess_ms": 2.0647999990615062,
+      "processing_ms": 199.98549999581883,
+      "total_ms": 200.1617999994778
+    },
+    {
+      "inference_ms": 194.4928999946569,
+      "cached_inference_ms": 194.4928999946569,
+      "network_reused": false,
+      "postprocess_ms": 2.361399994697422,
+      "processing_ms": 208.1971000006888,
+      "total_ms": 208.38759999605827
+    },
+    {
+      "inference_ms": 188.78460000269115,
+      "cached_inference_ms": 188.78460000269115,
+      "network_reused": false,
+      "postprocess_ms": 2.863500005332753,
+      "processing_ms": 201.2371000018902,
+      "total_ms": 201.58570000057807
+    },
+    {
+      "inference_ms": 193.9977999936673,
+      "cached_inference_ms": 193.9977999936673,
+      "network_reused": false,
+      "postprocess_ms": 3.2979000025079586,
+      "processing_ms": 207.4432999943383,
+      "total_ms": 207.65890000620857
+    },
+    {
+      "inference_ms": 194.27909999649273,
+      "cached_inference_ms": 194.27909999649273,
+      "network_reused": false,
+      "postprocess_ms": 2.4370000028284267,
+      "processing_ms": 204.47380000405246,
+      "total_ms": 204.59609999670647
+    },
+    {
+      "inference_ms": 201.67149999906542,
+      "cached_inference_ms": 201.67149999906542,
+      "network_reused": false,
+      "postprocess_ms": 2.5753000008990057,
+      "processing_ms": 211.04219999688212,
+      "total_ms": 211.3177999999607
+    },
+    {
+      "inference_ms": 199.04479999968316,
+      "cached_inference_ms": 199.04479999968316,
+      "network_reused": false,
+      "postprocess_ms": 2.668100001756102,
+      "processing_ms": 209.8887000029208,
+      "total_ms": 210.06130000023404
+    },
+    {
+      "inference_ms": 197.8369999997085,
+      "cached_inference_ms": 197.8369999997085,
+      "network_reused": false,
+      "postprocess_ms": 4.456299997400492,
+      "processing_ms": 210.35080000001471,
+      "total_ms": 210.640000004787
+    },
+    {
+      "inference_ms": 191.89360000018496,
+      "cached_inference_ms": 191.89360000018496,
+      "network_reused": false,
+      "postprocess_ms": 2.5668999951449223,
+      "processing_ms": 202.03899999614805,
+      "total_ms": 202.20960000006016
+    },
+    {
+      "inference_ms": 189.80549999832874,
+      "cached_inference_ms": 189.80549999832874,
+      "network_reused": false,
+      "postprocess_ms": 2.9647999981534667,
+      "processing_ms": 200.75280000310158,
+      "total_ms": 200.91130000218982
+    },
+    {
+      "inference_ms": 193.0350000038743,
+      "cached_inference_ms": 193.0350000038743,
+      "network_reused": false,
+      "postprocess_ms": 3.4197999993921258,
+      "processing_ms": 204.22550000512274,
+      "total_ms": 204.47459999559214
+    },
+    {
+      "inference_ms": 198.90399999712827,
+      "cached_inference_ms": 198.90399999712827,
+      "network_reused": false,
+      "postprocess_ms": 1.9393000038689934,
+      "processing_ms": 211.75720000610454,
+      "total_ms": 211.89059999596793
+    },
+    {
+      "inference_ms": 185.5795000010403,
+      "cached_inference_ms": 185.5795000010403,
+      "network_reused": false,
+      "postprocess_ms": 2.4267999979201704,
+      "processing_ms": 195.56020000163699,
+      "total_ms": 195.73379999928875
+    },
+    {
+      "inference_ms": 194.614800006093,
+      "cached_inference_ms": 194.614800006093,
+      "network_reused": false,
+      "postprocess_ms": 2.730700005486142,
+      "processing_ms": 204.9122000025818,
+      "total_ms": 205.19059999787714
+    },
+    {
+      "inference_ms": 189.4241999980295,
+      "cached_inference_ms": 189.4241999980295,
+      "network_reused": false,
+      "postprocess_ms": 2.5421000027563423,
+      "processing_ms": 200.61379999970086,
+      "total_ms": 200.7506000009016
+    },
+    {
+      "inference_ms": 188.9258000010159,
+      "cached_inference_ms": 188.9258000010159,
+      "network_reused": false,
+      "postprocess_ms": 3.7382000009529293,
+      "processing_ms": 199.94189999852097,
+      "total_ms": 200.10760000150185
+    },
+    {
+      "inference_ms": 213.00759999576258,
+      "cached_inference_ms": 213.00759999576258,
+      "network_reused": false,
+      "postprocess_ms": 2.330000002984889,
+      "processing_ms": 223.32099999766797,
+      "total_ms": 223.48120000242488
+    },
+    {
+      "inference_ms": 195.69839999894612,
+      "cached_inference_ms": 195.69839999894612,
+      "network_reused": false,
+      "postprocess_ms": 2.5526999961584806,
+      "processing_ms": 205.76789999904577,
+      "total_ms": 205.91220000642352
+    },
+    {
+      "inference_ms": 218.15309999510646,
+      "cached_inference_ms": 218.15309999510646,
+      "network_reused": false,
+      "postprocess_ms": 3.4988999977940693,
+      "processing_ms": 227.85819999990053,
+      "total_ms": 228.18050000205403
+    },
+    {
+      "inference_ms": 191.2841000012122,
+      "cached_inference_ms": 191.2841000012122,
+      "network_reused": false,
+      "postprocess_ms": 2.067900000838563,
+      "processing_ms": 202.44149999780348,
+      "total_ms": 202.61340000433847
+    },
+    {
+      "inference_ms": 202.9806999998982,
+      "cached_inference_ms": 202.9806999998982,
+      "network_reused": false,
+      "postprocess_ms": 2.4648999969940633,
+      "processing_ms": 212.74549999361625,
+      "total_ms": 212.90839999710442
+    },
+    {
+      "inference_ms": 202.03089999995427,
+      "cached_inference_ms": 202.03089999995427,
+      "network_reused": false,
+      "postprocess_ms": 2.3131999987526797,
+      "processing_ms": 211.45989999786252,
+      "total_ms": 211.6230000028736
+    },
+    {
+      "inference_ms": 191.00279999838676,
+      "cached_inference_ms": 191.00279999838676,
+      "network_reused": false,
+      "postprocess_ms": 2.891999996791128,
+      "processing_ms": 202.299700002186,
+      "total_ms": 202.46059999772115
+    },
+    {
+      "inference_ms": 191.8595000024652,
+      "cached_inference_ms": 191.8595000024652,
+      "network_reused": false,
+      "postprocess_ms": 3.509200003463775,
+      "processing_ms": 203.52419999835547,
+      "total_ms": 203.73249999829568
+    },
+    {
+      "inference_ms": 198.6326000042027,
+      "cached_inference_ms": 198.6326000042027,
+      "network_reused": false,
+      "postprocess_ms": 2.4065000034170225,
+      "processing_ms": 209.15480000257958,
+      "total_ms": 209.41739999398123
+    },
+    {
+      "inference_ms": 191.24870000086958,
+      "cached_inference_ms": 191.24870000086958,
+      "network_reused": false,
+      "postprocess_ms": 2.776099994662218,
+      "processing_ms": 202.46519999636803,
+      "total_ms": 202.6216999947792
+    },
+    {
+      "inference_ms": 196.33469999826048,
+      "cached_inference_ms": 196.33469999826048,
+      "network_reused": false,
+      "postprocess_ms": 2.3938000013004057,
+      "processing_ms": 206.3218000039342,
+      "total_ms": 206.48760000040056
+    },
+    {
+      "inference_ms": 197.73590000113472,
+      "cached_inference_ms": 197.73590000113472,
+      "network_reused": false,
+      "postprocess_ms": 2.3325000001932494,
+      "processing_ms": 207.39570000296226,
+      "total_ms": 207.56860000255983
+    },
+    {
+      "inference_ms": 189.83079999452457,
+      "cached_inference_ms": 189.83079999452457,
+      "network_reused": false,
+      "postprocess_ms": 2.1778000009362586,
+      "processing_ms": 199.6553999997559,
+      "total_ms": 199.81999999436084
+    },
+    {
+      "inference_ms": 186.37630000011995,
+      "cached_inference_ms": 186.37630000011995,
+      "network_reused": false,
+      "postprocess_ms": 2.7989000009256415,
+      "processing_ms": 197.157700000389,
+      "total_ms": 197.33149999956368
+    },
+    {
+      "inference_ms": 192.64880000264384,
+      "cached_inference_ms": 192.64880000264384,
+      "network_reused": false,
+      "postprocess_ms": 2.28870000137249,
+      "processing_ms": 203.57979999971576,
+      "total_ms": 203.74679999804357
+    },
+    {
+      "inference_ms": 196.42649999877904,
+      "cached_inference_ms": 196.42649999877904,
+      "network_reused": false,
+      "postprocess_ms": 2.7439999976195395,
+      "processing_ms": 206.9796000068891,
+      "total_ms": 207.1219999997993
+    },
+    {
+      "inference_ms": 189.19829999504145,
+      "cached_inference_ms": 189.19829999504145,
+      "network_reused": false,
+      "postprocess_ms": 3.8160000040079467,
+      "processing_ms": 199.5325000025332,
+      "total_ms": 199.66790000034962
+    },
+    {
+      "inference_ms": 204.36380000319332,
+      "cached_inference_ms": 204.36380000319332,
+      "network_reused": false,
+      "postprocess_ms": 4.58000000071479,
+      "processing_ms": 215.79959999507992,
+      "total_ms": 216.01019999798154
+    }
+  ],
+  "inference_ms_mean": 197.13618299967493,
+  "inference_ms_p95": 208.15980000043055,
+  "postprocess_ms_mean": 2.7758199999516364,
+  "postprocess_ms_p95": 3.8281250039290162,
+  "processing_ms_mean": 208.10555800002476,
+  "processing_ms_p95": 221.0385500053235,
+  "total_ms_mean": 208.29655699970317,
+  "total_ms_p95": 221.44523000024492
+}

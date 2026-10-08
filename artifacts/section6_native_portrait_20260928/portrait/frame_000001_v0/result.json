@@ -1,0 +1,56 @@
+{
+  "frame_id": 1,
+  "parameter_version": 0,
+  "model_id": "6d085046c29974f6",
+  "backend": "native-cpp-reference",
+  "path": "artifacts\\section6_portrait_input\\portrait.jpg",
+  "parameters": {
+    "threshold": 0.45,
+    "opening": true,
+    "closing": true,
+    "largest": true,
+    "fill": true,
+    "gaussian": false
+  },
+  "hardware_id": null,
+  "metrics": {
+    "area_px2": 3884,
+    "area_ratio": 0.3160807291666667,
+    "valid": true,
+    "centroid": [
+      58.65653964984552,
+      54.85839340885685
+    ],
+    "major_axis_px": 79.35599498079846,
+    "minor_axis_px": 62.49077926561997,
+    "perimeter_px": 235.48022890090942,
+    "circularity": 0.8801976133801944,
+    "axis_unstable": false,
+    "asymmetry": 0.05225340160108627
+  },
+  "flags": {
+    "components_before": 2,
+    "empty": false,
+    "touches_valid_border": false
+  },
+  "accuracy": {
+    "dice": 0.9796538472995919,
+    "iou": 0.9601191171318463
+  },
+  "timing": {
+    "inference_ms": 458.7793000000602,
+    "cached_inference_ms": 458.7793000000602,
+    "network_reused": false,
+    "postprocess_ms": 36.873999999443186,
+    "processing_ms": 690.1307999996789
+  },
+  "geometry": {
+    "original_w": 723,
+    "original_h": 962,
+    "size": 128,
+    "width": 96,
+    "height": 128,
+    "left": 16,
+    "top": 0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "run": "baseline",
+  "limited": false,
+  "epoch": 54,
+  "loss": 0.24963985946443346,
+  "validation_dice": 0.8901900472587714,
+  "validation_iou": 0.8116229937396235,
+  "seconds": 14.057562100002542,
+  "best": 0.8975035581508828
+}

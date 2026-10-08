@@ -1,0 +1,2 @@
+Version: 1.13.1
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-sq9dmg3q\\cp310-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-sq9dmg3q\\cp310-win_amd64\\repaired_wheel', '-v', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-sq9dmg3q\\cp310-win_amd64\\built_wheel\\cv2_enumerate_cameras-1.4.0-cp310-abi3-win_amd64.whl']

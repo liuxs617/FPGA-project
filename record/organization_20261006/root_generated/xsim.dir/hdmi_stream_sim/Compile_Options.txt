@@ -1,0 +1,1 @@
+"stream_tb" -s "hdmi_stream_sim" -timescale "1ns/1ps" 

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "startup_fpga_frame",
+    "passed": true
+  },
+  {
+    "name": "landscape_selection_True",
+    "passed": true
+  },
+  {
+    "name": "landscape_selection_False",
+    "passed": true
+  },
+  {
+    "name": "landscape_padding_not_selected",
+    "passed": true
+  },
+  {
+    "name": "threshold_up_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "opening_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "closing_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "largest_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "fill_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "alpha_redraw_only",
+    "passed": true
+  },
+  {
+    "name": "view_redraw_only",
+    "passed": true
+  },
+  {
+    "name": "view_redraw_only",
+    "passed": true
+  },
+  {
+    "name": "view_redraw_only",
+    "passed": true
+  },
+  {
+    "name": "run_forces_inference",
+    "passed": true
+  },
+  {
+    "name": "burst_latest_request_only",
+    "passed": true
+  },
+  {
+    "name": "reset_frozen_policy",
+    "passed": true
+  },
+  {
+    "name": "portrait_selection_True",
+    "passed": true
+  },
+  {
+    "name": "portrait_selection_False",
+    "passed": true
+  },
+  {
+    "name": "portrait_padding_not_selected",
+    "passed": true
+  },
+  {
+    "name": "threshold_0.0",
+    "passed": true
+  },
+  {
+    "name": "threshold_0.0_integer_reference",
+    "passed": true
+  },
+  {
+    "name": "threshold_1.0",
+    "passed": true
+  },
+  {
+    "name": "threshold_1.0_integer_reference",
+    "passed": true
+  },
+  {
+    "name": "empty_mask_no_crash",
+    "passed": true
+  },
+  {
+    "name": "unlabelled_accuracy_na",
+    "passed": true
+  },
+  {
+    "name": "corrupt_image_clears_result",
+    "passed": true
+  },
+  {
+    "name": "recover_after_corrupt_image",
+    "passed": true
+  },
+  {
+    "name": "clean_exit",
+    "passed": true
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "frame_id": 262,
+  "parameter_version": 0,
+  "model_id": "6d085046c29974f6",
+  "backend": "native-cpp-reference",
+  "path": "C:\\Users\\35899\\Desktop\\FPGA project\\data\\ISBI2016_ISIC_Part1_Test_Data\\ISBI2016_ISIC_Part1_Test_Data\\ISIC_0010238.jpg",
+  "parameters": {
+    "threshold": 0.45,
+    "opening": true,
+    "closing": true,
+    "largest": true,
+    "fill": true,
+    "gaussian": false
+  },
+  "metrics": {
+    "area_px2": 3754,
+    "area_ratio": 0.3055013020833333,
+    "valid": true,
+    "centroid": [
+      44.41635588705381,
+      47.99014384656367
+    ],
+    "major_axis_px": 72.11163991662168,
+    "minor_axis_px": 66.78631325482435,
+    "perimeter_px": 231.5807341337204,
+    "circularity": 0.879628474733219,
+    "axis_unstable": false,
+    "asymmetry": 0.1184618794326241
+  },
+  "flags": {
+    "components_before": 1,
+    "empty": false,
+    "touches_valid_border": true
+  },
+  "accuracy": {
+    "dice": 0.9260202602683075,
+    "iou": 0.8622325226541526
+  },
+  "timing": {
+    "inference_ms": 235.92830000416143,
+    "cached_inference_ms": 235.92830000416143,
+    "network_reused": false,
+    "postprocess_ms": 2.75129999499768,
+    "processing_ms": 248.2248999949661
+  },
+  "geometry": {
+    "original_w": 1024,
+    "original_h": 768,
+    "size": 128,
+    "width": 128,
+    "height": 96,
+    "left": 0,
+    "top": 16
+  }
+}

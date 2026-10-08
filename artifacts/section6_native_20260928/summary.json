@@ -1,0 +1,686 @@
+[
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 3764,
+      "area_ratio": 0.3063151041666667,
+      "valid": true,
+      "centroid": [
+        71.95164718384697,
+        58.586078639744954
+      ],
+      "major_axis_px": 79.17389616703625,
+      "minor_axis_px": 60.68907580957669,
+      "perimeter_px": 231.23758828639984,
+      "circularity": 0.8845912034648122,
+      "axis_unstable": false,
+      "asymmetry": 0.0469946515909066
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.9775848626255339,
+      "iou": 0.9561525713869464
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0000231.jpg",
+    "geometry": {
+      "original_w": 962,
+      "original_h": 723,
+      "size": 128,
+      "width": 128,
+      "height": 96,
+      "left": 0,
+      "top": 16
+    },
+    "mask_sha256": "656b7def8a8d87f0a6eea3221d619cf4afaaa9bcab9fdf85d47fad8e4c941995",
+    "network_mask_sha256": "3349b22c31156e352953c7f09d024bf861641af1620fdef356aa68bddda9cf53",
+    "moments": [
+      3764,
+      270826,
+      220518,
+      20435610,
+      15658092,
+      14311182
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 2594,
+      "area_ratio": 0.21110026041666666,
+      "valid": true,
+      "centroid": [
+        58.29876638396299,
+        68.1769468003084
+      ],
+      "major_axis_px": 66.24120638838266,
+      "minor_axis_px": 50.224069563735966,
+      "perimeter_px": 193.92387998104095,
+      "circularity": 0.8667967057310563,
+      "axis_unstable": false,
+      "asymmetry": 0.0936803483311649
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.9775580880894625,
+      "iou": 0.9561013459070697
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0000271.jpg",
+    "geometry": {
+      "original_w": 1024,
+      "original_h": 768,
+      "size": 128,
+      "width": 128,
+      "height": 96,
+      "left": 0,
+      "top": 16
+    },
+    "mask_sha256": "c5610df88a580efee9058ba86f0eec698986aadbc85cc6379f05c6103f57c416",
+    "network_mask_sha256": "83675c526787f1c9deaa12817bb423fbfa6d728e84954a597c2206576e476eb5",
+    "moments": [
+      2594,
+      151227,
+      176851,
+      9486193,
+      10206089,
+      12507657
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 473,
+      "area_ratio": 0.04347426470588235,
+      "valid": true,
+      "centroid": [
+        95.78646934460888,
+        59.53911205073996
+      ],
+      "major_axis_px": 32.05685672802587,
+      "minor_axis_px": 20.07958064563576,
+      "perimeter_px": 92.28427076339722,
+      "circularity": 0.6979360565221505,
+      "axis_unstable": false,
+      "asymmetry": 0.26587543451906526
+    },
+    "flags": {
+      "components_before": 2,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.0,
+      "iou": 0.0
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0001186.jpg",
+    "geometry": {
+      "original_w": 4288,
+      "original_h": 2848,
+      "size": 128,
+      "width": 128,
+      "height": 85,
+      "left": 0,
+      "top": 21
+    },
+    "mask_sha256": "14749dc3cd52a3be6dfa5b7c4dbb7b4d13d4f9aa8b95e7ff0d6889162768288a",
+    "network_mask_sha256": "580f87a2d5b2ab1eb17dc551c3be3b235c5fe9544a28bced09057c0686bb3f97",
+    "moments": [
+      473,
+      45307,
+      28162,
+      4369679,
+      2694547,
+      1689158
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 4570,
+      "area_ratio": 0.42003676470588236,
+      "valid": true,
+      "centroid": [
+        50.682494529540485,
+        67.60503282275711
+      ],
+      "major_axis_px": 84.25115669854736,
+      "minor_axis_px": 71.60031569657622,
+      "perimeter_px": 289.63960921764374,
+      "circularity": 0.6845578553391268,
+      "axis_unstable": false,
+      "asymmetry": 0.20980689143803244
+    },
+    "flags": {
+      "components_before": 6,
+      "empty": false,
+      "touches_valid_border": true
+    },
+    "accuracy": {
+      "dice": 0.13209604839573302,
+      "iou": 0.07071886554031918
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0001242.jpg",
+    "geometry": {
+      "original_w": 4288,
+      "original_h": 2848,
+      "size": 128,
+      "width": 128,
+      "height": 85,
+      "left": 0,
+      "top": 21
+    },
+    "mask_sha256": "04422a45b2933aa989c2a07ce7b8e08e40a1dbaea361af252f28277785754bd8",
+    "network_mask_sha256": "a4d7738df76f40cf4c6f7abb002c3d9792a20040d89211bbe7c28156d8b2676c",
+    "moments": [
+      4570,
+      231619,
+      308955,
+      13366419,
+      15914050,
+      22751249
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 693,
+      "area_ratio": 0.06369485294117647,
+      "valid": true,
+      "centroid": [
+        53.18614718614719,
+        50.721500721500725
+      ],
+      "major_axis_px": 31.977922850720553,
+      "minor_axis_px": 27.760016051620624,
+      "perimeter_px": 97.35533845424652,
+      "circularity": 0.9188054376690445,
+      "axis_unstable": false,
+      "asymmetry": 0.0966232917094999
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.9249768415449888,
+      "iou": 0.8604250376097348
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0001427.jpg",
+    "geometry": {
+      "original_w": 3024,
+      "original_h": 2016,
+      "size": 128,
+      "width": 128,
+      "height": 85,
+      "left": 0,
+      "top": 21
+    },
+    "mask_sha256": "05d1a73be9ff59a1eb9323b82d9ee4248ef54ed088278aaca5d1fe4ea90197f1",
+    "network_mask_sha256": "fb4d4ed123660570a9d97f063d2e315c8bca4b87909c33c4df3c25a138f3254e",
+    "moments": [
+      693,
+      36858,
+      35150,
+      2001768,
+      1864695,
+      1819096
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 8159,
+      "area_ratio": 0.7499080882352941,
+      "valid": true,
+      "centroid": [
+        77.98320872655962,
+        63.92977080524574
+      ],
+      "major_axis_px": 113.45241629536996,
+      "minor_axis_px": 95.01754539267367,
+      "perimeter_px": 394.6690467596054,
+      "circularity": 0.6582345340757602,
+      "axis_unstable": false,
+      "asymmetry": 0.1980753267491575
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": true
+    },
+    "accuracy": {
+      "dice": 0.12485611815444887,
+      "iou": 0.06658482016407359
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0003728.jpg",
+    "geometry": {
+      "original_w": 3024,
+      "original_h": 2016,
+      "size": 128,
+      "width": 128,
+      "height": 85,
+      "left": 0,
+      "top": 21
+    },
+    "mask_sha256": "a586acb20acde2f6a779f92d11546cc26ff13727117c4bb78d1bd01cfa6edce4",
+    "network_mask_sha256": "7e1b9202cbcaad10082b33632eb0b3c4a792b8a28c1f9a58b087d338d5d63052",
+    "moments": [
+      8159,
+      636265,
+      521603,
+      56133861,
+      40374087,
+      37997607
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 3221,
+      "area_ratio": 0.2621256510416667,
+      "valid": true,
+      "centroid": [
+        60.778019248680536,
+        62.16951257373486
+      ],
+      "major_axis_px": 82.30292045863618,
+      "minor_axis_px": 49.95546045430488,
+      "perimeter_px": 220.6518018245697,
+      "circularity": 0.8313533141517854,
+      "axis_unstable": false,
+      "asymmetry": 0.052348551360842877
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.9815960352560483,
+      "iou": 0.9638572405821716
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0009956.jpg",
+    "geometry": {
+      "original_w": 1024,
+      "original_h": 768,
+      "size": 128,
+      "width": 128,
+      "height": 96,
+      "left": 0,
+      "top": 16
+    },
+    "mask_sha256": "d1e834bd580d17d9b3314b6d857f966cdbbc5bd750031edcd03290c7a0bb07ea",
+    "network_mask_sha256": "c61e626db87ab0eec82411446f57ffccbcde452495904c5d96ee9ef9320ee780",
+    "moments": [
+      3221,
+      195766,
+      200248,
+      13259726,
+      12214036,
+      12953894
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 3754,
+      "area_ratio": 0.3055013020833333,
+      "valid": true,
+      "centroid": [
+        44.41635588705381,
+        47.99014384656367
+      ],
+      "major_axis_px": 72.11163991662168,
+      "minor_axis_px": 66.78631325482435,
+      "perimeter_px": 231.5807341337204,
+      "circularity": 0.879628474733219,
+      "axis_unstable": false,
+      "asymmetry": 0.1184618794326241
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": true
+    },
+    "accuracy": {
+      "dice": 0.9260202602683075,
+      "iou": 0.8622325226541526
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0010238.jpg",
+    "geometry": {
+      "original_w": 1024,
+      "original_h": 768,
+      "size": 128,
+      "width": 128,
+      "height": 96,
+      "left": 0,
+      "top": 16
+    },
+    "mask_sha256": "854f14df9d49155e978a2ed357f31c55a2dbd86845c947b625c4ae029a86f553",
+    "network_mask_sha256": "f1429f81182748a3b555489f6d8a6b98984c24131a04b3db13b9290b9b0b73b1",
+    "moments": [
+      3754,
+      166739,
+      180155,
+      8606579,
+      7947106,
+      9711619
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 3985,
+      "area_ratio": 0.3243001302083333,
+      "valid": true,
+      "centroid": [
+        65.89861982434128,
+        67.64516938519448
+      ],
+      "major_axis_px": 98.25601760279551,
+      "minor_axis_px": 52.06257861068027,
+      "perimeter_px": 256.7939372062683,
+      "circularity": 0.7593966163668346,
+      "axis_unstable": false,
+      "asymmetry": 0.10005370335922892
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.9834011407405948,
+      "iou": 0.967344328378457
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0010463.jpg",
+    "geometry": {
+      "original_w": 1024,
+      "original_h": 768,
+      "size": 128,
+      "width": 128,
+      "height": 96,
+      "left": 0,
+      "top": 16
+    },
+    "mask_sha256": "0721d03d300c48421bef62a67f8e0896afd694e7aa0b49d433ea68b4232a448e",
+    "network_mask_sha256": "38281b3dd5b64579390f012caf4ac6e5c439d359d14d9280a8573ade48760617",
+    "moments": [
+      3985,
+      262606,
+      269566,
+      19572910,
+      18231064,
+      19046898
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 817,
+      "area_ratio": 0.06648763020833333,
+      "valid": true,
+      "centroid": [
+        45.734394124847,
+        47.34761321909425
+      ],
+      "major_axis_px": 46.05337780461938,
+      "minor_axis_px": 26.93715985768695,
+      "perimeter_px": 143.15432798862457,
+      "circularity": 0.5009829611148233,
+      "axis_unstable": false,
+      "asymmetry": 0.38848374781966377
+    },
+    "flags": {
+      "components_before": 3,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.0,
+      "iou": 0.0
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0011152.jpg",
+    "geometry": {
+      "original_w": 1024,
+      "original_h": 768,
+      "size": 128,
+      "width": 128,
+      "height": 96,
+      "left": 0,
+      "top": 16
+    },
+    "mask_sha256": "c24b3ab4e7fe59b5c9451e348041b7f04ed480002c8884042f75f77090b5795e",
+    "network_mask_sha256": "d3b339571283ea858b4fb9459f7ab5b6a2132d774e932f62e99b86c8f098b8ff",
+    "moments": [
+      817,
+      37365,
+      38683,
+      1761081,
+      1798306,
+      1924683
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 680,
+      "area_ratio": 0.055338541666666664,
+      "valid": true,
+      "centroid": [
+        63.46617647058824,
+        58.93970588235294
+      ],
+      "major_axis_px": 34.86989554168962,
+      "minor_axis_px": 24.903385717724678,
+      "perimeter_px": 97.01219260692596,
+      "circularity": 0.9079587871373856,
+      "axis_unstable": false,
+      "asymmetry": 0.05844093735054995
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.9254840217471525,
+      "iou": 0.8613031732222172
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0011213.jpg",
+    "geometry": {
+      "original_w": 1024,
+      "original_h": 768,
+      "size": 128,
+      "width": 128,
+      "height": 96,
+      "left": 0,
+      "top": 16
+    },
+    "mask_sha256": "d326dae6a4315e4cd068e46805f171d3cfeed74857788654ea41c58a0ac6c907",
+    "network_mask_sha256": "e8c4d40e4a469556e096779ac8618a721d5fba9ea4ba607789254e2a4fa6cc5f",
+    "moments": [
+      680,
+      43157,
+      40079,
+      2790213,
+      2540233,
+      2389075
+    ]
+  },
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 7374,
+      "area_ratio": 0.60009765625,
+      "valid": true,
+      "centroid": [
+        60.73447247084351,
+        65.3779495524817
+      ],
+      "major_axis_px": 129.03076611491437,
+      "minor_axis_px": 73.51803806022654,
+      "perimeter_px": 352.83556735515594,
+      "circularity": 0.7443347285678198,
+      "axis_unstable": false,
+      "asymmetry": 0.09332518980333004
+    },
+    "flags": {
+      "components_before": 1,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.9246381729534883,
+      "iou": 0.8598391254904529
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "ISIC_0011363.jpg",
+    "geometry": {
+      "original_w": 1024,
+      "original_h": 768,
+      "size": 128,
+      "width": 128,
+      "height": 96,
+      "left": 0,
+      "top": 16
+    },
+    "mask_sha256": "1ab4c93394fdd42338a260f127d93438d7dcac2ccc3949490f638e41f8a775d2",
+    "network_mask_sha256": "a38cb66734e37bd5c8546f911ff9b7a4fc81369a7ad4225f2b1704de799f4eb5",
+    "moments": [
+      7374,
+      447856,
+      482097,
+      34482872,
+      27912010,
+      34400003
+    ]
+  }
+]

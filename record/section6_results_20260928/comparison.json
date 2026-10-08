@@ -1,0 +1,23 @@
+{
+  "cases": 12,
+  "issues": [
+    [
+      "ISIC_0003728.jpg/metrics/asymmetry",
+      0.1980753267491575,
+      0.1980200353635554
+    ],
+    [
+      "ISIC_0010463.jpg/metrics/asymmetry",
+      0.10005370335922892,
+      0.09983915973920054
+    ],
+    [
+      "ISIC_0011213.jpg/metrics/asymmetry",
+      0.05844093735054995,
+      0.05772357723577237
+    ]
+  ],
+  "float_rtol": 1e-06,
+  "float_atol": 1e-08,
+  "pass": false
+}

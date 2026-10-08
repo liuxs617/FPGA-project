@@ -1,0 +1,12 @@
+ABI_PASS 8a111a4f13c4f851 5008640 3076
+RegisterMap {
+  CTRL = Register(AP_START=0, AP_DONE=0, AP_IDLE=1, AP_READY=0, RESERVED_1=0, AUTO_RESTART=0, RESERVED_2=0, INTERRUPT=0, RESERVED_3=0),
+  GIER = Register(Enable=0, RESERVED=0),
+  IP_IER = Register(CHAN0_INT_EN=0, CHAN1_INT_EN=0, RESERVED_0=0),
+  IP_ISR = Register(CHAN0_INT_ST=0, CHAN1_INT_ST=0, RESERVED_0=0),
+  ap_return = Register(ap_return=256),
+  arena_1 = Register(arena=write-only),
+  arena_2 = Register(arena=write-only),
+  params_1 = Register(params=write-only),
+  params_2 = Register(params=write-only)
+}

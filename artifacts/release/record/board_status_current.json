@@ -1,0 +1,16 @@
+{
+  "evidence_date": "2026-09-30",
+  "hardware_path": "artifacts/hardware/hdmi_full",
+  "hardware_id": "abe0c39aea79af7e",
+  "board_validation": "Partial acceptance: ABI and first inference passed; updated UI passed 28/28 board checks; reboot service ordering verified. See record/section7_20260930/状态.md.",
+  "physical_hdmi": "User confirmed standalone colorbars and full four-panel UI; end-to-end latency and long-term/cold-power stability remain unmeasured.",
+  "physical_usb_mouse": "Device enumerated and application initialized; physical movement/unplug/replug acceptance remains pending.",
+  "cdc_review": "Three retained HDMI-input asynchronous reset alerts; current output-only tests do not cover HDMI input.",
+  "remaining_acceptance": [
+    "Resolve strict asymmetry mismatch on 3 images in record/section6_results_20260928/验证结论.md.",
+    "Verify physical mouse movement/unplug/replug and measure end-to-end display latency.",
+    "Run 100-frame FPGA benchmark with and without HDMI and measure power.",
+    "Verify real AXI timeout recovery and repeated cold-power/long-duration stability."
+  ],
+  "evidence": ["record/section6_results_20260928/验证结论.md", "record/section7_20260930/状态.md"]
+}

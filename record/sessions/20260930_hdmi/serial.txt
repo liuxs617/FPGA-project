@@ -1,0 +1,91 @@
+cd ~/lesion_fpga; source scripts/board_env.sh; mkdir -p record/20260930_hdmi; (sudo -n env XILINX_XRT="$XILINX_XRT" PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -u scripts/hdmi_colorbars.py --seconds 60 > record/20260930_hdmi/colorbars.log 2>&1; echo $? > record/20260930_hdmi/colorbars.exit) </dev/null & echo COLORBARS_PID=$!
+[?2004l[1] 1092
+COLORBARS_PID=1092
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+echo VIDEO_CHECK; cat ~/lesion_fpga/record/20260930_hdmi/colorbars.log; cat ~/lesion_fpga/record/20260930_hdmi/colorbars.exit 2>/dev/null; pgrep -af hdmi_colorbars.py; dmesg | tail -n 8; echo VIDEO_CHECK_END
+[?2004lVIDEO_CHECK
+sudo: a password is required
+[1]+  Done                    ( sudo -n env XILINX_XRT="$XILINX_XRT" PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -u scripts/hdmi_colorbars.py --seconds 60 > record/20260930_hdmi/colorbars.log 2>&1; echo $? > record/20260930_hdmi/colorbars.exit ) < /dev/null
+1
+[  121.181921] [drm] Memory 4 is not reserved in device tree. Will allocate memory from CMA
+[  121.181992] [drm] zocl_xclbin_read_axlf 63599552-8a17-6b07-5d5a-1f2dbc3245d0 ret: 0
+[  121.245410] [drm] bitstream 63599552-8a17-6b07-5d5a-1f2dbc3245d0 locked, ref=1
+[  121.245534] zocl-drm axi:zyxclmm_drm:  ffffffffc157c810 kds_add_context: Client pid(213) add context Domain(65535) CU(0xffff) shared(true)
+[  121.245656] zocl-drm axi:zyxclmm_drm:  ffffffffc157c810 kds_del_context: Client pid(213) del context Domain(65535) CU(0xffff)
+[  121.245709] [drm] bitstream 63599552-8a17-6b07-5d5a-1f2dbc3245d0 unlocked, ref=0
+[  128.519416] zocl-drm axi:zyxclmm_drm: zocl_destroy_client: client exits pid(213)
+[  130.494616] zocl-drm axi:zyxclmm_drm: zocl_destroy_client: client exits pid(746)
+VIDEO_CHECK_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; source scripts/board_env.sh; (sudo -n env XILINX_XRT="$XILINX_XRT" PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -u scripts/hdmi_colorbars.py --seconds 60 > record/20260930_hdmi/colorbars_retry.log 2>&1; echo $? > record/20260930_hdmi/colorbars_retry.exit) </dev/null & echo COLORBARS_PID=$!
+[?2004l[1] 1937
+COLORBARS_PID=1937
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cat ~/lesion_fpga/record/20260930_hdmi/colorbars_retry.log; cat ~/lesion_fpga/record/20260930_hdmi/colorbars_retry.exit 2>/dev/null; pgrep -af hdmi_colorbars
+[?2004l1938 sudo -n env XILINX_XRT=/usr PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software /usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py --seconds 60
+1943 sudo -n env XILINX_XRT=/usr PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software /usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py --seconds 60
+1944 /usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py --seconds 60
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; (sudo -n env XILINX_XRT="$XILINX_XRT" PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -u scripts/hdmi_colorbars.py --seconds 60 > record/20260930_hdmi/colorbars_usb2.log 2>&1; echo $? > record/20260930_hdmi/colorbars_usb2.exit) </dev/null & echo COLORBARS_PID=$!
+[?2004l[1] 2101
+COLORBARS_PID=2101
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; (sudo -n env XILINX_XRT="$XILINX_XRT" PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -u scripts/hdmi_colorbars.py --seconds 300 > record/20260930_hdmi/colorbars_720.log 2>&1; echo $? > record/20260930_hdmi/colorbars_720.exit) </dev/null & echo COLORBARS_PID=$!
+[?2004l[1] 2326
+COLORBARS_PID=2326
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; sudo -n env XILINX_XRT=/usr "$BOARD_PY" -c "import base64;exec(base64.b64decode('aW1wb3J0IHhtbC5ldHJlZS5FbGVtZW50VHJlZSBhcyBFCmZyb20gcHlucSBpbXBvcnQgTU1JTwpyPUUucGFyc2UoJ2FydGlmYWN0cy9oYXJkd2FyZS9sZXNpb24uaHdoJykuZ2V0cm9vdCgpCmZvciBtIGluIHIuZmluZGFsbCgnLi8vTU9EVUxFJyk6CiBuPW0uZ2V0KCdGVUxMTkFNRScsJycpCiBpZiBuIGluIFsnL3ZpZGVvL2F4aV92ZG1hJywnL3ZpZGVvL2hkbWlfb3V0L2Zyb250ZW5kL2F4aV9keW5jbGsnLCcvdmlkZW8vaGRtaV9vdXQvZnJvbnRlbmQvdnRjX291dCddOgogIHA9bmV4dChwIGZvciBwIGluIG0uZmluZGFsbCgnLi9QQVJBTUVURVJTL1BBUkFNRVRFUicpIGlmIHAuZ2V0KCdOQU1FJyk9PSdDX0JBU0VBRERSJykKICBtbT1NTUlPKGludChwLmdldCgnVkFMVUUnKSwxNiksMHgxMDAwKQogIG9mZnNldHM9WzAsNCwweDI4LDB4NTAsMHg1NCwweDU4XSBpZiBuLmVuZHN3aXRoKCdheGlfdmRtYScpIGVsc2UgWzAsNF0KICBwcmludChuLHtoZXgobyk6aGV4KG1tLnJlYWQobykpIGZvciBvIGluIG9mZnNldHN9LGZsdXNoPVRydWUp'))"; echo REG_END
+[?2004l
+
+[?2004l[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; sudo -n env XILINX_XRT=/usr "$BOARD_PY" -c "import base64;exec(base64.b64decode('aW1wb3J0IHhtbC5ldHJlZS5FbGVtZW50VHJlZSBhcyBFCmZyb20gcHlucSBpbXBvcnQgTU1JTwpyPUUucGFyc2UoJ2FydGlmYWN0cy9oYXJkd2FyZS9sZXNpb24uaHdoJykuZ2V0cm9vdCgpCmZvciBtIGluIHIuZmluZGFsbCgnLi8vTU9EVUxFJyk6CiBuPW0uZ2V0KCdGVUxMTkFNRScsJycpCiBpZiBuIGluIFsnL3ZpZGVvL2F4aV92ZG1hJywnL3ZpZGVvL2hkbWlfb3V0L2Zyb250ZW5kL2F4aV9keW5jbGsnLCcvdmlkZW8vaGRtaV9vdXQvZnJvbnRlbmQvdnRjX291dCddOgogIHA9bmV4dChwIGZvciBwIGluIG0uZmluZGFsbCgnLi9QQVJBTUVURVJTL1BBUkFNRVRFUicpIGlmIHAuZ2V0KCdOQU1FJyk9PSdDX0JBU0VBRERSJykKICBtbT1NTUlPKGludChwLmdldCgnVkFMVUUnKSwxNiksMHgxMDAwKQogIG9mZnNldHM9WzAsNCwweDI4LDB4NTAsMHg1NCwweDU4XSBpZiBuLmVuZHN3aXRoKCdheGlfdmRtYScpIGVsc2UgWzAsNF0KICBwcmludChuLHtoZXgobyk6aGV4KG1tLnJlYWQobykpIGZvciBvIGluIG9mZnNldHN9LGZsdXNoPVRydWUp'))" > record/20260930_hdmi/registers.txt 2>&1; cat record/20260930_hdmi/registers.txt; echo REG_END
+[?2004l
+cat ~/lesion_fpga/record/20260930_hdmi/registers.txt; ps -eo pid,etime,stat,args | grep -E "python3 -c|hdmi_colorbars"; echo END
+[?2004l/video/axi_vdma {'0x0': '0x11089', '0x4': '0x11000', '0x28': '0x10001', '0x50': '0x2d0', '0x54': '0xf00', '0x58': '0x1000f00'}
+/video/hdmi_out/frontend/axi_dynclk {'0x0': '0x1', '0x4': '0x1'}
+/video/hdmi_out/frontend/vtc_out {'0x0': '0x3f7ef06', '0x4': '0x13000'}
+ 2327       02:08 S    sudo -n env XILINX_XRT=/usr PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software /usr/local/share/pynq-venv/bin/python3 -u scripts/[01;31m[Khdmi_colorbars[m[K.py --seconds 300
+ 2332       02:08 Ss+  sudo -n env XILINX_XRT=/usr PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software /usr/local/share/pynq-venv/bin/python3 -u scripts/[01;31m[Khdmi_colorbars[m[K.py --seconds 300
+ 2333       02:08 S    /usr/local/share/pynq-venv/bin/python3 -u scripts/[01;31m[Khdmi_colorbars[m[K.py --seconds 300
+ 2532       00:00 S+   grep --color=auto -E [01;31m[Kpython3 -c[m[K|[01;31m[Khdmi_colorbars[m[K
+END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; source scripts/board_env.sh; if pgrep -f "^/usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py" >/dev/null; then echo COLORBARS_ALREADY_RUNNING; else tag=$(date +%Y%m%d_%H%M%S); (sudo -n env XILINX_XRT="$XILINX_XRT" PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -u scripts/hdmi_colorbars.py --seconds 300 > "record/20260930_hdmi/colorbars_$tag.log" 2>&1; echo $? > "record/20260930_hdmi/colorbars_$tag.exit") </dev/null & echo COLORBARS_STARTED=$tag; fi
+[?2004l[1]+  Done                    ( sudo -n env XILINX_XRT="$XILINX_XRT" PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -u scripts/hdmi_colorbars.py --seconds 300 > record/20260930_hdmi/colorbars_720.log 2>&1; echo $? > record/20260930_hdmi/colorbars_720.exit ) < /dev/null
+[1] 3759
+COLORBARS_STARTED=20250503_183737
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cat ~/lesion_fpga/record/20260930_hdmi/colorbars_20250503_183737.log; pgrep -af "^/usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py"; echo OUTPUT_CHECK_END
+[?2004l3766 /usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py --seconds 300
+OUTPUT_CHECK_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; echo SYSTEM_BEGIN; uptime; pgrep -af "hdmi_colorbars.py|lesion_fpga.app"; cat record/20260930_hdmi/colorbars_replay2.log; cat record/20260930_hdmi/colorbars_replay2.exit 2>/dev/null; free -m; dmesg | tail -n 15; echo SYSTEM_END
+[?2004lSYSTEM_BEGIN
+ 18:50:54 up 48 min,  2 users,  load average: 0.00, 0.02, 0.04
+4597 sudo -n env XILINX_XRT=/usr PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software /usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py --seconds 300
+4602 sudo -n env XILINX_XRT=/usr PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software:/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software /usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py --seconds 300
+4603 /usr/local/share/pynq-venv/bin/python3 -u scripts/hdmi_colorbars.py --seconds 300
+               total        used        free      shared  buff/cache   available
+Mem:             491         170         136           1         184         302
+Swap:            511           0         511
+[ 2678.221444] zocl-drm axi:zyxclmm_drm:  ffffffffc157c810 kds_del_context: Client pid(4603) del context Domain(65535) CU(0xffff)
+[ 2678.221516] [drm] bitstream 9a342c26-1d51-881b-be47-eac823c7561d unlocked, ref=0
+[ 2680.536756] fpga_manager fpga0: writing lesion.bin to Xilinx Zynq FPGA Manager
+[ 2680.616538] [drm] Loading xclbin 0f6b44cb-f2ab-b568-76b7-47f72d5dd30e to slot 0
+[ 2680.616573] [drm] skip kind 29(AIE_RESOURCES) return code: -22
+[ 2680.616613] [drm] skip kind 8(IP_LAYOUT) return code: -22
+[ 2680.616631] [drm] skip kind 9(DEBUG_IP_LAYOUT) return code: -22
+[ 2680.616645] [drm] skip kind 25(AIE_METADATA) return code: -22
+[ 2680.616659] [drm] skip kind 7(CONNECTIVITY) return code: -22
+[ 2680.616672] [drm] found kind 6(MEM_TOPOLOGY)
+[ 2680.616807] [drm] Memory 0 is not reserved in device tree. Will allocate memory from CMA
+[ 2680.616872] [drm] zocl_xclbin_read_axlf 0f6b44cb-f2ab-b568-76b7-47f72d5dd30e ret: 0
+[ 2680.641360] [drm] bitstream 0f6b44cb-f2ab-b568-76b7-47f72d5dd30e locked, ref=1
+[ 2680.641469] zocl-drm axi:zyxclmm_drm:  ffffffffc157c810 kds_add_context: Client pid(4603) add context Domain(65535) CU(0xffff) shared(true)
+[ 2680.641577] zocl-drm axi:zyxclmm_drm:  ffffffffc157c810 kds_del_context: Client pid(4603) del context Domain(65535) CU(0xffff)
+SYSTEM_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; source scripts/board_env.sh; (sudo -n env XILINX_XRT="$XILINX_XRT" PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -u scripts/hdmi_colorbars.py --seconds 300 > record/20260930_hdmi/colorbars_out.log 2>&1; echo $? > record/20260930_hdmi/colorbars_out.exit) </dev/null & echo COLORBARS_PID=$!
+[?2004l[1] 5111
+COLORBARS_PID=5111
+[?2004hxilinx@pynq:~/lesion_fpga$ 

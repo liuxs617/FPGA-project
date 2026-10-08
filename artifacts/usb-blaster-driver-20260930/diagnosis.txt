@@ -1,0 +1,16 @@
+USB-Blaster driver diagnosis, 2026-09-30
+Device: USB\VID_09FB&PID_6001\00000000
+Windows problem code: 52
+Installed driver: oem125.inf, 2.12.0.0, 2014-08-26; CIM IsSigned=False.
+Quartus 9.1sp2 jtagconfig --enum: No JTAG hardware available.
+Code Integrity event 3004 rejects usbblstr.sys. Existing SYS matches DriverStore and school package SHA256: 14FDF6273CEAD3E4E391F538D0FF4E3E258FC34B1B1074C73B72961E640377E0.
+Offline signtool /kp /c verifies catalog membership and signature, but does not prove Windows 11 runtime acceptance.
+Backup: backup-old-driver (copied complete currently installed DriverStore directory).
+Official candidate, not downloaded or installed:
+https://www.altera.com/downloads/fpga-development-tools/quartus-prime-standard-edition-design-software-version-24-1-windows
+QuartusProgrammerSetup-24.1std.0.1077-windows.exe, 373.7 MB, published SHA1 b66fc109e6e41146d8b9f7299c7c4f1daa1e18ef.
+Candidate internal USB-Blaster driver version and Windows 11 compatibility NOT yet verified.
+Official downloads currently link to customerlogin.altera.com. Local requests to pages and public download endpoints return HTTP 403. Tabbit stable launcher diagnose exited 1 without output.
+User reports no local newer package.
+No drivers installed/deleted; no security settings changed; no restart; no FPGA programming.
+Next step: obtain official installer through authenticated vendor download; verify hash and signature; extract usb-blaster (not usb-blaster-ii/iii), verify INF hardware ID and catalog membership; elevate driver install through user UAC; retest device and Quartus 9.1sp2 enumeration.

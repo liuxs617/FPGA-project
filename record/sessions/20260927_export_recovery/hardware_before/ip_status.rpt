@@ -1,0 +1,158 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Sep 22 23:48:44 2026
+| Host         : WIN-9V8PKT2UNH4 running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 29 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| Instance Name                    | Status                    | Recommendation      | Change    | IP Name            | IP      | New Version           | New        | Original Part        |
+|                                  |                           |                     | Log       |                    | Version |                       | License    |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_axi_dynclk_0              | Up-to-date                | No changes required | Change    | Dynamic Clock      | 1.0     | 1.0 (Rev. 3)          | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   | Generator          | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 3)      |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_axi_gpio_hdmiin_0         | Up-to-date                | No changes required |  *(1)     | AXI GPIO           | 2.0     | 2.0 (Rev. 37)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 37)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_axi_interconnect_0_0      | Up-to-date (discontinued) | No changes required |  *(2)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 38)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_axi_mem_intercon_0        | Up-to-date (discontinued) | No changes required |  *(3)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 38)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_axi_vdma_0                | Up-to-date                | No changes required |  *(4)     | AXI Video Direct   | 6.3     | 6.3 (Rev. 24)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Memory Access      | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 24)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_axis_register_slice_0_0   | Up-to-date                | No changes required |  *(5)     | AXI4-Stream        | 1.1     | 1.1 (Rev. 35)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Register Slice     | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 35)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_axis_register_slice_0_1   | Up-to-date                | No changes required |  *(6)     | AXI4-Stream        | 1.1     | 1.1 (Rev. 35)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Register Slice     | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 35)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_color_convert_0           | Up-to-date                | No changes required | Change    | Color_convert      | 1.0     | 1.0 (Rev. 2114797774) | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 2114797 |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_color_convert_1           | Up-to-date                | No changes required | Change    | Color_convert      | 1.0     | 1.0 (Rev. 2114797774) | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 2114797 |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_color_swap_0_0            | Up-to-date                | No changes required | Change    | color_swap_v1_1    | 1.1     | 1.1 (Rev. 3)          | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 3)      |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_color_swap_0_1            | Up-to-date                | No changes required | Change    | color_swap_v1_1    | 1.1     | 1.1 (Rev. 3)          | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 3)      |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_control_0                 | Up-to-date (discontinued) | No changes required |  *(7)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 38)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_dvi2rgb_0_0               | Up-to-date                | No changes required | Change    | DVI to RGB Video   | 1.7     | 1.7 (Rev. 3)          | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   | Decoder (Sink)     | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 3)      |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_hdmi_out_hpd_video_0      | Up-to-date                | No changes required |  *(8)     | AXI GPIO           | 2.0     | 2.0 (Rev. 37)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 37)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_lesion_accel_0_0          | Up-to-date                | No changes required | Change    | Lesion_accel       | 1.0     | 1.0 (Rev. 2114797785) | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 2114797 |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_memory_0                  | Up-to-date (discontinued) | No changes required |  *(9)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 38)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 38)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_pixel_pack_0              | Up-to-date                | No changes required | Change    | Pixel_pack         | 1.0     | 1.0 (Rev. 2114797775) | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 2114797 |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_pixel_unpack_0            | Up-to-date                | No changes required | Change    | Pixel_unpack       | 1.0     | 1.0 (Rev. 2114797776) | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 2114797 |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_proc_sys_reset_pixelclk_0 | Up-to-date                | No changes required |  *(10)    | Processor System   | 5.0     | 5.0 (Rev. 17)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Reset              | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 17)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_ps7_0_0                   | Up-to-date                | No changes required |  *(11)    | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 8)          | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | System             | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 8)      |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_reset0_0                  | Up-to-date                | No changes required |  *(12)    | Processor System   | 5.0     | 5.0 (Rev. 17)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Reset              | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 17)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_reset1_0                  | Up-to-date                | No changes required |  *(13)    | Processor System   | 5.0     | 5.0 (Rev. 17)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Reset              | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 17)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_rgb2dvi_0_0               | Up-to-date                | No changes required | Change    | RGB to DVI Video   | 1.2     | 1.2 (Rev. 7)          | Included   | xc7z020clg400-1      |
+|                                  |                           |                     | Log not   | Encoder (Source)   | (Rev.   |                       |            |                      |
+|                                  |                           |                     | available |                    | 7)      |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_system_interrupts_0       | Up-to-date                | No changes required |  *(14)    | AXI Interrupt      | 4.1     | 4.1 (Rev. 22)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Controller         | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 22)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_v_axi4s_vid_out_0_0       | Up-to-date                | No changes required |  *(15)    | AXI4-Stream to     | 4.0     | 4.0 (Rev. 20)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Video Out          | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 20)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_v_vid_in_axi4s_0_0        | Up-to-date                | No changes required |  *(16)    | Video In to        | 5.0     | 5.0 (Rev. 7)          | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | AXI4-Stream        | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 7)      |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_vtc_in_0                  | Up-to-date                | No changes required |  *(17)    | Video Timing       | 6.2     | 6.2 (Rev. 11)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Controller         | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 11)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_vtc_out_0                 | Up-to-date                | No changes required |  *(18)    | Video Timing       | 6.2     | 6.2 (Rev. 11)         | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           | Controller         | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 11)     |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+| lesion_xlconcat_0_0              | Up-to-date (discontinued) | No changes required |  *(19)    | Concat             | 2.1     | 2.1 (Rev. 7)          | Included   | xc7z020clg400-1      |
+|                                  |                           |                     |           |                    | (Rev.   |                       |            |                      |
+|                                  |                           |                     |           |                    | 7)      |                       |            |                      |
++----------------------------------+---------------------------+---------------------+-----------+--------------------+---------+-----------------------+------------+----------------------+
+*(1) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(2) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(3) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(4) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axi_vdma_v6_3/doc/axi_vdma_v6_3_changelog.txt
+*(5) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axis_register_slice_v1_1/doc/axis_register_slice_v1_1_changelog.txt
+*(6) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axis_register_slice_v1_1/doc/axis_register_slice_v1_1_changelog.txt
+*(7) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(8) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axi_gpio_v2_0/doc/axi_gpio_v2_0_changelog.txt
+*(9) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(10) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(11) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+*(12) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(13) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(14) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/axi_intc_v4_1/doc/axi_intc_v4_1_changelog.txt
+*(15) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/v_axi4s_vid_out_v4_0/doc/v_axi4s_vid_out_v4_0_changelog.txt
+*(16) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/v_vid_in_axi4s_v5_0/doc/v_vid_in_axi4s_v5_0_changelog.txt
+*(17) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/v_tc_v6_2/doc/v_tc_v6_2_changelog.txt
+*(18) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/v_tc_v6_2/doc/v_tc_v6_2_changelog.txt
+*(19) c:/AMDDesignTools/2025.2/Vivado/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+
+

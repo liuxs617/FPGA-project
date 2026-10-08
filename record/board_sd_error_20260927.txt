@@ -1,0 +1,24 @@
+findmnt -n -o SOURCE,FSTYPE,OPTIONS /; dmesg | tail -n 25; echo READONLY_CHECK_DONE
+[?2004lEXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 43 with max blocks 2 with error 117
+EXT4-fs (mmcblk0p2): This should not happen!! Data will be lost
+
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+/dev/mmcblk0p2 ext4   rw,relatime
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  205.727544] EXT4-fs error: 1709 callbacks suppressed
+[  205.727562] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  205.745322] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  205.762422] EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  205.780368] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  205.797528] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  205.814683] EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  205.832594] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  205.849722] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent:

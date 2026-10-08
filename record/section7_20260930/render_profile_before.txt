@@ -1,0 +1,4 @@
+cat record/section7_20260930/render_profile.json
+[?2004l{"render_ms": [1034.7193589996095, 1030.2770689995668, 1042.3363179997978, 1036.5521519997856, 1032.456730999911, 1025.4324970001107, 1189.7908410001037, 1030.4608409996945, 1027.3743369998556, 1023.0685209999137]}
+[2]+  Done                    PYTHONPATH=software /usr/local/share/pynq-venv/bin/python3 scripts/section7_render_profile.py > record/section7_20260930/render_profile.json 2>&1
+[?2004hxilinx@pynq:~/lesion_fpga$ 

@@ -1,0 +1,419 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Sep 30 19:24:05 2026
+| Host         : WIN-9V8PKT2UNH4 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file C:/temp/lesion_hdmi_probe/timing.rpt
+| Design       : probe_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (4)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (4)
+-------------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      7.892        0.000                      0                  412        0.131        0.000                      0                  412        0.538        0.000                       0                   184  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                      Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                      ------------         ----------      --------------
+probe_i/clocks/clk_in1     {0.000 5.000}        10.000          100.000         
+  clk_out1_probe_clocks_0  {0.000 6.734}        13.468          74.250          
+  clk_out2_probe_clocks_0  {0.000 1.347}        2.694           371.250         
+  clkfbout_probe_clocks_0  {0.000 25.000}       50.000          20.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+probe_i/clocks/clk_in1                                                                                                                                                       3.000        0.000                       0                     1  
+  clk_out1_probe_clocks_0        7.892        0.000                      0                  412        0.131        0.000                      0                  412        6.234        0.000                       0                   170  
+  clk_out2_probe_clocks_0                                                                                                                                                    0.538        0.000                       0                    10  
+  clkfbout_probe_clocks_0                                                                                                                                                   47.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  probe_i/clocks/clk_in1
+  To Clock:  probe_i/clocks/clk_in1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         probe_i/clocks/clk_in1
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { probe_i/clocks/clk_in1 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  probe_i/clocks/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  probe_i/clocks/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  probe_i/clocks/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  probe_i/clocks/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_probe_clocks_0
+  To Clock:  clk_out1_probe_clocks_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        7.892ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.131ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        6.234ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             7.892ns  (required time - arrival time)
+  Source:                 probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/frame_counter_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_probe_clocks_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Destination:            probe_i/video/inst/core/encoder/true_hdmi_output.packet_assembler/parity_reg[2][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_probe_clocks_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             clk_out1_probe_clocks_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            13.468ns  (clk_out1_probe_clocks_0 rise@13.468ns - clk_out1_probe_clocks_0 rise@0.000ns)
+  Data Path Delay:        5.274ns  (logic 1.315ns (24.933%)  route 3.959ns (75.067%))
+  Logic Levels:           4  (LUT2=1 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.071ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.859ns = ( 15.327 - 13.468 ) 
+    Source Clock Delay      (SCD):    2.062ns
+    Clock Pessimism Removal (CPR):    0.132ns
+  Clock Uncertainty:      0.172ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.338ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_probe_clocks_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  probe_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.806     1.806    probe_i/clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.793    -1.987 r  probe_i/clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.889    -0.098    probe_i/clocks/inst/clk_out1_probe_clocks_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     0.003 r  probe_i/clocks/inst/clkout1_buf/O
+                         net (fo=168, routed)         2.059     2.062    probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/clk_pixel
+    SLICE_X106Y147       FDRE                                         r  probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/frame_counter_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X106Y147       FDRE (Prop_fdre_C_Q)         0.419     2.481 f  probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/frame_counter_reg[5]/Q
+                         net (fo=7, routed)           1.033     3.514    probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/audio_sample_packet/Q[3]
+    SLICE_X106Y146       LUT6 (Prop_lut6_I5_O)        0.296     3.810 r  probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/audio_sample_packet/parity[4][7]_i_14/O
+                         net (fo=3, routed)           1.206     5.016    probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/subs[2][2]_3[51]
+    SLICE_X109Y132       LUT5 (Prop_lut5_I3_O)        0.124     5.140 r  probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/parity[2][6]_i_5/O
+                         net (fo=3, routed)           0.783     5.923    probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/packet_type_reg[2]_0
+    SLICE_X109Y133       LUT2 (Prop_lut2_I0_O)        0.150     6.073 r  probe_i/video/inst/core/encoder/true_hdmi_output.packet_picker/parity[2][6]_i_2/O
+                         net (fo=1, routed)           0.460     6.533    probe_i/video/inst/core/encoder/true_hdmi_output.packet_assembler/parity_reg[2][6]_0
+    SLICE_X111Y133       LUT6 (Prop_lut6_I1_O)        0.326     6.859 r  probe_i/video/inst/core/encoder/true_hdmi_output.packet_assembler/parity[2][6]_i_1/O
+                         net (fo=3, routed)           0.478     7.336    probe_i/video/inst/core/encoder/true_hdmi_output.packet_assembler/p_18_out[0]
+    SLICE_X113Y133       FDRE                                         r  probe_i/video/inst/core/encoder/true_hdmi_output.packet_assembler/parity_reg[2][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_probe_clocks_0 rise edge)
+                                                     13.468    13.468 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000    13.468 r  probe_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.612    15.080    probe_i/clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.425    11.655 r  probe_i/clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.725    13.380    probe_i/clocks/inst/clk_out1_probe_clocks_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.471 r  probe_i/clocks/inst/clkout1_buf/O
+                         net (fo=168, routed)         1.856    15.327    probe_i/video/inst/core/encoder/true_hdmi_output.packet_assembler/clk_pixel
+    SLICE_X113Y133       FDRE                                         r  probe_i/video/inst/core/encoder/true_hdmi_output.packet_assembler/parity_reg[2][6]/C
+                         clock pessimism              0.132    15.459    
+                         clock uncertainty           -0.172    15.287    
+    SLICE_X113Y133       FDRE (Setup_fdre_C_D)       -0.058    15.229    probe_i/video/inst/core/encoder/true_hdmi_output.packet_assembler/parity_reg[2][6]
+  -------------------------------------------------------------------
+                         required time                         15.229    
+                         arrival time                          -7.336    
+  -------------------------------------------------------------------
+                         slack                                  7.892    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.131ns  (arrival time - required time)
+  Source:                 probe_i/video/inst/core/reset_pipe_reg[0]/C
+                            (rising edge-triggered cell FDPE clocked by clk_out1_probe_clocks_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Destination:            probe_i/video/inst/core/reset_pipe_reg[1]/D
+                            (rising edge-triggered cell FDPE clocked by clk_out1_probe_clocks_0  {rise@0.000ns fall@6.734ns period=13.468ns})
+  Path Group:             clk_out1_probe_clocks_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_probe_clocks_0 rise@0.000ns - clk_out1_probe_clocks_0 rise@0.000ns)
+  Data Path Delay:        0.206ns  (logic 0.141ns (68.336%)  route 0.065ns (31.664%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.990ns
+    Source Clock Delay      (SCD):    0.717ns
+    Clock Pessimism Removal (CPR):    0.273ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_probe_clocks_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  probe_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.597     0.597    probe_i/clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.150    -0.553 r  probe_i/clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.529    -0.024    probe_i/clocks/inst/clk_out1_probe_clocks_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.002 r  probe_i/clocks/inst/clkout1_buf/O
+                         net (fo=168, routed)         0.715     0.717    probe_i/video/inst/core/clk_pixel
+    SLICE_X106Y135       FDPE                                         r  probe_i/video/inst/core/reset_pipe_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X106Y135       FDPE (Prop_fdpe_C_Q)         0.141     0.858 r  probe_i/video/inst/core/reset_pipe_reg[0]/Q
+                         net (fo=1, routed)           0.065     0.923    probe_i/video/inst/core/reset_pipe[0]
+    SLICE_X106Y135       FDPE                                         r  probe_i/video/inst/core/reset_pipe_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_probe_clocks_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y16       BUFG                         0.000     0.000 r  probe_i/ps7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.864     0.864    probe_i/clocks/inst/clk_in1
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.467    -0.603 r  probe_i/clocks/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.576    -0.027    probe_i/clocks/inst/clk_out1_probe_clocks_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     0.002 r  probe_i/clocks/inst/clkout1_buf/O
+                         net (fo=168, routed)         0.988     0.990    probe_i/video/inst/core/clk_pixel
+    SLICE_X106Y135       FDPE                                         r  probe_i/video/inst/core/reset_pipe_reg[1]/C
+                         clock pessimism             -0.273     0.717    
+    SLICE_X106Y135       FDPE (Hold_fdpe_C_D)         0.075     0.792    probe_i/video/inst/core/reset_pipe_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -0.792    
+                         arrival time                           0.923    
+  -------------------------------------------------------------------
+                         slack                                  0.131    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_probe_clocks_0
+Waveform(ns):       { 0.000 6.734 }
+Period(ns):         13.468
+Sources:            { probe_i/clocks/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         13.468      11.313     BUFGCTRL_X0Y0    probe_i/clocks/inst/clkout1_buf/I
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       13.468      199.892    MMCME2_ADV_X1Y0  probe_i/clocks/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDPE/C              n/a            0.500         6.734       6.234      SLICE_X106Y135   probe_i/video/inst/core/reset_pipe_reg[0]/C
+High Pulse Width  Slow    FDPE/C              n/a            0.500         6.734       6.234      SLICE_X106Y135   probe_i/video/inst/core/reset_pipe_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_probe_clocks_0
+  To Clock:  clk_out2_probe_clocks_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        0.538ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_probe_clocks_0
+Waveform(ns):       { 0.000 1.347 }
+Period(ns):         2.694
+Sources:            { probe_i/clocks/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         2.694       0.538      BUFGCTRL_X0Y1    probe_i/clocks/inst/clkout2_buf/I
+Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       2.694       210.666    MMCME2_ADV_X1Y0  probe_i/clocks/inst/mmcm_adv_inst/CLKOUT1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_probe_clocks_0
+  To Clock:  clkfbout_probe_clocks_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       47.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_probe_clocks_0
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { probe_i/clocks/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         50.000      47.845     BUFGCTRL_X0Y2    probe_i/clocks/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       50.000      50.000     MMCME2_ADV_X1Y0  probe_i/clocks/inst/mmcm_adv_inst/CLKFBIN
+
+
+

@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vitis HLS Report for 'convolution_Pipeline_VITIS_LOOP_28_4'
+================================================================
+* Date:           Sun Sep 27 08:32:15 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        lesion
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.712 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       66|       66|  0.660 us|  0.660 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_28_4  |       64|       64|         1|          1|          1|    64|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    526|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|       9|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       9|    553|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |add_ln28_fu_367_p2       |         +|   0|  0|  14|           7|           1|
+    |icmp_ln28_fu_361_p2      |      icmp|   0|  0|  15|           7|           8|
+    |icmp_ln32_1_fu_337_p2    |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln32_2_fu_327_p2    |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln32_3_fu_317_p2    |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln32_4_fu_307_p2    |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln32_5_fu_297_p2    |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln32_6_fu_287_p2    |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln32_fu_347_p2      |      icmp|   0|  0|  39|          32|          32|
+    |select_ln32_1_fu_394_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln32_2_fu_403_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln32_3_fu_412_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln32_4_fu_421_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln32_5_fu_430_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln32_6_fu_439_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln32_fu_385_p3    |    select|   0|  0|  32|           1|          32|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0| 526|         245|         457|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_s_1  |   9|          2|    7|         14|
+    |s_fu_78               |   9|          2|    7|         14|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|   15|         30|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |s_fu_78      |  7|   0|    7|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |             Source Object            |    C Type    |
++-------------------+-----+-----+------------+--------------------------------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  convolution_Pipeline_VITIS_LOOP_28_4|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  convolution_Pipeline_VITIS_LOOP_28_4|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  convolution_Pipeline_VITIS_LOOP_28_4|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  convolution_Pipeline_VITIS_LOOP_28_4|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  convolution_Pipeline_VITIS_LOOP_28_4|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  convolution_Pipeline_VITIS_LOOP_28_4|  return value|
+|or_ln32_6          |   in|   31|     ap_none|                             or_ln32_6|        scalar|
+|co                 |   in|   32|     ap_none|                                    co|        scalar|
+|or_ln32_5          |   in|   31|     ap_none|                             or_ln32_5|        scalar|
+|or_ln32_4          |   in|   31|     ap_none|                             or_ln32_4|        scalar|
+|or_ln32_3          |   in|   31|     ap_none|                             or_ln32_3|        scalar|
+|or_ln32_2          |   in|   31|     ap_none|                             or_ln32_2|        scalar|
+|or_ln32_1          |   in|   31|     ap_none|                             or_ln32_1|        scalar|
+|or_ln              |   in|   31|     ap_none|                                 or_ln|        scalar|
+|acc_7_address0     |  out|    6|   ap_memory|                                 acc_7|         array|
+|acc_7_ce0          |  out|    1|   ap_memory|                                 acc_7|         array|
+|acc_7_we0          |  out|    1|   ap_memory|                                 acc_7|         array|
+|acc_7_d0           |  out|   32|   ap_memory|                                 acc_7|         array|
+|acc_6_address0     |  out|    6|   ap_memory|                                 acc_6|         array|
+|acc_6_ce0          |  out|    1|   ap_memory|                                 acc_6|         array|
+|acc_6_we0          |  out|    1|   ap_memory|                                 acc_6|         array|
+|acc_6_d0           |  out|   32|   ap_memory|                                 acc_6|         array|
+|acc_5_address0     |  out|    6|   ap_memory|                                 acc_5|         array|
+|acc_5_ce0          |  out|    1|   ap_memory|                                 acc_5|         array|
+|acc_5_we0          |  out|    1|   ap_memory|                                 acc_5|         array|
+|acc_5_d0           |  out|   32|   ap_memory|                                 acc_5|         array|
+|acc_4_address0     |  out|    6|   ap_memory|                                 acc_4|         array|
+|acc_4_ce0          |  out|    1|   ap_memory|                                 acc_4|         array|
+|acc_4_we0          |  out|    1|   ap_memory|                                 acc_4|         array|
+|acc_4_d0           |  out|   32|   ap_memory|                                 acc_4|         array|
+|acc_3_address0     |  out|    6|   ap_memory|                                 acc_3|         array|
+|acc_3_ce0          |  out|    1|   ap_memory|                                 acc_3|         array|
+|acc_3_we0          |  out|    1|   ap_memory|                                 acc_3|         array|
+|acc_3_d0           |  out|   32|   ap_memory|                                 acc_3|         array|
+|acc_2_address0     |  out|    6|   ap_memory|                                 acc_2|         array|
+|acc_2_ce0          |  out|    1|   ap_memory|                                 acc_2|         array|
+|acc_2_we0          |  out|    1|   ap_memory|                                 acc_2|         array|
+|acc_2_d0           |  out|   32|   ap_memory|                                 acc_2|         array|
+|acc_1_address0     |  out|    6|   ap_memory|                                 acc_1|         array|
+|acc_1_ce0          |  out|    1|   ap_memory|                                 acc_1|         array|
+|acc_1_we0          |  out|    1|   ap_memory|                                 acc_1|         array|
+|acc_1_d0           |  out|   32|   ap_memory|                                 acc_1|         array|
+|acc_address0       |  out|    6|   ap_memory|                                   acc|         array|
+|acc_ce0            |  out|    1|   ap_memory|                                   acc|         array|
+|acc_we0            |  out|    1|   ap_memory|                                   acc|         array|
+|acc_d0             |  out|   32|   ap_memory|                                   acc|         array|
+|controlmem_load    |   in|   32|     ap_none|                       controlmem_load|        scalar|
+|controlmem_load_1  |   in|   32|     ap_none|                     controlmem_load_1|        scalar|
+|controlmem_load_2  |   in|   32|     ap_none|                     controlmem_load_2|        scalar|
+|controlmem_load_3  |   in|   32|     ap_none|                     controlmem_load_3|        scalar|
+|controlmem_load_4  |   in|   32|     ap_none|                     controlmem_load_4|        scalar|
+|controlmem_load_5  |   in|   32|     ap_none|                     controlmem_load_5|        scalar|
+|controlmem_load_6  |   in|   32|     ap_none|                     controlmem_load_6|        scalar|
+|controlmem_load_7  |   in|   32|     ap_none|                     controlmem_load_7|        scalar|
++-------------------+-----+-----+------------+--------------------------------------+--------------+
+

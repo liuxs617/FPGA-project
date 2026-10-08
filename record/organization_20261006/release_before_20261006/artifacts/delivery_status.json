@@ -1,0 +1,49 @@
+{
+  "model_id": "6d085046c29974f6",
+  "code": "implemented",
+  "training": "completed with early stopping",
+  "data_counts": {
+    "train": 718,
+    "validation": 179,
+    "test": 376,
+    "excluded_overlap": 6
+  },
+  "unit_tests": "12 passed in 0.31s",
+  "native_full_network_bit_exact": true,
+  "rtl_cosimulation": "passed",
+  "rtl_cosimulation_scope": "testbench vectors: ABI, convolution, pooling, upsample, concat, threshold endpoints, erosion, dilation, moments, Gaussian; whole network compared in native C++ only",
+  "bitstream": "generated and timing checked",
+  "board_validation": "pending: no connected board",
+  "physical_hdmi": "pending",
+  "physical_usb_mouse": "pending",
+  "fpga_latency_throughput_power": "not measured",
+  "accuracy_test_original_size": {
+    "dice": 0.8951897340533911,
+    "iou": 0.8241781914478115
+  },
+  "quantization_gate": true,
+  "docx_visual_qa": "6 pages inspected after Word PDF export",
+  "implementation_notes": [
+    "Preprocessing/morphology use DDR frame neighbourhood scans, not a standalone line-stream pipeline.",
+    "Gaussian switching requires a matching trained and calibrated model package; default package bypasses Gaussian.",
+    "Native C++ timings are development measurements, never FPGA timings."
+  ],
+  "remaining_acceptance": [
+    "Load bit/hwh on PYNQ-Z2 and verify ABI / allocated memory.",
+    "Run compare_layers.py --fpga and compare final masks.",
+    "Verify RGB bars, 720p display, mouse disconnect/reconnect and latest-result submission.",
+    "Run 100-frame FPGA benchmark with and without HDMI; test timeout/reset and capture report."
+  ],
+  "cdc_review": "3 CDC-7 reset paths in retained, unused HDMI input dvi2rgb; 2 CDC-6 in VTC. Not waived. Review record/open_questions.md HW04 before enabling HDMI input.",
+  "hardware_id": "94e0bc1d5316b159",
+  "timing_ns": {
+    "setup_wns": 0.011,
+    "hold_whs": 0.051
+  },
+  "resource_percent": {
+    "Slice LUTs": 45.84,
+    "Slice Registers": 34.35,
+    "Block RAM Tile": 17.14,
+    "DSPs": 75.45
+  }
+}

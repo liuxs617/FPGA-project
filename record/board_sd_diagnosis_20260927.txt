@@ -1,0 +1,88 @@
+echo DIAG_START; uptime; findmnt -n -o SOURCE,FSTYPE,OPTIONS /; dmesg | grep -E 'mmc|I/O error|Buffer I/O|EXT4-fs|voltage|timeout' | head -n 45; echo DIAG_END
+[?2004lDIAG_START
+ 19:34:59 up 7 min,  1 user,  load average: 0.02, 0.48, 0.35
+/dev/mmcblk0p2 ext4   rw,relatime
+[  407.627417] EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  407.645242] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.499236] EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 69 with max blocks 1 with error 117
+[  412.510209] EXT4-fs (mmcblk0p2): This should not happen!! Data will be lost
+[  412.519500] EXT4-fs error: 1661 callbacks suppressed
+[  412.519520] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.536602] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.553791] EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.571664] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.588826] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.605952] EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.623759] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.640885] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.657984] EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  412.676684] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  417.539277] EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 69 with max blocks 2 with error 117
+[  417.550251] EXT4-fs (mmcblk0p2): This should not happen!! Data will be lost
+[  417.567934] EXT4-fs error: 1673 callbacks suppressed
+[  417.567952] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  417.585066] EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  417.602376] EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+[  417.62
+printf '\nCHECK2\n'; sudo -n true; echo SUDO=$?; stat -c '%i %n' /var/log/syslog /var/log/kern.log; cat /sys/fs/ext4/mmcblk0p2/errors_count 2>/dev/null; dmesg | grep -E 'mmc.*(error|timeout|CRC)|I/O error|under.?voltage' | tail -n 5; ls /sys/class/hwmon; echo CHECK2_END
+[?2004l
+CHECK2
+sudo: a password is required
+SUDO=1
+221588 /var/log/syslog
+221589 /var/log/kern.log
+102717
+[  437.699334] EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 72 with max blocks 1 with error 117
+[  442.739254] EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 72 with max blocks 2 with error 117
+[  447.779251] EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 73 with max blocks 2 with error 117
+[  452.819237] EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 74 with max blocks 1 with error 117
+[  457.859231] EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 74 with max blocks 2 with error 117
+CHECK2_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+
+EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 75 with max blocks 1 with error 117
+EXT4-fs (mmcblk0p2): This should not happen!! Data will be lost
+
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+
+
+
+python3 -c "import base64;exec(base64.b64decode('ZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCmltcG9ydCBqc29uLGhhc2hsaWIKZm9yIGZvbGRlciBpbiBbJy9ib290L2xlc2lvbl9kZXBsb3lfMjAyNjA5MjcnLCcvaG9tZS94aWxpbngvbGVzaW9uX2ZwZ2EnXToKIHA9UGF0aChmb2xkZXIpCiB0cnk6CiAgbT1qc29uLmxvYWRzKChwLydyZWxlYXNlX21hbmlmZXN0Lmpzb24nKS5yZWFkX3RleHQoKSkKICBiYWQ9W10KICBmb3IgbixoIGluIG1bJ2ZpbGVzJ10uaXRlbXMoKToKICAgdHJ5OgogICAgaWYgaGFzaGxpYi5zaGEyNTYoKHAvbikucmVhZF9ieXRlcygpKS5oZXhkaWdlc3QoKSE9aDogYmFkLmFwcGVuZChuKQogICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6IGJhZC5hcHBlbmQobisnOicrdHlwZShlKS5fX25hbWVfXykKICBwcmludChmb2xkZXIsJ2ZpbGVzJyxsZW4obVsnZmlsZXMnXSksJ2JhZCcsYXNjaWkoYmFkKSxmbHVzaD1UcnVlKQogZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOiBwcmludChmb2xkZXIscmVwcihlKSxmbHVzaD1UcnVlKQpwcmludCgnSEFTSF9ESUFHX0RPTkUnLGZsdXNoPVRydWUp'))" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K"
+[?2004l
+/boot/lesion_deploy_20260927 files 87 bad ['docs/\u540e\u7eed\u64cd\u4f5c\u6307\u5bfc_\u4eff\u771f\u4e0a\u677f\u4e0e\u4ee3\u7801\u4fee\u6b63.md:FileNotFoundError', 'docs/\u9879\u76ee\u8bf4\u660e.docx:FileNotFoundError', 'docs/\u9879\u76ee\u8bf4\u660e.md:FileNotFoundError', 'docs/\u9a8c\u6536\u6458\u8981.md:FileNotFoundError']
+
+/home/xilinx/lesion_fpga files 87 bad ['docs/\u540e\u7eed\u64cd\u4f5c\u6307\u5bfc_\u4eff\u771f\u4e0a\u677f\u4e0e\u4ee3\u7801\u4fee\u6b63.md:FileNotFoundError', 'docs/\u9879\u76ee\u8bf4\u660e.docx:FileNotFoundError', 'docs/\u9879\u76ee\u8bf4\u660e.md:FileNotFoundError', 'docs/\u9a8c\u6536\u6458\u8981.md:FileNotFoundError']
+HASH_DIAG_DONE
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+
+EXT4-fs (mmcblk0p2): Delayed block allocation failed for inode 221589 at logical offset 78 with max blocks 2 with error 117
+EXT4-fs (mmcblk0p2): This should not happen!! Data will be lost
+
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_ext_remove_space:2994: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+EXT4-fs error (device mmcblk0p2): ext4_find_extent:936: inode #221588: comm rs:main Q:Reg: pblk 4161536 bad header/extent: invalid magic - magic 8e5, entries 4827, max 33402(0), depth 16480(0)
+
+
+
+
+findmnt -n -o FSTYPE,OPTIONS /boot; python3 -c "import os; print(ascii(os.listdir('/boot/lesion_deploy_20260927/docs')))"; echo NAMES_DONE
+[?2004lvfat   rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortn
+['??????_?????????.md', '????.md', '????.md', '????.docx']
+NAMES_DONE
+[?2004hxilinx@pynq:~/lesion_fpga$ 

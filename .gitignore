@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+build/
+third_party/
+*.jou
+*.log
+*.str
+*.zip
+artifacts/checkpoints/
+artifacts/cache/
+artifacts/models/
+artifacts/predictions/

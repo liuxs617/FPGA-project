@@ -1,0 +1,31 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Sep 30 20:17:20 2026
+| Host         : WIN-9V8PKT2UNH4 running 64-bit major release  (build 9200)
+| Command      : report_cdc -file C:/temp/lesion_hdmi_full/build/cdc.rpt
+| Design       : lesion_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock            Destination Clock       CDC Type                 Exceptions               Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ----------------------  ----------------------  -----------------------  -----------------------  ---------  ----  ------  -------  ------------  
+Critical  hdmi_in_PixelClk        clk_fpga_2              No Common Primary Clock  False Path                       6     3       0        3             0  
+Warning   axi_dynclk_0_PXL_CLK_O  clk_fpga_0              Safely Timed             Max Delay Datapath Only         35    35       0        0             0  
+Warning   hdmi_in_PixelClk        clk_fpga_0              No Common Primary Clock  Max Delay Datapath Only         35    35       0        0             0  
+Info      clk_fpga_0              axi_dynclk_0_PXL_CLK_O  Safely Timed             Max Delay Datapath Only         42    42       0        0             0  
+Info      clk_fpga_1              axi_dynclk_0_PXL_CLK_O  No Common Primary Clock  Max Delay Datapath Only          1     1       0        0             0  
+Info      clk_fpga_1              clk_fpga_0              No Common Primary Clock  Max Delay Datapath Only         28    28       0        0             0  
+Info      clk_fpga_2              clk_fpga_0              No Common Primary Clock  False Path                       1     1       0        0             0  
+Info      axi_dynclk_0_PXL_CLK_O  clk_fpga_1              No Common Primary Clock  Max Delay Datapath Only          2     2       0        0             0  
+Info      clk_fpga_0              clk_fpga_1              No Common Primary Clock  Max Delay Datapath Only         26    26       0        0             0  
+Info      hdmi_in_PixelClk        clk_fpga_1              No Common Primary Clock  Max Delay Datapath Only          1     1       0        0             0  
+Info      clk_fpga_0              clk_fpga_2              No Common Primary Clock  False Path                       1     1       0        0             0  
+Info      clk_fpga_0              hdmi_in_PixelClk        No Common Primary Clock  Max Delay Datapath Only         42    42       0        0             0  
+Info      clk_fpga_1              hdmi_in_PixelClk        No Common Primary Clock  Max Delay Datapath Only          1     1       0        0             0  
+Info      clk_fpga_2              hdmi_in_PixelClk        No Common Primary Clock  False Path                       5     5       0        0             0  
+

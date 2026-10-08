@@ -1,0 +1,15 @@
+{
+  "purpose": "isolated HDMI capture compatibility diagnostic; no inference IP",
+  "upstream_hdmi_commit": "83b1c9543a91b776671a44e68e130f81cae437b7",
+  "format": "1280x720p60 RGB24 full range, VIC4, HDMI data islands and InfoFrames",
+  "pixel_clock_mhz": 74.25,
+  "serial_clock_mhz": 371.25,
+  "files_sha256": {
+    "hdmi_probe.bit": "267241880afe5bee90d99da30c50b6b0b8ec397ed86d0a489f10bd8287b8c07f",
+    "hdmi_probe.hwh": "0c7523aad45d3fe7f6614e796f4e3932d1164f53e5e7d755fc450e36422d732f",
+    "timing.rpt": "679f87736c0eaa10d61e6a7b7ce0ab08db964197b69dbe34f4538bcffce3d379",
+    "drc.rpt": "d2748b87fb08846de516ec893838c8de323c3bcc0c1c5a349f06ccdd02f24ff1",
+    "utilization.rpt": "462264846ddae49f826d140ccf6bc2854cc38f93aa3a1189cd23837447ce729c"
+  },
+  "hardware_reception": "not yet verified"
+}

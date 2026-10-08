@@ -1,0 +1,56 @@
+{
+  "frame_id": 17,
+  "parameter_version": 38,
+  "model_id": "6d085046c29974f6",
+  "backend": "fpga-int8",
+  "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+  "parameters": {
+    "threshold": 0,
+    "opening": true,
+    "closing": true,
+    "largest": true,
+    "fill": true,
+    "gaussian": false
+  },
+  "hardware_id": "abe0c39aea79af7e",
+  "metrics": {
+    "area_px2": 12096,
+    "area_ratio": 0.984375,
+    "valid": true,
+    "centroid": [
+      63.5,
+      63.5
+    ],
+    "major_axis_px": 145.48768561863466,
+    "minor_axis_px": 110.8452374559533,
+    "perimeter_px": 440.0,
+    "circularity": 0.7851385276409533,
+    "axis_unstable": false,
+    "asymmetry": 0.0
+  },
+  "flags": {
+    "components_before": 1,
+    "empty": false,
+    "touches_valid_border": true
+  },
+  "accuracy": {
+    "dice": 0.4805885192150858,
+    "iou": 0.3162991232413343
+  },
+  "timing": {
+    "inference_ms": 0.0,
+    "cached_inference_ms": 3680.3270409991455,
+    "network_reused": true,
+    "postprocess_ms": 384.48087300002953,
+    "processing_ms": 569.9309350002295
+  },
+  "geometry": {
+    "original_w": 723,
+    "original_h": 962,
+    "size": 128,
+    "width": 96,
+    "height": 128,
+    "left": 16,
+    "top": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model_id": "6d085046c29974f6",
+  "limited": false,
+  "parameters": {
+    "threshold": 0.45,
+    "opening": true,
+    "closing": true,
+    "largest": true,
+    "fill": true
+  },
+  "selection": "mean original-size validation Dice, deterministic candidate order"
+}

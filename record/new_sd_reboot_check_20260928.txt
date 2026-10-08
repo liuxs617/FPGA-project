@@ -1,0 +1,8 @@
+echo REBOOT_VERIFY; uptime; cat /sys/block/mmcblk0/device/cid; cat /sys/fs/ext4/mmcblk0p2/errors_count; sha256sum /home/xilinx/sd_probe_20260928.bin; dmesg | grep -E 'EXT4-fs error|I/O error|Delayed block|failed checksum' | tail -n 8; echo VERIFY_END
+[?2004lREBOOT_VERIFY
+ 16:51:15 up 2 min,  1 user,  load average: 2.66, 1.19, 0.45
+05000c61736466672200004d7101a700
+0
+c10dea3c37f92d5c1b0b4bf3306c40602cd351e3fea099d6cce99b7116ef05b6  /home/xilinx/sd_probe_20260928.bin
+VERIFY_END
+[?2004hxilinx@pynq:~$ 

@@ -1,0 +1,16 @@
+dmesg | grep -E 'EXT4-fs error|I/O error|Delayed block|bad header|mmc.*error' | tail -n 8; cat /sys/fs/ext4/mmcblk0p2/first_error_time /sys/fs/ext4/mmcblk0p2/last_error_time 2>/dev/null; echo ERROR_CHECK_DONE
+[?2004l[   51.459563] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.496029] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.539702] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.580180] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.619658] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.659407] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   53.816995] EXT4-fs error (device mmcblk0p2): htree_dirblock_to_tree:1082: inode #226269: comm systemd-logind: Directory block failed checksum
+[   64.621403] EXT4-fs error (device mmcblk0p2): htree_dirblock_to_tree:1082: inode #226241: comm journalctl: Directory block failed checksum
+1746291133
+1649359718
+ERROR_CHECK_DONE
+[?2004hxilinx@pynq:~$ 
+
+
+

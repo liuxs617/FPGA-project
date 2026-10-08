@@ -1,0 +1,56 @@
+{
+  "frame_id": 9,
+  "parameter_version": 0,
+  "model_id": "6d085046c29974f6",
+  "backend": "native-cpp-reference",
+  "path": "artifacts\\release\\data\\demo\\ISIC_0010463.jpg",
+  "parameters": {
+    "threshold": 0.45,
+    "opening": true,
+    "closing": true,
+    "largest": true,
+    "fill": true,
+    "gaussian": false
+  },
+  "hardware_id": null,
+  "metrics": {
+    "area_px2": 3985,
+    "area_ratio": 0.3243001302083333,
+    "valid": true,
+    "centroid": [
+      65.89861982434128,
+      67.64516938519448
+    ],
+    "major_axis_px": 98.25601760279551,
+    "minor_axis_px": 52.06257861068027,
+    "perimeter_px": 256.7939372062683,
+    "circularity": 0.7593966163668346,
+    "axis_unstable": false,
+    "asymmetry": 0.10005370335922892
+  },
+  "flags": {
+    "components_before": 1,
+    "empty": false,
+    "touches_valid_border": false
+  },
+  "accuracy": {
+    "dice": 0.9834011407405948,
+    "iou": 0.967344328378457
+  },
+  "timing": {
+    "inference_ms": 479.4300999992629,
+    "cached_inference_ms": 479.4300999992629,
+    "network_reused": false,
+    "postprocess_ms": 5.4986000004646485,
+    "processing_ms": 513.4327000005214
+  },
+  "geometry": {
+    "original_w": 1024,
+    "original_h": 768,
+    "size": 128,
+    "width": 128,
+    "height": 96,
+    "left": 0,
+    "top": 16
+  }
+}

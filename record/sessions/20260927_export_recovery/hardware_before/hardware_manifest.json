@@ -1,0 +1,33 @@
+{
+  "abi": 1,
+  "hardware_id": "94e0bc1d5316b159",
+  "part": "xc7z020clg400-1",
+  "tool": "Vivado/Vitis 2025.2",
+  "files": {
+    "lesion.bit": "94e0bc1d5316b159d4304537502247b0e0c2660b8d9aa809ffc8eb7bad069df5",
+    "lesion.hwh": "6e48db184e14c820be73166286ccb0c46eac5c84df466d613271d7a1e4409a6b",
+    "lesion.xsa": "304b75895e1795e8691ec9917533f835f40b71554301db2dc4207f20d7ab1b3e"
+  },
+  "sources": {
+    "hardware\\hls\\build.tcl": "fc6415450feb5e0ba3ddf2affaca72f67d501ff8b9c8bb101b1c226f353633b5",
+    "hardware\\hls\\cosim.tcl": "b4602fa39498b2e2611e47b672327d96267a4675792a3f2d07ccb73756f16956",
+    "hardware\\hls\\lesion_accel.cpp": "922a56d4775852d31486a6f35aa40cc9f2d8fd55f2c02a3edb7ba6bfc5b3d61f",
+    "hardware\\hls\\lesion_accel.hpp": "a49a7b1d7c4648ed442de164d12209f7f9497c2847f95c345047377bf36feec4",
+    "hardware\\hls\\testbench.cpp": "ff9782973f5bcb7d91927a50fd14a170b99d69fc830a813e871ca4568aca8acc",
+    "hardware\\vivado\\build.tcl": "e1a9594f0f082e5d9c3774961e1c6dcbec3d645d808516cdf04014aaf27da545",
+    "hardware\\vivado\\finish.tcl": "88d000a29b78f37dba8d635bbf9b5b05babc7aadf5c67104bda7a08ba2f77820",
+    "hardware\\vivado\\resume_route.tcl": "9bd3923f651d1c206d102931475e37b72e8e470b9972bc597655fd6804580d73"
+  },
+  "registers": {
+    "CTRL": 0,
+    "GIER": 4,
+    "IP_IER": 8,
+    "IP_ISR": 12,
+    "ap_return": 16,
+    "arena_1": 24,
+    "arena_2": 28,
+    "params_1": 36,
+    "params_2": 40
+  },
+  "board_verified": false
+}

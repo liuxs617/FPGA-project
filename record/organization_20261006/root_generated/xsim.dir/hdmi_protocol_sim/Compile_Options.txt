@@ -1,0 +1,1 @@
+"protocol_tb" -s "hdmi_protocol_sim" -timescale "1ns/1ps" 

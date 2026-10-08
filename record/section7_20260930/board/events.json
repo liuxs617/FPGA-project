@@ -1,0 +1,2966 @@
+[
+  {
+    "time": "2025-05-03T21:26:58+0000",
+    "event": "app_start",
+    "backend": "fpga",
+    "bitstream": "/home/xilinx/lesion_fpga/artifacts/hardware/hdmi_full/lesion.bit",
+    "images": "/home/xilinx/lesion_fpga/record/section7_20260930/cases"
+  },
+  {
+    "time": "2025-05-03T21:27:10+0000",
+    "event": "hdmi_started",
+    "width": 1280,
+    "height": 720,
+    "refresh_hz": 60,
+    "hardware_id": "abe0c39aea79af7e"
+  },
+  {
+    "time": "2025-05-03T21:27:10+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 1,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:10+0000",
+    "event": "mouse_connected",
+    "device": "/dev/input/event0"
+  },
+  {
+    "time": "2025-05-03T21:27:14+0000",
+    "event": "frame_complete",
+    "frame_id": 1,
+    "parameter_version": 1,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 3654.12391999962,
+      "cached_inference_ms": 3654.12391999962,
+      "network_reused": false,
+      "postprocess_ms": 414.43568599970604,
+      "processing_ms": 4564.042596000036
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:19+0000",
+    "event": "result_saved",
+    "folder": "/home/xilinx/lesion_fpga/record/section7_20260930/saved/frame_000001_v1",
+    "frame_id": 1,
+    "parameter_version": 1
+  },
+  {
+    "time": "2025-05-03T21:27:19+0000",
+    "event": "ui_action",
+    "key": "save",
+    "x": 1127,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 1,
+    "frame_id": 1,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:20+0000",
+    "event": "ui_action",
+    "key": null,
+    "x": 701,
+    "y": 407,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 1,
+    "frame_id": 1,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": true
+  },
+  {
+    "time": "2025-05-03T21:27:20+0000",
+    "event": "ui_action",
+    "key": null,
+    "x": 533,
+    "y": 397,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 1,
+    "frame_id": 1,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:21+0000",
+    "event": "ui_action",
+    "key": null,
+    "x": 461,
+    "y": 365,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 1,
+    "frame_id": 1,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:22+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 2,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:22+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 2,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:23+0000",
+    "event": "frame_complete",
+    "frame_id": 2,
+    "parameter_version": 2,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 0.0,
+      "cached_inference_ms": 3654.12391999962,
+      "network_reused": true,
+      "postprocess_ms": 382.1463379999841,
+      "processing_ms": 557.3494700001902
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameters": {
+      "threshold": 0.5,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:23+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 3,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:23+0000",
+    "event": "ui_action",
+    "key": "opening",
+    "x": 504,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 3,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:24+0000",
+    "event": "frame_complete",
+    "frame_id": 3,
+    "parameter_version": 3,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 0.0,
+      "cached_inference_ms": 3654.12391999962,
+      "network_reused": true,
+      "postprocess_ms": 281.0980849999396,
+      "processing_ms": 418.76432499975635
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:24+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 4,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:24+0000",
+    "event": "ui_action",
+    "key": "closing",
+    "x": 593,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 4,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:24+0000",
+    "event": "frame_complete",
+    "frame_id": 4,
+    "parameter_version": 4,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 0.0,
+      "cached_inference_ms": 3654.12391999962,
+      "network_reused": true,
+      "postprocess_ms": 174.45571000007476,
+      "processing_ms": 334.82948299933923
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:25+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 5,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:25+0000",
+    "event": "ui_action",
+    "key": "largest",
+    "x": 682,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 5,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:25+0000",
+    "event": "frame_complete",
+    "frame_id": 5,
+    "parameter_version": 5,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 0.0,
+      "cached_inference_ms": 3654.12391999962,
+      "network_reused": true,
+      "postprocess_ms": 81.50588900025468,
+      "processing_ms": 236.84806100027345
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:27+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 6,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:27+0000",
+    "event": "ui_action",
+    "key": "fill",
+    "x": 771,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 6,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:27+0000",
+    "event": "frame_complete",
+    "frame_id": 6,
+    "parameter_version": 6,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 0.0,
+      "cached_inference_ms": 3654.12391999962,
+      "network_reused": true,
+      "postprocess_ms": 69.79167999998026,
+      "processing_ms": 241.75703299988527
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:27+0000",
+    "event": "ui_action",
+    "key": "alpha",
+    "x": 860,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 6,
+    "frame_id": 6,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:28+0000",
+    "event": "ui_action",
+    "key": "view",
+    "x": 949,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 6,
+    "frame_id": 6,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 1,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:29+0000",
+    "event": "ui_action",
+    "key": "view",
+    "x": 949,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 6,
+    "frame_id": 6,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 2,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:29+0000",
+    "event": "ui_action",
+    "key": "view",
+    "x": 949,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 6,
+    "frame_id": 6,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:31+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 7,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": true
+  },
+  {
+    "time": "2025-05-03T21:27:31+0000",
+    "event": "ui_action",
+    "key": "run",
+    "x": 237,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 7,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:35+0000",
+    "event": "frame_complete",
+    "frame_id": 7,
+    "parameter_version": 7,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 3705.642746000194,
+      "cached_inference_ms": 3705.642746000194,
+      "network_reused": false,
+      "postprocess_ms": 96.02217900010146,
+      "processing_ms": 4113.252320000356
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:35+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 8,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:35+0000",
+    "event": "ui_action",
+    "key": "next",
+    "x": 148,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 8,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:35+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 9,
+    "parameters": {
+      "threshold": 0.55,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:35+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 9,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.55,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:35+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/02_unlabelled.jpg",
+    "parameter_version": 10,
+    "parameters": {
+      "threshold": 0.55,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:35+0000",
+    "event": "ui_action",
+    "key": "next",
+    "x": 148,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/02_unlabelled.jpg",
+    "parameter_version": 10,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.55,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/02_unlabelled.jpg",
+    "parameter_version": 11,
+    "parameters": {
+      "threshold": 0.6,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/02_unlabelled.jpg",
+    "parameter_version": 11,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.6,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/03_broken.jpg",
+    "parameter_version": 12,
+    "parameters": {
+      "threshold": 0.6,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "ui_action",
+    "key": "next",
+    "x": 148,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/03_broken.jpg",
+    "parameter_version": 12,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.6,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/03_broken.jpg",
+    "parameter_version": 13,
+    "parameters": {
+      "threshold": 0.65,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/03_broken.jpg",
+    "parameter_version": 13,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.65,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 14,
+    "parameters": {
+      "threshold": 0.65,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "ui_action",
+    "key": "next",
+    "x": 148,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 14,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.65,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 15,
+    "parameters": {
+      "threshold": 0.7,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 15,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.7,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 16,
+    "parameters": {
+      "threshold": 0.7,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:36+0000",
+    "event": "ui_action",
+    "key": "next",
+    "x": 148,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 16,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.7,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:37+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 17,
+    "parameters": {
+      "threshold": 0.75,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:37+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 17,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.75,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    },
+    "alpha": 0.5,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:39+0000",
+    "event": "frame_complete",
+    "frame_id": 9,
+    "parameter_version": 17,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 0.0,
+      "cached_inference_ms": 3685.7036620003782,
+      "network_reused": true,
+      "postprocess_ms": 101.02614100014762,
+      "processing_ms": 262.8257529995608
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameters": {
+      "threshold": 0.75,
+      "opening": false,
+      "closing": false,
+      "largest": false,
+      "fill": false,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:39+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 18,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": true
+  },
+  {
+    "time": "2025-05-03T21:27:39+0000",
+    "event": "ui_action",
+    "key": "reset",
+    "x": 1038,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 18,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:44+0000",
+    "event": "frame_complete",
+    "frame_id": 10,
+    "parameter_version": 18,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 3680.3270409991455,
+      "cached_inference_ms": 3680.3270409991455,
+      "network_reused": false,
+      "postprocess_ms": 415.07820900005754,
+      "processing_ms": 4422.643316000176
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:27:48+0000",
+    "event": "result_saved",
+    "folder": "/home/xilinx/lesion_fpga/record/section7_20260930/saved/frame_000010_v18",
+    "frame_id": 10,
+    "parameter_version": 18
+  },
+  {
+    "time": "2025-05-03T21:27:48+0000",
+    "event": "ui_action",
+    "key": "save",
+    "x": 1127,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 18,
+    "frame_id": 10,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:49+0000",
+    "event": "ui_action",
+    "key": null,
+    "x": 649,
+    "y": 439,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 18,
+    "frame_id": 10,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": true
+  },
+  {
+    "time": "2025-05-03T21:27:49+0000",
+    "event": "ui_action",
+    "key": null,
+    "x": 595,
+    "y": 397,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 18,
+    "frame_id": 10,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:50+0000",
+    "event": "ui_action",
+    "key": null,
+    "x": 461,
+    "y": 365,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 18,
+    "frame_id": 10,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:50+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 19,
+    "parameters": {
+      "threshold": 0.4,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:50+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 19,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.4,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 20,
+    "parameters": {
+      "threshold": 0.35,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 20,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.35,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 21,
+    "parameters": {
+      "threshold": 0.3,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 21,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.3,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 22,
+    "parameters": {
+      "threshold": 0.25,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 22,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.25,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 23,
+    "parameters": {
+      "threshold": 0.2,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 23,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.2,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 24,
+    "parameters": {
+      "threshold": 0.15,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 24,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.15,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 25,
+    "parameters": {
+      "threshold": 0.1,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 25,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.1,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 26,
+    "parameters": {
+      "threshold": 0.05,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:51+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 26,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.05,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 27,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 27,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 28,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 28,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 29,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 29,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 30,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 30,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 31,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:52+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 31,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 32,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 32,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 33,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 33,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 34,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 34,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 35,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 35,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 36,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:53+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 36,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:54+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 37,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:54+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 37,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:54+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 38,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:27:54+0000",
+    "event": "ui_action",
+    "key": "threshold_down",
+    "x": 326,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 38,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:27:55+0000",
+    "event": "frame_complete",
+    "frame_id": 17,
+    "parameter_version": 38,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 0.0,
+      "cached_inference_ms": 3680.3270409991455,
+      "network_reused": true,
+      "postprocess_ms": 384.48087300002953,
+      "processing_ms": 569.9309350002295
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:28:00+0000",
+    "event": "result_saved",
+    "folder": "/home/xilinx/lesion_fpga/record/section7_20260930/saved/frame_000017_v38",
+    "frame_id": 17,
+    "parameter_version": 38
+  },
+  {
+    "time": "2025-05-03T21:28:00+0000",
+    "event": "ui_action",
+    "key": "save",
+    "x": 1127,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 38,
+    "frame_id": 17,
+    "parameters": {
+      "threshold": 0,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:02+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 39,
+    "parameters": {
+      "threshold": 0.05,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:02+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 39,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.05,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:02+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 40,
+    "parameters": {
+      "threshold": 0.1,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:02+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 40,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.1,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:02+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 41,
+    "parameters": {
+      "threshold": 0.15,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:02+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 41,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.15,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:02+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 42,
+    "parameters": {
+      "threshold": 0.2,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:02+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 42,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.2,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 43,
+    "parameters": {
+      "threshold": 0.25,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 43,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.25,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 44,
+    "parameters": {
+      "threshold": 0.3,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 44,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.3,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 45,
+    "parameters": {
+      "threshold": 0.35,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 45,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.35,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 46,
+    "parameters": {
+      "threshold": 0.4,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 46,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.4,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 47,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 47,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 48,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:03+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 48,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.5,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 49,
+    "parameters": {
+      "threshold": 0.55,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 49,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.55,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 50,
+    "parameters": {
+      "threshold": 0.6,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 50,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.6,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 51,
+    "parameters": {
+      "threshold": 0.65,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 51,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.65,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 52,
+    "parameters": {
+      "threshold": 0.7,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 52,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.7,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 53,
+    "parameters": {
+      "threshold": 0.75,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 53,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.75,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 54,
+    "parameters": {
+      "threshold": 0.8,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:04+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 54,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.8,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:05+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 55,
+    "parameters": {
+      "threshold": 0.85,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:05+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 55,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.85,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:05+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 56,
+    "parameters": {
+      "threshold": 0.9,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:05+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 56,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.9,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:05+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 57,
+    "parameters": {
+      "threshold": 0.95,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:05+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 57,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.95,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:05+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 58,
+    "parameters": {
+      "threshold": 1,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:05+0000",
+    "event": "ui_action",
+    "key": "threshold_up",
+    "x": 415,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 58,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 1,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:06+0000",
+    "event": "frame_complete",
+    "frame_id": 23,
+    "parameter_version": 58,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 0.0,
+      "cached_inference_ms": 3680.3270409991455,
+      "network_reused": true,
+      "postprocess_ms": 333.3381169995846,
+      "processing_ms": 476.20702699987305
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameters": {
+      "threshold": 1,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:28:09+0000",
+    "event": "result_saved",
+    "folder": "/home/xilinx/lesion_fpga/record/section7_20260930/saved/frame_000023_v58",
+    "frame_id": 23,
+    "parameter_version": 58
+  },
+  {
+    "time": "2025-05-03T21:28:09+0000",
+    "event": "ui_action",
+    "key": "save",
+    "x": 1127,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 58,
+    "frame_id": 23,
+    "parameters": {
+      "threshold": 1,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:10+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 59,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": true
+  },
+  {
+    "time": "2025-05-03T21:28:10+0000",
+    "event": "ui_action",
+    "key": "reset",
+    "x": 1038,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameter_version": 59,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:15+0000",
+    "event": "frame_complete",
+    "frame_id": 24,
+    "parameter_version": 59,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 3673.2291640000767,
+      "cached_inference_ms": 3673.2291640000767,
+      "network_reused": false,
+      "postprocess_ms": 438.6257289997957,
+      "processing_ms": 4443.174226999872
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/01_portrait.jpg",
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:28:15+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/02_unlabelled.jpg",
+    "parameter_version": 60,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:15+0000",
+    "event": "ui_action",
+    "key": "next",
+    "x": 148,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/02_unlabelled.jpg",
+    "parameter_version": 60,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:19+0000",
+    "event": "frame_complete",
+    "frame_id": 25,
+    "parameter_version": 60,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 3695.828357999744,
+      "cached_inference_ms": 3695.828357999744,
+      "network_reused": false,
+      "postprocess_ms": 442.5316120004936,
+      "processing_ms": 4331.112153000504
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/02_unlabelled.jpg",
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:28:24+0000",
+    "event": "result_saved",
+    "folder": "/home/xilinx/lesion_fpga/record/section7_20260930/saved/frame_000025_v60",
+    "frame_id": 25,
+    "parameter_version": 60
+  },
+  {
+    "time": "2025-05-03T21:28:24+0000",
+    "event": "ui_action",
+    "key": "save",
+    "x": 1127,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/02_unlabelled.jpg",
+    "parameter_version": 60,
+    "frame_id": 25,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:25+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/03_broken.jpg",
+    "parameter_version": 61,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:25+0000",
+    "event": "ui_action",
+    "key": "next",
+    "x": 148,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/03_broken.jpg",
+    "parameter_version": 61,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:26+0000",
+    "event": "runtime_error",
+    "message": "cannot identify image file '/home/xilinx/lesion_fpga/record/section7_20260930/cases/03_broken.jpg'"
+  },
+  {
+    "time": "2025-05-03T21:28:26+0000",
+    "event": "ui_action",
+    "key": "save",
+    "x": 1127,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/03_broken.jpg",
+    "parameter_version": 61,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:26+0000",
+    "event": "frame_requested",
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 62,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "force_inference": false
+  },
+  {
+    "time": "2025-05-03T21:28:26+0000",
+    "event": "ui_action",
+    "key": "next",
+    "x": 148,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 62,
+    "frame_id": null,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  },
+  {
+    "time": "2025-05-03T21:28:31+0000",
+    "event": "frame_complete",
+    "frame_id": 27,
+    "parameter_version": 62,
+    "model_id": "6d085046c29974f6",
+    "backend": "fpga-int8",
+    "timing": {
+      "inference_ms": 3672.2944559996904,
+      "cached_inference_ms": 3672.2944559996904,
+      "network_reused": false,
+      "postprocess_ms": 505.6798460000209,
+      "processing_ms": 4477.141827000196
+    },
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    }
+  },
+  {
+    "time": "2025-05-03T21:28:31+0000",
+    "event": "ui_action",
+    "key": "quit",
+    "x": 1216,
+    "y": 673,
+    "path": "/home/xilinx/lesion_fpga/record/section7_20260930/cases/00_landscape.jpg",
+    "parameter_version": 62,
+    "frame_id": 27,
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "alpha": 0.25,
+    "view": 0,
+    "selected": false
+  }
+]

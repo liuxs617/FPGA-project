@@ -1,0 +1,1163 @@
+{
+  "abi": 1,
+  "model_id": "6d085046c29974f6",
+  "checkpoint_sha256": "6d085046c29974f66320849154b4d71a50ea9e0d5e9e2996b1206bcc950fbe1d",
+  "limited_training": false,
+  "gaussian": false,
+  "input_size": 128,
+  "channels": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "nodes": [
+    {
+      "name": "e0a",
+      "op": "conv",
+      "inputs": [
+        "input"
+      ],
+      "co": 16,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 49152,
+      "weight_count": 432,
+      "weight_shape": [
+        16,
+        3,
+        3,
+        3
+      ],
+      "bias_offset": 64,
+      "multiplier": 27219,
+      "weight_scale": 0.001962678052308991,
+      "accumulator_bound": 455273,
+      "descriptor": [
+        1,
+        128,
+        128,
+        3,
+        16,
+        3,
+        0,
+        0,
+        49600,
+        49152,
+        64,
+        27219,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "e0b",
+      "op": "conv",
+      "inputs": [
+        "e0a"
+      ],
+      "co": 16,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 311744,
+      "weight_count": 2304,
+      "weight_shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "bias_offset": 80,
+      "multiplier": 27233,
+      "weight_scale": 0.0020658272927201638,
+      "accumulator_bound": 2350039,
+      "descriptor": [
+        1,
+        128,
+        128,
+        16,
+        16,
+        3,
+        49600,
+        0,
+        314048,
+        311744,
+        80,
+        27233,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "p0",
+      "op": "pool",
+      "inputs": [
+        "e0b"
+      ],
+      "descriptor": [
+        2,
+        128,
+        128,
+        16,
+        16,
+        0,
+        314048,
+        0,
+        576192,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "e1a",
+      "op": "conv",
+      "inputs": [
+        "p0"
+      ],
+      "co": 32,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 641728,
+      "weight_count": 4608,
+      "weight_shape": [
+        32,
+        16,
+        3,
+        3
+      ],
+      "bias_offset": 96,
+      "multiplier": 40897,
+      "weight_scale": 0.0035751030201048362,
+      "accumulator_bound": 2346041,
+      "descriptor": [
+        1,
+        64,
+        64,
+        16,
+        32,
+        3,
+        576192,
+        0,
+        646336,
+        641728,
+        96,
+        40897,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "e1b",
+      "op": "conv",
+      "inputs": [
+        "e1a"
+      ],
+      "co": 32,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 777408,
+      "weight_count": 9216,
+      "weight_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "bias_offset": 128,
+      "multiplier": 75634,
+      "weight_scale": 0.004208967910976861,
+      "accumulator_bound": 4684332,
+      "descriptor": [
+        1,
+        64,
+        64,
+        32,
+        32,
+        3,
+        646336,
+        0,
+        786624,
+        777408,
+        128,
+        75634,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "p1",
+      "op": "pool",
+      "inputs": [
+        "e1b"
+      ],
+      "descriptor": [
+        2,
+        64,
+        64,
+        32,
+        32,
+        0,
+        786624,
+        0,
+        917696,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "e2a",
+      "op": "conv",
+      "inputs": [
+        "p1"
+      ],
+      "co": 64,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 950464,
+      "weight_count": 18432,
+      "weight_shape": [
+        64,
+        32,
+        3,
+        3
+      ],
+      "bias_offset": 160,
+      "multiplier": 75345,
+      "weight_scale": 0.002777925861163402,
+      "accumulator_bound": 4684559,
+      "descriptor": [
+        1,
+        32,
+        32,
+        32,
+        64,
+        3,
+        917696,
+        0,
+        968896,
+        950464,
+        160,
+        75345,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "e2b",
+      "op": "conv",
+      "inputs": [
+        "e2a"
+      ],
+      "co": 64,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 1034432,
+      "weight_count": 36864,
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "bias_offset": 224,
+      "multiplier": 28679,
+      "weight_scale": 0.003780809209102721,
+      "accumulator_bound": 9366176,
+      "descriptor": [
+        1,
+        32,
+        32,
+        64,
+        64,
+        3,
+        968896,
+        0,
+        1071296,
+        1034432,
+        224,
+        28679,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "p2",
+      "op": "pool",
+      "inputs": [
+        "e2b"
+      ],
+      "descriptor": [
+        2,
+        32,
+        32,
+        64,
+        64,
+        0,
+        1071296,
+        0,
+        1136832,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "e3a",
+      "op": "conv",
+      "inputs": [
+        "p2"
+      ],
+      "co": 128,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 1153216,
+      "weight_count": 73728,
+      "weight_shape": [
+        128,
+        64,
+        3,
+        3
+      ],
+      "bias_offset": 288,
+      "multiplier": 49511,
+      "weight_scale": 0.003713788713995866,
+      "accumulator_bound": 9365796,
+      "descriptor": [
+        1,
+        16,
+        16,
+        64,
+        128,
+        3,
+        1136832,
+        0,
+        1226944,
+        1153216,
+        288,
+        49511,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "e3b",
+      "op": "conv",
+      "inputs": [
+        "e3a"
+      ],
+      "co": 128,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 1259712,
+      "weight_count": 147456,
+      "weight_shape": [
+        128,
+        128,
+        3,
+        3
+      ],
+      "bias_offset": 416,
+      "multiplier": 62451,
+      "weight_scale": 0.0033498587101463257,
+      "accumulator_bound": 18728215,
+      "descriptor": [
+        1,
+        16,
+        16,
+        128,
+        128,
+        3,
+        1226944,
+        0,
+        1407168,
+        1259712,
+        416,
+        62451,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "u2",
+      "op": "up",
+      "inputs": [
+        "e3b"
+      ],
+      "descriptor": [
+        3,
+        16,
+        16,
+        128,
+        128,
+        0,
+        1407168,
+        0,
+        1439936,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c2",
+      "op": "cat",
+      "inputs": [
+        "u2",
+        "e2b"
+      ],
+      "multipliers": [
+        16777216,
+        14814154
+      ],
+      "descriptor": [
+        4,
+        32,
+        32,
+        128,
+        192,
+        0,
+        1439936,
+        1071296,
+        1571008,
+        0,
+        0,
+        16777216,
+        24,
+        64,
+        14814154,
+        0
+      ]
+    },
+    {
+      "name": "d2a",
+      "op": "conv",
+      "inputs": [
+        "c2"
+      ],
+      "co": 64,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 1767616,
+      "weight_count": 110592,
+      "weight_shape": [
+        64,
+        192,
+        3,
+        3
+      ],
+      "bias_offset": 544,
+      "multiplier": 58124,
+      "weight_scale": 0.004671024055931512,
+      "accumulator_bound": 28091458,
+      "descriptor": [
+        1,
+        32,
+        32,
+        192,
+        64,
+        3,
+        1571008,
+        0,
+        1878208,
+        1767616,
+        544,
+        58124,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d2b",
+      "op": "conv",
+      "inputs": [
+        "d2a"
+      ],
+      "co": 64,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 1943744,
+      "weight_count": 36864,
+      "weight_shape": [
+        64,
+        64,
+        3,
+        3
+      ],
+      "bias_offset": 608,
+      "multiplier": 39256,
+      "weight_scale": 0.0036974305243004024,
+      "accumulator_bound": 9364651,
+      "descriptor": [
+        1,
+        32,
+        32,
+        64,
+        64,
+        3,
+        1878208,
+        0,
+        1980608,
+        1943744,
+        608,
+        39256,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "u1",
+      "op": "up",
+      "inputs": [
+        "d2b"
+      ],
+      "descriptor": [
+        3,
+        32,
+        32,
+        64,
+        64,
+        0,
+        1980608,
+        0,
+        2046144,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c1",
+      "op": "cat",
+      "inputs": [
+        "u1",
+        "e1b"
+      ],
+      "multipliers": [
+        16777216,
+        5082395
+      ],
+      "descriptor": [
+        4,
+        64,
+        64,
+        64,
+        96,
+        0,
+        2046144,
+        786624,
+        2308288,
+        0,
+        0,
+        16777216,
+        24,
+        32,
+        5082395,
+        0
+      ]
+    },
+    {
+      "name": "d1a",
+      "op": "conv",
+      "inputs": [
+        "c1"
+      ],
+      "co": 32,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 2701504,
+      "weight_count": 27648,
+      "weight_shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "bias_offset": 672,
+      "multiplier": 44050,
+      "weight_scale": 0.006849058969752995,
+      "accumulator_bound": 14045508,
+      "descriptor": [
+        1,
+        64,
+        64,
+        96,
+        32,
+        3,
+        2308288,
+        0,
+        2729152,
+        2701504,
+        672,
+        44050,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d1b",
+      "op": "conv",
+      "inputs": [
+        "d1a"
+      ],
+      "co": 32,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 2860224,
+      "weight_count": 9216,
+      "weight_shape": [
+        32,
+        32,
+        3,
+        3
+      ],
+      "bias_offset": 704,
+      "multiplier": 41925,
+      "weight_scale": 0.0026585220351932554,
+      "accumulator_bound": 4682166,
+      "descriptor": [
+        1,
+        64,
+        64,
+        32,
+        32,
+        3,
+        2729152,
+        0,
+        2869440,
+        2860224,
+        704,
+        41925,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "u0",
+      "op": "up",
+      "inputs": [
+        "d1b"
+      ],
+      "descriptor": [
+        3,
+        64,
+        64,
+        32,
+        32,
+        0,
+        2869440,
+        0,
+        3000512,
+        0,
+        0,
+        0,
+        24,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "c0",
+      "op": "cat",
+      "inputs": [
+        "u0",
+        "e0b"
+      ],
+      "multipliers": [
+        16777216,
+        1337447
+      ],
+      "descriptor": [
+        4,
+        128,
+        128,
+        32,
+        48,
+        0,
+        3000512,
+        314048,
+        3524800,
+        0,
+        0,
+        16777216,
+        24,
+        16,
+        1337447,
+        0
+      ]
+    },
+    {
+      "name": "d0a",
+      "op": "conv",
+      "inputs": [
+        "c0"
+      ],
+      "co": 16,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 4311232,
+      "weight_count": 6912,
+      "weight_shape": [
+        16,
+        48,
+        3,
+        3
+      ],
+      "bias_offset": 736,
+      "multiplier": 95688,
+      "weight_scale": 0.00715755900060098,
+      "accumulator_bound": 7022750,
+      "descriptor": [
+        1,
+        128,
+        128,
+        48,
+        16,
+        3,
+        3524800,
+        0,
+        4318144,
+        4311232,
+        736,
+        95688,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "d0b",
+      "op": "conv",
+      "inputs": [
+        "d0a"
+      ],
+      "co": 16,
+      "k": 3,
+      "relu": true,
+      "weight_offset": 4580288,
+      "weight_count": 2304,
+      "weight_shape": [
+        16,
+        16,
+        3,
+        3
+      ],
+      "bias_offset": 752,
+      "multiplier": 25365,
+      "weight_scale": 0.0030477966849259503,
+      "accumulator_bound": 2341127,
+      "descriptor": [
+        1,
+        128,
+        128,
+        16,
+        16,
+        3,
+        4318144,
+        0,
+        4582592,
+        4580288,
+        752,
+        25365,
+        24,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head",
+      "op": "conv",
+      "inputs": [
+        "d0b"
+      ],
+      "co": 1,
+      "k": 1,
+      "relu": false,
+      "weight_offset": 4844736,
+      "weight_count": 16,
+      "weight_shape": [
+        1,
+        16,
+        1,
+        1
+      ],
+      "bias_offset": 768,
+      "multiplier": 62943,
+      "weight_scale": 0.002370929154824084,
+      "accumulator_bound": 260238,
+      "descriptor": [
+        1,
+        128,
+        128,
+        16,
+        1,
+        1,
+        4582592,
+        0,
+        4844800,
+        4844736,
+        768,
+        62943,
+        24,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "tensors": {
+    "input": {
+      "shape": [
+        3,
+        128,
+        128
+      ],
+      "scale": 0.007874015748031496,
+      "offset": 0
+    },
+    "e0a": {
+      "shape": [
+        16,
+        128,
+        128
+      ],
+      "scale": 0.009525777786735475,
+      "offset": 49600
+    },
+    "e0b": {
+      "shape": [
+        16,
+        128,
+        128
+      ],
+      "scale": 0.012123443010285145,
+      "offset": 314048
+    },
+    "p0": {
+      "shape": [
+        16,
+        64,
+        64
+      ],
+      "scale": 0.012123443010285145,
+      "offset": 576192
+    },
+    "e1a": {
+      "shape": [
+        32,
+        64,
+        64
+      ],
+      "scale": 0.017780452262698195,
+      "offset": 646336
+    },
+    "e1b": {
+      "shape": [
+        32,
+        64,
+        64
+      ],
+      "scale": 0.016600556260957494,
+      "offset": 786624
+    },
+    "p1": {
+      "shape": [
+        32,
+        32,
+        32
+      ],
+      "scale": 0.016600556260957494,
+      "offset": 917696
+    },
+    "e2a": {
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "scale": 0.010268583072452094,
+      "offset": 968896
+    },
+    "e2b": {
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "scale": 0.022711472248467875,
+      "offset": 1071296
+    },
+    "p2": {
+      "shape": [
+        64,
+        16,
+        16
+      ],
+      "scale": 0.022711472248467875,
+      "offset": 1136832
+    },
+    "e3a": {
+      "shape": [
+        128,
+        16,
+        16
+      ],
+      "scale": 0.028581356439064808,
+      "offset": 1226944
+    },
+    "e3b": {
+      "shape": [
+        128,
+        16,
+        16
+      ],
+      "scale": 0.02572102809515525,
+      "offset": 1407168
+    },
+    "u2": {
+      "shape": [
+        128,
+        32,
+        32
+      ],
+      "scale": 0.02572102809515525,
+      "offset": 1439936
+    },
+    "c2": {
+      "shape": [
+        192,
+        32,
+        32
+      ],
+      "scale": 0.02572102809515525,
+      "offset": 1571008
+    },
+    "d2a": {
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "scale": 0.0346786018431656,
+      "offset": 1878208
+    },
+    "d2b": {
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "scale": 0.05479918877909502,
+      "offset": 1980608
+    },
+    "u1": {
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "scale": 0.05479918877909502,
+      "offset": 2046144
+    },
+    "c1": {
+      "shape": [
+        96,
+        64,
+        64
+      ],
+      "scale": 0.05479918877909502,
+      "offset": 2308288
+    },
+    "d1a": {
+      "shape": [
+        32,
+        64,
+        64
+      ],
+      "scale": 0.14294903672586276,
+      "offset": 2729152
+    },
+    "d1b": {
+      "shape": [
+        32,
+        64,
+        64
+      ],
+      "scale": 0.1520790340393547,
+      "offset": 2869440
+    },
+    "u0": {
+      "shape": [
+        32,
+        128,
+        128
+      ],
+      "scale": 0.1520790340393547,
+      "offset": 3000512
+    },
+    "c0": {
+      "shape": [
+        48,
+        128,
+        128
+      ],
+      "scale": 0.1520790340393547,
+      "offset": 3524800
+    },
+    "d0a": {
+      "shape": [
+        16,
+        128,
+        128
+      ],
+      "scale": 0.19085247310127798,
+      "offset": 4318144
+    },
+    "d0b": {
+      "shape": [
+        16,
+        128,
+        128
+      ],
+      "scale": 0.3847474826602485,
+      "offset": 4582592
+    },
+    "head": {
+      "shape": [
+        1,
+        128,
+        128
+      ],
+      "scale": 0.2431475271390179,
+      "offset": 4844800
+    }
+  },
+  "scratch": {
+    "rgb": 4861184,
+    "processed_rgb": 4910336,
+    "mask0": 4959488,
+    "mask1": 4975872,
+    "valid": 4992256
+  },
+  "arena_bytes": 5008640,
+  "arena_sha256": "f2985fc8ca413e0e54fe20fc6b899612164782fd9f59b1f9034d593af8c008cc",
+  "params_sha256": "8b79329d87ba87ca75d6376d455c134ddf04baea6a27156d83172f2630642f67",
+  "fp32_sha256": "7aeaf57c4839518ab47f36cc8ae629cc3f1b92c89080ff62d5d36624785f9212",
+  "calibration_ids": [
+    "ISIC_0000000",
+    "ISIC_0000001",
+    "ISIC_0000004",
+    "ISIC_0000008",
+    "ISIC_0000009",
+    "ISIC_0000010",
+    "ISIC_0000011",
+    "ISIC_0000016",
+    "ISIC_0000017",
+    "ISIC_0000018",
+    "ISIC_0000019",
+    "ISIC_0000024",
+    "ISIC_0000026",
+    "ISIC_0000028",
+    "ISIC_0000029",
+    "ISIC_0000031",
+    "ISIC_0000032",
+    "ISIC_0000034",
+    "ISIC_0000035",
+    "ISIC_0000039",
+    "ISIC_0000041",
+    "ISIC_0000042",
+    "ISIC_0000044",
+    "ISIC_0000045",
+    "ISIC_0000047",
+    "ISIC_0000048",
+    "ISIC_0000049",
+    "ISIC_0000050",
+    "ISIC_0000051",
+    "ISIC_0000054",
+    "ISIC_0000058",
+    "ISIC_0000059",
+    "ISIC_0000060",
+    "ISIC_0000062",
+    "ISIC_0000063",
+    "ISIC_0000065",
+    "ISIC_0000067",
+    "ISIC_0000068",
+    "ISIC_0000073",
+    "ISIC_0000074",
+    "ISIC_0000078",
+    "ISIC_0000079",
+    "ISIC_0000080",
+    "ISIC_0000082",
+    "ISIC_0000085",
+    "ISIC_0000089",
+    "ISIC_0000091",
+    "ISIC_0000093",
+    "ISIC_0000094",
+    "ISIC_0000095",
+    "ISIC_0000096",
+    "ISIC_0000097",
+    "ISIC_0000102",
+    "ISIC_0000103",
+    "ISIC_0000105",
+    "ISIC_0000108",
+    "ISIC_0000109",
+    "ISIC_0000110",
+    "ISIC_0000112",
+    "ISIC_0000114",
+    "ISIC_0000116",
+    "ISIC_0000119",
+    "ISIC_0000122",
+    "ISIC_0000127"
+  ],
+  "quantization": "signed int8, symmetric, zero point 0; int32 accumulate; Q24 multiplier; half away from zero",
+  "training_epoch": 42,
+  "validation_dice_fp32_training_scale": 0.8975035581508828
+}

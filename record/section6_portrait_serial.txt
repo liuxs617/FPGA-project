@@ -1,0 +1,12 @@
+python3 -c 'import json,zlib,base64,pathlib; p=pathlib.Path("artifacts/section6_fpga_portrait_20260928/summary.json"); s=base64.b64encode(zlib.compress(p.read_bytes())).decode(); print("DATA_START"); print("\n".join(s[i:i+160] for i in range(0,len(s),160))); print("DATA_END")'; cat /sys/fs/ext4/mmcblk0p2/errors_count; echo CHECK_END
+[?2004lDATA_START
+eJxtVNtuozAQfe9XRHnORh7fvb9SVWjiC3FLMDJk0+6q/76GJBDaIoHwmaO5nDPw/LTZ/Cv3ZrPtMOPJDz732983rKDDMfv+mBpXQLLnYncPpM63sa0LPOSzn2HbpP4HuMFc+374CofYNF+xGs99H7EteMCm9xP+
+eQ1vS4M52lWHmD1W3TstGNOa71Z4xiGmqXUGkmiiqAE5Xmrm/cEmum9j+HbIacKfb9hmI/ReCimYkdxoLgTdLSG+10IzwzjRWkgtbpGXOeMJX1Ou8D32pdmSVpk9E8KYkoqokk4uzNiumJLuuSFKGVqqgzFL653P
+cbLsSqRM7LkmlGpDiCGG02WemO25mBCHj0kNrQkYJYGx8YU/qDaWPbf9gIfG3y1Yov3HabTgmoQISkWZuCgLREuqVlaFBuuVUTadutQWYfvq4EPKY/qlQ3/qpt7WBYd0tkffV5NJ1SFl5/OPi4HWnjPaj8eCLlo/
+NWqUKbZpXtw3woCZ08d0vhLKBGAAFDAoVrD1ziXnm2raha10RAvCpS2ZFA9ye+McMbtL2bgbTSMAIA/ALA9awJ12QPvm24kSuhp/xXbQ91g8YT22u+1SHjLGYf/a1fdg7dNd93m8lGMdW2yqy7hOlO2+BY4lYOSi
+cR//jhWA6hm6RDdcaTN09LE+Dl94jQ8TJB+s6Ubt1lJh/1b1R6RCTjIEAxycptZTy5ELH5yjDpULoILWijkgnILzxYCgFQeFQUoERA/azrK1frik/FZ9SR84PZhgA1DwiGyspByidNoEyrwVngC1lAjLDiSUb4I7
+p5Sj6kCY1FJtZ4NP41Y+fOuPPxJKlaazhhQYUeR+Aq4ZsEVhoFKJ8md4OBtFQU7Hl/L8fHr5D77FVHE=
+DATA_END
+0
+CHECK_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 

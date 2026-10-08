@@ -1,0 +1,157 @@
+stty -echo; mkdir -p ~/lesion_offline; cat > ~/lesion_offline/evdev.b64 <<'EVDEV_EOF'
+[?2004l[?2004h> H4sICGGwymMC/2V2ZGV2LTEuNi4xLnRhcgDtvXt/2kjSKLz/Hj5FP8mZAbIgA74lZJxnfMEJZxzbx9iTzfH6J8sgbG0AsZKwzSR5P/tbl26pWxIYZ5LM7DPwm4lB6q7urq6urq6ui7Virfx87Ny/cZ2eG/ztm3xq/Jn1t1ZbXUu+4/N6rVFv/E3c/+07fCZh5ATQ/N/+mp/GczGMvKG7Vd/YXGs0Np/XXliN9dUXa5vrhb8tP//jP+5tz72t1q0Nq77yrdrARb25Tuu9nvobr/n62uoG0F2tvlaH9d9Y39j4m1j/nuv/+tYZfPBvZ5Z76P1/6Mf6M/D/xkaW/68u+f934f8Ng/+vrz2vW7Ul5/9L8v+D9m7rsNP6Jut/Y20m/29srq1K/t9YXa8j/1/dqK3/TdS+5/r/i/L/XX88Dbzrm0iUumXRgK232qg1VsVr1w+uPfErDdoS24OBoGKhCNzQDW7dnlUonLg9L4wC72oSef5IOKOemISu8EYi9CdB
+[?2004l[?2004h> 16UnV97ICaai7wfDsCLuvOhG+AH99SdRYej3vL7XdRBARTiBK8ZuMPSiyO2JceDfej34Et04EfzjApDBwL/zRtei6496HlYKsVJh6EbNQkGIuiXMToXC76vedP2eK4Yw4TCGyIFeIkjnyr/FVxINAAM+Iz/yum4FCnihGAA4hKI3Oeql+gNtdgcOMNLAwn40sv2A9jRUqH7AGHsT6Ns36Qq0yUCwQM/vTobuKHLUXK3ANPjwJhBDJ3IDzxmECcppnuAl19dHQuNbtcSh61FlhD1yhi72y5nArAbQ5+QxTYAHdAN9Zhh+EEKLU4Z85SLJwBB84Y568MpF6oBuDP3IFYwdqAyyiQc0J/rwglER+v3oDqeewEhyEuHY7SI9QU0PqSxAShoxTYUh9/70TbsjOkf7p++2T1oCvh+fHP3a3mvtiZ334vRNS+weHb8/ab9+cyreHB3stU46YvtwD54enp60d85Oj046hSfbHaj5hF5sH74XrX8cn7Q6HXF0Itpv
+[?2004l[?2004h> jw/aAAygn2wfnrZbnYpoH+4enO21D19XBAAQh0enhYP22/YpFDs9qlCj2WriaF+8bZ3svoGf2zvtg/bpe2pvv316iG3tH50UtsXx9slpe/fsYPtEHJ+dHB91WgKHtdfu7B5st9+29ixoHVoUrV9bh6ei82b74IAa3D47fQNDgS4XsgPeaYmD9vbOQQtboRHutU9au6c4lOTbLmAN+nZQKXSOW7tt+AKIaMFAtk/eVxAXgLNO6/+eQSF4Kfa2326/hnGVHkAHzMfu2UnrLfYXcNA52+mctk/PTlvi9dHRHiG50zr5FXarzktxcNQhTJ11WpXC3vbpNjUMIABN8Bq+75x12oSw9uFp6+Tk7Pi0fXRYhqG+A5RAH7eh6h5h9ugQhwoE0jo6eY9AEQeE+Ip496YFz08QmUQJ24iCDlDE7qleDNoDAjktJGMUh63XB+3XrcPdFr49Qijv2p1WGeap3cECbWoWZh7aPKMh4/xArwr0VaPWCs2iaO+L7b1f29ht
+[?2004l[?2004h> WRjmvdOWNEIo230j0W0VlvL/Uv5fRP5fe17bfL7x/PlS/v+Lyv9vtw/b+63OqeWNvqf8X1tdXwP5vwEn0MbmOpaDwwD8Wcr/3+HjjbqDCYjFJ63tvbctKwijgnokj4OFwlNxCsKc7aL8HAr3HiQqFKUEyO6Tgauk674H30eu2wtRmAO57toduYGDgrxzDdJ2SCI8ACOSEze04ZB0iKJiMBmNUHj94AYjd4DScx9lS59eFq8m3qAnO1AkaRRE0UEIwLr+cIgiMJ453GgytsZTq+De8wiopRWuZnWXXO3Puv8v73/+uP1/ef+z3P/l/n/8y+tq+3D/6Dvr/1Yb643U/c/qBt7/LPf/b/9560ZOz4mc6q+wGcOm3hQNq144dIZuk7fPQvyCiKTQmcCGG0ybYscb9WDHDtUmfeCNJvewD48nkbiBLXmA23k4uQqnYeQOC2/8oVsdO9cA9yaKxmFzZeXai24mVxZs4SsSuyvjaXTjj6rc8jZpk5qmLlI+rbpD
+[?2004l[?2004h> xxs0QcjAd1ZkMYCfr/ExgiwceF2QU6C5E/fWQxXTTmdPyIeFX9zpnR/0QjlI2e0J/SnsDpww9PqeC23vubfuwB+j4kx0IieahKLZFOuiKo5ZNwWoWYEXVwPXqAdvrwNnOEQkHDij6wmMHGse0wDx2+pjy1sbj66x+egazx9d48Wja9Rrj69SN6ocjVGyxAodoi4qftRp/wO/ECEaxdsjEFlRq7k96XnuqEvg5cwCdRtlT/2x18X3HalgNEiAwF8FTuC5ZjVJWFgA+iG2x6hJhRbht053jxt3ezgeuInOFp7s8ktF3NV9ELqbiaT+jKj5WaHKn0LhFFWlY6f7AWFL5W6Iemhj6ZKkDqPmVQDDhZF6gLOg73RRnV8glFp0DJBNaO/pOiAkQONJMPZDUgWPcaAwMoIWFpLDgNS7s6APsnzgdqPBFLsyAUjh2CFteOBPrm9E98YJnC40VIA2YcghXwXgrERTmCdnADUHflcBvrxcQYmfxrFyeWmlEOAMQh9P
+[?2004l[?2004h> DACH9Ns6Hp7x4n9Wod4lXWGWEPMxSzw744IAbeDfhVrRMU8ogesGLnSKtPPEDN0CI9cYR9cZAfx/AQIkmhJ0AHp5btLtFwp7uiK/Sfpv5KjAUHXuaUEHegCg53dDy/NX3NHKAHoURisAIaHopP4iHLlwzJhMtTr2LC5mATOm3yuy/C4M/hrauv6CfnZVXesmGg6W0uj/3PPfUv+71P8uP3/4+S/RAX7X8199dTWj/21sLvW/3+WzlBiXEuNSYlzKf0v9/1L/n+j/Gy/WNjeW6+cvJv/xdem3Wf+P8/9Y3djcXPp/LM//S/6/PP8vP9+X/9u2N/Ii2wYB/Tud/2vk/6Gf/zdqjeX5/7t8nla/2qfwVLx2yCUADosBHNjwME+nUkfgwX7gVtAJAI6tHqoLyDkAT8FW4Wt2okAuAnxQ5KOz8IZjP4jwHg9+tUd9vyLaeEbmBxWxfRXy0xbWagWBH+hQ5EFbQqGaLXxUEb+4U/ntxB3Ib53pSH4DsPIbQbD7
+[?2004l[?2004h> Tjfyg6kOmjUICvQZwa7Iv5l+oMmbKoqOILbUDABW4fh77QfebzCYwA39wa0rjeXSv+2e1400oAoev8150e8vN4Pl+X8p//0F5L/157XnL15s1Jby319a/uNd5etJfw/Jf6u19bV1lP821mubrCeor683Npfy33eR/4Q7gr0fxLOmmET96vNCQe78fqi+3TkB2ubHv9GT072PBt5V8mQwcMkWLizkCBG2x4KNkklQkllEwioUomDK9wDp0p5vO+F01FWVqHz7yJDh3PuuO47QigpK0KNZsOZBKXxV8dSWwqbY0pFmoTDciybjgVuiLhZlsWJFnBeB8iYufCsOvRH9ce7xT3/y22/0d+BE+JckPXLRLV6UCwX7l6veIi3JYtRS4I5dBtZzB86U4SRy80OgkpIE7QrW1nRMPb8l5178Jl16+SFZllIrhS5axilRvKTQVOYZKxYRITg6Vzj3HjpToxO1E/sjC7EtLi+TDl1eslsxlBIhSN14FHFmQRBVgtD1
+[?2004l[?2004h> A0Dh2B/14mvOy0uiXBuqYnmAGkYB9L4p24zYoxkkZ/yZzDL+ollj72RxQPdT6O4NVAbdonfUOfL7hv7IUQyVx7bosCezG+IzbzgZzqnk3Gcrwfu5lZB6MrXwoaxC141eGHtn971B5KJrtxe6yg1bDY/vfwE1rjNU4IEo5dtfEZ52D4sXqXSlC9C5rTtvMECPIfRcdwI01Lyain/5U7w
+QZBjJ3THej8Z4dEJRE+haBNKrbDhZBZnRJa9ihNxy32KAJqIYwIlZbYiRA5x7qFW6vNze6dj/gKMe/HnPf/7f5WUZ8aZAxgMQkxG6wY/R3x7GCzIX4rNET1eGw3Il3b/A5wtbZyBh6I2eyFZPZLMn6XaNFiWAwOl5jlowh37kxmRLX07V5TEuBQwYAM2NfPg1cIbjFPFqS+RcEmhFESP+uIC1AmOE9isinHRvROSEH7B/A7cfGVf3sjuwxPlLz+0L2wZisu1S6A76kgXw3EaTYCSQIYqPnyu4Mvivc09/iXzp
+[?2004l[?2004h> C1AffQGUwt+ixWu99IwAxtxGsr6SYpUJt4GT/ZUPpCiYIwo0RLDmL/qqJD8sL3ucBwXnJTZSYHIIXYznYKnhD1RsBLE99CcjCviAIrpcQeKDO+XoEbhi3DEMEZfoldvHSfMiXk0o1ahuALZlB0rQOBEfNxmWrUfjXkJC5FJX56A32Q5K2iaSIHkBdMothBkq7SH0VW4i8jHtIgsPZBhewz6Gm1NTfGzW1u5hJAw6/inBa6+pCfm7mMYJQJyBAU3NVJKyRXr4sEoSvwmpsCL2enfjwbLRDGxCsv6ASQ+I2xnjhbEO/Ci0bRhaqTh2ohuSDHr4r8f7cRF3R9qBb6Yh/gXu8G/8awfOXdcZO1fewIuATxYr8QDjT7xXI9S+7fb7IASEdhfps1jWcc7KY0I6Usithnk1Zhp3cE0mKWH8xJx4BngrmritfLqaAn18OoZhHXgfXK17+AjpW0ef0V7842kzt7AVF8AeW4g5QCHJrn1ifjdO6ACJluAR4sruh1jG
+[?2004l[?2004h> totl4Q5CXIG3VvK0VNZaFLtuQHFmfHZXkMFqxNgPQ+9q4Ap/NJjCPLts36S0lSGWHxEH12DhpFcxnomLfrdav2MRWX36PRiBH1oIhbsNP47sk713J+ITfz88Otw5ONr9pRxXlLLyUUeTkx8EeHR48D4LUkf5NuBwVL0a+N0PKIKRjzAcAbqBN4782L9XkT28Tc0HNd3v6Ug9oUUHG6HkDWr1xss2Xq8V0jHDcyB4VJImJF5OmsHVYeM2sSWPKZbnd6MBKVeRc8lupIfVpAXevNSE4590pbOVvHh1SSKKM8pQm8cytcYnn6nunDfXLsw2T7U4O4g0FrpyqZiKbcVDO1+7yEBCnKA1HEzB2B/411MFNn9ZQGkd4HoWIHITEOWcXg83pLnQsKgObSMLjY+PMKGRDycONaEpOIotp2au9Wv7aPf1r62TTvvoMH/+sAngegK14ShhBTR8SYY6oYgqNAVCTrM/GXWb+ptS+TLVnTQfTffLqD2zW6PJ8ApkAugO
+[?2004l[?2004h> bCm4KFy3d+V0PwjJc/UFg/vBB9cdo0yBkt7QHfrBNL2EUuw6H12t/f3W7mkn1S9m6bDPZ7dRYI+KNTKvx92mTOK5Wrkei4+H/sg1GUqGZcWd7Q780C2VjZeSNZUkb6roB/pKIj/Q73IWLpqVaqPJzEJFyNPd1mkwcQ2JB6fw4+dkilAqd5nnyGAIFHYgZ+4t4NNDoJEUI4X6FIQMqjGAbHcH0Ca0bIVuBP11JoOoJJs8vyhnSsMseKHiLiUEWRF0AM5BhCwvR5v/no4ZdMzvuef1C+S3pVpF8H+N9XX+Wp5Z14O66gz/zJldbmA5Y9hNeiXq83ntoiK8cn5x3GWbDwOScLIwZtc36morUYp1MAsJ3eSQDbCfK6DWrX0HWphJRbrQw1uXxr1xYkMV3s4L1boOJ2Ok8BDPtw6cbsZj3Dz9frKwuQDICAYcn+4FifmyCbF6zxEwkhG27h10LczIXvGDV69eKd5tMr24xEdRb4rzxmYD6GJzFf9Zu9AFxwa8
+[?2004l[?2004h> BVqpV8RGRTy/ENoyavfh1CixB8dEGPflJWLt8rKi95dD29HIlIJAXmb2EuGHBAgv4NtkbYTNZkHrzEcQilu/2r+03oMAWy9D10rFndND++3RWadVxM43ypWZNIYfLk9B0qj86kLl37b39g5assKFWYN6dNI6wLfcI/hh/6OI6+sh2FiSh7JIyTfv3rSonY2FiqvSz8vGrJ2NPoz8u5GcGxTecqcGp+TysvjfRTKmN6Y80aIZU47LIQ5sqO+fBBot8DVhjQO7zFblSV8BCrGoLRglrknelEhkYZpQVmEqiOcpNjb0Rls10jFsEQNEJQM+QB3DVq2ch9JSffHq4kLD8a4/vPJGKvyivkiS+JBXLvkj5BL49k4HJm61TGMoFUk7xQT1e4ZjDI2hSuL7slEa5zLYkeQoTSYtmTBKaCW8L7ByDBlYWjG3dElkZW03ye4AEvic6gnnZw0wiKLjXMY/g9W/duPTPFaFg6AnOdq/J17wYQFmnMeL9b4k40M+q0vk
+[?2004l[?2004h> 8/grn331LgXm2iV2GoNitppa++kqcrnrFAncrH14fHZqH58cHdvHRxR6UVJi9lX78LXdOW3v/gIl1ssXhVyM0qjzhVeElEiuC1JWDlGVZKiopH8VbjYrHNDjhEhgq30MdUhBoDsJAtjuBlOMXSUOWnuo2/tC0qAemDQBXOh5Rby4+IKd91sRBYzRPjx7exCTAj7Y3T7uHEiGwk/etju7tAPFD7bbWOLFLOLA0efThn0FJyNFHEput4BXAtivQSsApkLNZ2kEnyYkAlNswxNJJfDNhqNehbXpM8ik43LYY9iqovjcD/XhMAdIhpa/jFRUT5IR0JzgBOR2g5BHqqeSgb7MKPRDo/vvWAtIQYZnDPH0zo893JCE3H9PnAFOB4t1TYxN07wksUE4sao4KWrlQpUToB2NqA8VyfFtkgZsWzuusipmi/vKv/5pUEJcklWEqiT+WlTlLPcDVJ2ThubJx89PWDtFX+fpleOWK4mGp5LoZgzMY1DpWX0omQiAbwjJ
+[?2004l[?2004h> tivJ2MoZlf/Hz6WP/xV8Lid6fgBmNBmrP/MvDWLY2nmKDvpZnYLSHbwS1foiSoMJ7GOlcq7eAD9+aCUtGbsDnce9EfqDztBFkO6xWk/6fB04V+kuG3s+vDcV+RNyaL28ZFZ0sr0DTLcqg27DqW4gA5+zqBvDwZjYI4woxDc3Xde7ddUVwGSEVqCmujgAjuCEbs8SR6PBNAbjj0j26KI6DjVFN/6gB8dJszcYCjzW0sVV37HFx0xmgiO9ojt1qD5A1fSUsHMFbEn2i4T3wMHbYgfdbNtHpKC5vLTy5cAc1g09TBh3XSO4yeihqThhlMRIwhDkqK8C3LrZLpcmIfAUDS/lR+CCm0ohQ01JLjbiqjFWQCQaAQv1YH7kvUix/MWYqklM/ZzY6Vjy69AZOdfyOlhRtC3fzUPntrL5ERJCfFHem/DNBu5OfGNFlxr4Sko3ugBHtKhOjDMoXNkWZHTHmS2JiCBZ0VPPHfTSmmZZJiGd8cB3elIjKvcn/jFj6GdU
+[?2004l[?2004h> ARZJrjpWkHV76lVex5NLLdjQgK+wqvbWc+9Ksnkr8umaSxtRv297vUSsyfad5hshZpg2VU2G7QZAjeaoqcSMQbeweDwwOVSamFmDFeQ2bxzWwwgFdlJ2EYD55JzpIY2NOynpWZ5apvGo+C56LksGCQpNgKQg9SHvQr6UuZFPNk1vBOIGiwl82z3jBj0zKjkNysLgWd6ibSWHFjVE7hdKaJG2TLVxZgVG2VK2gY7WQ
+EU8S4toMFxYdTaeOH7PyYXBLHpwyRNH9Y5oBxg4vaw1Fjy7oEnEIicXWf1RJxhL7PuBdk9KAzO1L3Cw+aX13m7RoYVPMfj7oLV/2nnT3keN4Vpj1tFFG/4jTzDQxtc4wQCYit6L7EFGezlrKfZHM4TeY96IMS/Mx9pnlp6lxRbuGfisPyoacm5WPE2GqWxRLfxSgjYqYg9tYFiQknt1BU9M3Q8DDFqx1SgvII5KtY+6ELr3QjzXLLQGsrpF3BsNMRDhFR5l+qB6IJpo+qZNKCv5
+[?2004l[?2004h> kODpIqkk6VE08XDUvJRTSoq/y/IXnQ4VKnRQCQqVwo+4yVZ9vVYnM6yt6mpjc+M5awDx62ZKB1hvPNcN3LZq5XkHt/gKKWc5QIeSxRDPVNk8aOfPp2SeW3gjyd2W36DT/I36LL9it/mr1m98MFNS6OF2kiEHtpdj4VwlqEnM6JQ05MPqlelqrP8YWtFRrYOTNNGo1ZRSGL5pTbz3J3QkofA6kxFG21Fzzt 
+
+
+cd ~/lesion_fpga; python3 -m pip install --no-index --no-deps --no-build-isolation --target .board_deps ~/lesion_offline/evdev-1.6.1.tar.gz > record/evdev_install.log 2>&1; echo INSTALL_STATUS=$?; tail -n 16 record/evdev_install.log; echo INSTALL_END
+[?2004l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSTALL_STATUS=0
+Processing /home/xilinx/lesion_offline/evdev-1.6.1.tar.gz
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: evdev
+  Building wheel for evdev (pyproject.toml): started
+  Building wheel for evdev (pyproject.toml): finished with status 'done'
+  Created wheel for evdev: filename=evdev-1.6.1-cp310-cp310-linux_armv7l.whl size=81192 sha256=a9c113837664aa5f29305a9eba4abdf66dc5ce090bddc1412760ca959289563a
+  Stored in directory: /home/xilinx/.cache/pip/wheels/0a/ed/f6/653e137612960daff107e5552da59c76425a0735e9ed0f4de2
+Successfully built evdev
+Installing collected packages: evdev
+Successfully installed evdev-1.6.1
+INSTALL_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+export PYTHONPATH=$HOME/lesion_fpga/.board_deps:$HOME/lesion_fpga/software; python3 -m pytest -q record/compat_tests > record/board_compat_tests.log 2>&1; echo TEST_STATUS=$?; cat record/board_compat_tests.log; python3 scripts/board_preflight.py > record/board_environment.json; echo PREFLIGHT_STATUS=$?; cat record/board_environment.json; echo COMPAT_END
+[?2004l
+TEST_STATUS=1
+......F                                                                  [100%]
+=================================== FAILURES ===================================
+_____________ test_parameter_updates_reuse_network_and_clear_empty _____________
+
+tmp_path = PosixPath('/tmp/pytest-of-xilinx/pytest-0/test_parameter_updates_reuse_n0')
+
+    def test_parameter_updates_reuse_network_and_clear_empty(tmp_path):
+        path=tmp_path/'image.jpg';Image.fromarray(np.zeros((30,40,3),np.uint8)).save(path)
+        b=CountingBackend();p=Pipeline(b);r=p.run(path,Parameters(),1)
+        r2=p.run(path,replace(Parameters(),threshold=.9),2)
+        assert b.calls==1 and r2['timing']['network_reused'] and r2['metrics']['area_px2']==0
+        assert r2['frame_id']>r['frame_id'] and r2['parameter_version']==2 and r2['accuracy'] is None
+        p.reset();p.run(path);assert b.calls==2
+>       assert render(r,'test',Parameters()).shape==(720,1280,3)
+
+record/compat_tests/test_pipeline.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+software/lesion_fpga/ui.py:45: in render
+    tile(result['rgb'],(18,92,450,351),'Original RGB')
+software/lesion_fpga/ui.py:42: in tile
+    im.paste(Image.fromarray(rgb).resize((w,h),Image.Resampling.NEAREST if nearest else Image.Resampling.BILINEAR),(rx,ry))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+name = 'Resampling'
+
+    def __getattr__(name):
+        categories = {"NORMAL": 0, "SEQUENCE": 1, "CONTAINER": 2}
+        if name in categories:
+            warnings.warn(
+         
+       "Image categories are deprecated and will be removed in Pillow 10 "
+                "(2023-07-01). Use is_animated instead.",
+                DeprecationWarning,
+                stacklevel=2,
+            )
+            return categories[name]
+>       raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+E       AttributeError: module 'PIL.Image' has no attribute 'Resampling'
+
+/usr/lib/python3/dist-packages/PIL/Image.py:65: AttributeError
+=============================== warnings summary ===============================
+../../../usr/lib/python3/dist-packages/_pytest/config/__init__.py:1233
+  /usr/lib/python3/dist-packages/_pytest/config/__init__.py:1233: PytestConfigWarning: Unknown config option: pythonpath
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+FAILED record/compat_tests/test_pipeline.py::test_parameter_updates_reuse_network_and_clear_empty
+1 failed, 6 passed, 1 warning in 9.39s
+
+PREFLIGHT_STATUS=0
+{
+  "p
+latform": "Linux-6.6.10-xilinx-v2024.1-g3c0eca68c652-armv7l-with-glibc2.35",
+  "pynq": "3.1.1",
+  "memory": [
+    "MemTotal:         503464 kB",
+    "MemFree:           24964 kB",
+    "MemAvailable:     354580 kB",
+    "Buffers:           27296 kB",
+    "Cached:           300176 kB"
+  ],
+  "input_devices": []
+}
+COMPAT_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+5suebLFPBEULOtKrDEwAsjJMRIootE+jMBpS2RP/24uf+8mPw5np397MYyyzBYXmxJLXDXw18WGtADQgSe/ONzx69ZTCDXIzvR/tDx8/MBeHQ++vkwekGEZy//CwO6Hmo="))); [(p/n).write_text(s) for n,s in d.items()]; m=json.loads((p/"release_manifest.json").read_text()); m["files"].update({n:hashlib.sha256((p/n).read_bytes()).hexdigest() for n in d}); (p/"release_manifest.json").write_text(json.dumps(m,indent=2))'
+[?2004l[?2004hxilinx@pynq:~/lesion_fpga$ source scripts/board_env.sh; python3 -m pytest -q -c /dev/null record/compat_tests > record/board_compat_tests.log 2>&1; echo TEST_STATUS=$?; cat record/board_compat_tests.log; python3 scripts/board_preflight.py > record/board_environment.json; echo PREFLIGHT_STATUS=$?; cat /sys/fs/ext4/mmcblk0p2/errors_count; echo VERIFY_END
+[?2004l
+TEST_STATUS=0
+.......                                                                  [100%]
+7 passed in 6.74s
+
+PREFLIGHT_STATUS=0
+0
+VERIFY_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+python3 -c 'import pathlib,json,hashlib,evdev,importlib.metadata as m; p=pathlib.Path.home()/"lesion_fpga"; d=json.loads((p/"release_manifest.json").read_text()); bad=[n for n,h in d["files"].items() if hashlib.sha256((p/n).read_bytes()).hexdigest()!=h]; print("MANIFEST_BAD",bad); print("EVDEV",m.version("evdev"),evdev.__file__); print("UI_SHA",hashlib.sha256((p/"software/lesion_fpga/ui.py").read_bytes()).hexdigest()); print("INPUTS",evdev.list_devices())'; echo FINAL_END
+[?2004l
+MANIFEST_BAD []
+EVDEV 1.6.1 /home/xilinx/lesion_fpga/.board_deps/evdev/__init__.py
+UI_SHA 538f0b6e64edd83e0f90092cd866bf42bbedd0a33e55973917b4fa9b166f92d2
+INPUTS []
+FINAL_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 

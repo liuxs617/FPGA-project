@@ -1,0 +1,125 @@
+cat record/section7_latency_20260930/checks.json; tail -4 record/events.jsonl; tail -5 record/section7_20260930/interactive_latency.log
+[?2004l[
+  {
+    "name": "startup_fpga_frame",
+    "passed": true
+  },
+  {
+    "name": "landscape_selection_True",
+    "passed": true
+  },
+  {
+    "name": "landscape_selection_False",
+    "passed": true
+  },
+  {
+    "name": "landscape_padding_not_selected",
+    "passed": true
+  },
+  {
+    "name": "threshold_up_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "opening_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "closing_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "largest_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "fill_reuses_network",
+    "passed": true
+  },
+  {
+    "name": "alpha_redraw_only",
+    "passed": true
+  },
+  {
+    "name": "view_redraw_only",
+    "passed": true
+  },
+  {
+    "name": "view_redraw_only",
+    "passed": true
+  },
+  {
+    "name": "view_redraw_only",
+    "passed": true
+  },
+  {
+    "name": "run_forces_inference",
+    "passed": true
+  },
+  {
+    "name": "burst_latest_request_only",
+    "passed": true
+  },
+  {
+    "name": "reset_frozen_policy",
+    "passed": true
+  },
+  {
+    "name": "portrait_selection_True",
+    "passed": true
+  },
+  {
+    "name": "portrait_selection_False",
+    "passed": true
+  },
+  {
+    "name": "portrait_padding_not_selected",
+    "passed": true
+  },
+  {
+    "name": "threshold_0.0",
+    "passed": true
+  },
+  {
+    "name": "threshold_0.0_integer_reference",
+    "passed": true
+  },
+  {
+    "name": "threshold_1.0",
+    "passed": true
+  },
+  {
+    "name": "threshold_1.0_integer_reference",
+    "passed": true
+  },
+  {
+    "name": "empty_mask_no_crash",
+    "passed": true
+  },
+  {
+    "name": "unlabelled_accuracy_na",
+    "passed": true
+  },
+  {
+    "name": "corrupt_image_clears_result",
+    "passed": true
+  },
+  {
+    "name": "recover_after_corrupt_image",
+    "passed": true
+  },
+  {
+    "name": "clean_exit",
+    "passed": true
+  }
+]{"time": "2025-05-03T21:56:54+0000", "event": "ui_action", "key": "next", "x": 148, "y": 673, "path": "/home/xilinx/lesion_fpga/record/section7_latency_20260930/cases/00_landscape.jpg", "parameter_version": 62, "frame_id": null, "parameters": {"threshold": 0.45, "opening": true, "closing": true, "largest": true, "fill": true, "gaussian": false}, "alpha": 0.25, "view": 0, "selected": false}
+{"time": "2025-05-03T21:56:58+0000", "event": "frame_complete", "frame_id": 25, "parameter_version": 62, "model_id": "6d085046c29974f6", "backend": "fpga-int8", "timing": {"inference_ms": 3663.9475450001555, "cached_inference_ms": 3663.9475450001555, "network_reused": false, "postprocess_ms": 391.0794639996311, "processing_ms": 4374.889445999543}, "path": "/home/xilinx/lesion_fpga/record/section7_latency_20260930/cases/00_landscape.jpg", "parameters": {"threshold": 0.45, "opening": true, "closing": true, "largest": true, "fill": true, "gaussian": false}}
+{"time": "2025-05-03T21:56:59+0000", "event": "ui_action", "key": "quit", "x": 1216, "y": 673, "path": "/home/xilinx/lesion_fpga/record/section7_latency_20260930/cases/00_landscape.jpg", "parameter_version": 62, "frame_id": 25, "parameters": {"threshold": 0.45, "opening": true, "closing": true, "largest": true, "fill": true, "gaussian": false}, "alpha": 0.25, "view": 0, "selected": false}
+{"time": "2025-05-03T21:57:34+0000", "event": "app_start", "backend": "fpga", "bitstream": "artifacts/hardware/hdmi_full/lesion.bit", "images": "data/demo"}
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+tail -4 record/events.jsonl; tail -5 record/section7_20260930/interactive_latency.log
+[?2004l{"time": "2025-05-03T21:57:46+0000", "event": "hdmi_started", "width": 1280, "height": 720, "refresh_hz": 60, "hardware_id": "abe0c39aea79af7e"}
+{"time": "2025-05-03T21:57:46+0000", "event": "frame_requested", "path": "data/demo/ISIC_0000231.jpg", "parameter_version": 1, "parameters": {"threshold": 0.45, "opening": true, "closing": true, "largest": true, "fill": true, "gaussian": false}, "force_inference": false}
+{"time": "2025-05-03T21:57:46+0000", "event": "mouse_connected", "device": "/dev/input/event0"}
+{"time": "2025-05-03T21:57:50+0000", "event": "frame_complete", "frame_id": 1, "parameter_version": 1, "model_id": "6d085046c29974f6", "backend": "fpga-int8", "timing": {"inference_ms": 3624.983298999723, "cached_inference_ms": 3624.983298999723, "network_reused": false, "postprocess_ms": 398.03546399980405, "processing_ms": 4455.910522000522}, "path": "data/demo/ISIC_0000231.jpg", "parameters": {"threshold": 0.45, "opening": true, "closing": true, "largest": true, "fill": true, "gaussian": false}}
+[?2004hxilinx@pynq:~/lesion_fpga$ 

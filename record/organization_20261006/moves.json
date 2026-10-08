@@ -1,0 +1,134 @@
+[
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\clockInfo.txt",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\clockInfo.txt"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\dfx_runtime.txt",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\dfx_runtime.txt"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\install.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\install.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\pynq_fetch.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\pynq_fetch.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\setup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\setup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_10896.backup.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_10896.backup.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_10896.backup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_10896.backup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_12232.backup.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_12232.backup.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_12232.backup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_12232.backup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_30916.backup.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_30916.backup.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_30916.backup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_30916.backup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_37568.backup.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_37568.backup.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_37568.backup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_37568.backup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_9636.backup.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_9636.backup.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado_9636.backup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado_9636.backup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\vivado.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\vivado.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xelab.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xelab.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xelab.pb",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xelab.pb"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim_27828.backup.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim_27828.backup.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim_27828.backup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim_27828.backup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim_36876.backup.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim_36876.backup.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim_36876.backup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim_36876.backup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim_36980.backup.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim_36980.backup.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim_36980.backup.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim_36980.backup.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim.jou",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim.jou"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xvlog.log",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xvlog.log"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xvlog.pb",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xvlog.pb"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\.Xil",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\.Xil"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\xsim.dir",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\xsim.dir"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\NA",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\root_generated\\NA"
+  },
+  {
+    "source": "C:\\Users\\35899\\Desktop\\FPGA project\\artifacts\\release",
+    "destination": "C:\\Users\\35899\\Desktop\\FPGA project\\record\\organization_20261006\\release_before_20261006"
+  }
+]

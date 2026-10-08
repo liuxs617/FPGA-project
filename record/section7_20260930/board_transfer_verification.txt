@@ -1,0 +1,6 @@
+cd /home/xilinx/lesion_fpga && sha256sum artifacts/hardware/hdmi_full/lesion.bit artifacts/hardware/hdmi_full/lesion.hwh software/lesion_fpga/app.py scripts/section7_ui_test.py
+[?2004labe0c39aea79af7e30de94120f861b706f094f8cc37a7e821397f80b8333917a  artifacts/hardware/hdmi_full/lesion.bit
+33f57cea6b975efa9793dbb12ac77fdba0020cc180a9c478d1b4dc293806640e  artifacts/hardware/hdmi_full/lesion.hwh
+e9cc9372d266f41a78b3054c8aa59f4f93562bf95d3f5134d68aa7ddf8b57fb1  software/lesion_fpga/app.py
+97444886ee87ff825fecf9e64fa42f2729c8a74c8c8e9082bb3fe2066ffd2158  scripts/section7_ui_test.py
+[?2004hxilinx@pynq:~/lesion_fpga$ 

@@ -1,0 +1,8 @@
+# Prefer packages already present in the matching PYNQ image.
+# Install via distro packages if armv7 wheels are unavailable. No PyTorch required.
+# Validated on PYNQ 3.1.1 / Python 3.10: imaging + pipeline/UI tests.
+# Board execution uses PYTHONPATH, not the desktop pyproject dependency set.
+numpy>=1.21.5
+Pillow>=9
+opencv-python-headless>=4.5.4
+evdev>=1.6

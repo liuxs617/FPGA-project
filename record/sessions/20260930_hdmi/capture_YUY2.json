@@ -1,0 +1,51 @@
+{
+  "device": "USB2 Video",
+  "requested_format": "YUY2",
+  "opened": true,
+  "settings": {
+    "6": {
+      "accepted": true,
+      "actual": 844715353.0
+    },
+    "3": {
+      "accepted": true,
+      "actual": 1280.0
+    },
+    "4": {
+      "accepted": true,
+      "actual": 720.0
+    },
+    "5": {
+      "accepted": true,
+      "actual": 30.00003000003
+    }
+  },
+  "frames": 60,
+  "elapsed": 2.270601100000931,
+  "first": [
+    {
+      "mean": 6.0,
+      "std": 0.0,
+      "min": 6,
+      "max": 6,
+      "shape": [
+        720,
+        1280,
+        3
+      ]
+    }
+  ],
+  "last": [
+    {
+      "mean": 6.0,
+      "std": 0.0,
+      "min": 6,
+      "max": 6,
+      "shape": [
+        720,
+        1280,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "parameters": {
+      "threshold": 0.45,
+      "opening": true,
+      "closing": true,
+      "largest": true,
+      "fill": true,
+      "gaussian": false
+    },
+    "metrics": {
+      "area_px2": 3884,
+      "area_ratio": 0.3160807291666667,
+      "valid": true,
+      "centroid": [
+        58.65653964984552,
+        54.85839340885685
+      ],
+      "major_axis_px": 79.35599498079846,
+      "minor_axis_px": 62.49077926561997,
+      "perimeter_px": 235.48022890090942,
+      "circularity": 0.8801976133801944,
+      "axis_unstable": false,
+      "asymmetry": 0.05225340160108627
+    },
+    "flags": {
+      "components_before": 2,
+      "empty": false,
+      "touches_valid_border": false
+    },
+    "accuracy": {
+      "dice": 0.9796538472995919,
+      "iou": 0.9601191171318463
+    },
+    "model_id": "6d085046c29974f6",
+    "hardware_id": null,
+    "backend": "native-cpp-reference",
+    "image": "portrait.jpg",
+    "geometry": {
+      "original_w": 723,
+      "original_h": 962,
+      "size": 128,
+      "width": 96,
+      "height": 128,
+      "left": 16,
+      "top": 0
+    },
+    "mask_sha256": "8f9141d82ce2c4a45efdd2da7df17f8873d10421de960f87417af66a1aae18c1",
+    "network_mask_sha256": "f42b9fcf121eaa341d87daa6d89f23ec5e012c205c3b0f9004dd77d27b036867",
+    "moments": [
+      3884,
+      227822,
+      213070,
+      14831362,
+      12675455,
+      12697216
+    ]
+  }
+]

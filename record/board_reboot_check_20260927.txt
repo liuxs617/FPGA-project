@@ -1,0 +1,19 @@
+echo REBOOT_CHECK; uptime; cat /proc/sys/kernel/random/boot_id; cat /sys/fs/ext4/mmcblk0p2/errors_count; findmnt -n -o SOURCE,FSTYPE,OPTIONS /; dmesg | grep -E 'EXT4-fs error|I/O error|Delayed block|failed checksum' | tail -n 8; echo REBOOT_CHECK_END
+[?2004lREBOOT_CHECK
+ 19:30:23 up 2 min,  1 user,  load average: 1.86, 1.13, 0.45
+ed58f401-5fcc-45b4-8da0-9f33b18063da
+28
+/dev/mmcblk0p2 ext4   rw,relatime
+[   51.129576] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.177688] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.200464] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.249502] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.286472] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   51.349917] EXT4-fs error (device mmcblk0p2): __ext4_find_entry:1693: inode #226259: comm systemd: checksumming directory block 0
+[   53.354613] EXT4-fs error (device mmcblk0p2): htree_dirblock_to_tree:1082: inode #226269: comm systemd-logind: Directory block failed checksum
+[   64.225578] EXT4-fs error (device mmcblk0p2): htree_dirblock_to_tree:1082: inode #226241: comm journalctl: Directory block failed checksum
+REBOOT_CHECK_END
+[?2004hxilinx@pynq:~$ 
+
+
+

@@ -1,0 +1,25 @@
+echo NEW_SD_CHECK; uptime; lsblk -o NAME,SIZE,FSTYPE,LABEL,MOUNTPOINT; findmnt -n -o SOURCE,FSTYPE,OPTIONS /; cat /sys/block/mmcblk0/device/cid; cat /sys/fs/ext4/mmcblk0p2/errors_count; dmesg | grep -E 'EXT4-fs|mmc|I/O error|Delayed block|failed checksum' | tail -n 18; echo CHECK_END
+[?2004lNEW_SD_CHECK
+ 16:47:19 up 4 min,  1 user,  load average: 0.52, 0.83, 0.39
+NAME         SIZE FSTYPE LABEL MOUNTPOINT
+mmcblk0     29.3G              
+??????mmcblk0p1  130M vfat   PYNQ  /boot
+??????mmcblk0p2 29.2G ext4   root  /
+/dev/mmcblk0p2 ext4   rw,relatime
+05000c61736466672200004d7101a700
+0
+[   40.229142] mmc0: SDHCI controller on e0100000.mmc [e0100000.mmc] using ADMA
+[   40.296446] mmc0: new high speed SDHC card at address 0001
+[   40.301734] mmcblk0: mmc0:0001 asdfg 29.3 GiB
+[   40.307632]  mmcblk0: p1 p2
+[   40.407598] EXT4-fs (mmcblk0p2): mounted filesystem 63b8b04d-af08-419a-a9dc-16f374e283dc r/w with ordered data mode. Quota mode: disabled.
+[   53.203874] EXT4-fs (mmcblk0p2): resizing filesystem from 2001940 to 7646464 blocks
+[   56.554061] EXT4-fs (mmcblk0p2): resized filesystem to 7646464
+CHECK_END
+[?2004hxilinx@pynq:~$ 
+python3 -c "import base64;exec(base64.b64decode('aW1wb3J0IG9zLGhhc2hsaWIsanNvbgpmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKcD1QYXRoLmhvbWUoKS8nc2RfcHJvYmVfMjAyNjA5MjguYmluJwphc3NlcnQgbm90IHAuZXhpc3RzKCksJ1Byb2JlIGFscmVhZHkgZXhpc3RzOyBkbyBub3Qgb3ZlcndyaXRlJwpkYXRhPW9zLnVyYW5kb20oOCoxMDI0KjEwMjQpCmg9aGFzaGxpYi5zaGEyNTYoZGF0YSkuaGV4ZGlnZXN0KCkKd2l0aCBwLm9wZW4oJ3hiJykgYXMgZjoKIGYud3JpdGUoZGF0YSk7Zi5mbHVzaCgpO29zLmZzeW5jKGYuZmlsZW5vKCkpCndpdGggcC5vcGVuKCdyYicpIGFzIGY6IGFzc2VydCBoYXNobGliLnNoYTI1NihmLnJlYWQoKSkuaGV4ZGlnZXN0KCk9PWgKb3Muc3luYygpCnByaW50KCdQUk9CRV9QQVNTICcranNvbi5kdW1wcyh7J3BhdGgnOnN0cihwKSwnYnl0ZXMnOmxlbihkYXRhKSwnc2hhMjU2JzpofSksZmx1c2g9VHJ1ZSk='))"; cat /sys/fs/ext4/mmcblk0p2/errors_count; dmesg | grep -E 'EXT4-fs error|I/O error|Delayed block|failed checksum' | tail -n 5; echo TEST_END
+[?2004l
+PROBE_PASS {"path": "/home/xilinx/sd_probe_20260928.bin", "bytes": 8388608, "sha256": "c10dea3c37f92d5c1b0b4bf3306c40602cd351e3fea099d6cce99b7116ef05b6"}
+0
+TEST_END
+[?2004hxilinx@pynq:~$ 

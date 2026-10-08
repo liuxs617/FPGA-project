@@ -1,0 +1,36 @@
+tail -40 record/section7_20260930/mouse_latency.jsonl; tail -8 record/events.jsonl; ps -eo pid,stat,pcpu,args | grep -E '[l]esion_fpga.app'
+[?2004l{"kernel_time": 1746310244.949823, "read_monotonic": 6869.769720274, "draw_start": 6869.775045622, "submit_done": 6869.811949628, "events": 2, "x": 650, "y": 432}
+{"kernel_time": 1746310245.041824, "read_monotonic": 6869.861726957, "draw_start": 6869.867043849, "submit_done": 6869.90319972, "events": 2, "x": 616, "y": 510}
+{"kernel_time": 1746310245.129823, "read_monotonic": 6869.949719831, "draw_start": 6869.955041302, "submit_done": 6869.991157634, "events": 2, "x": 591, "y": 559}
+{"kernel_time": 1746310245.145854, "read_monotonic": 6869.99158476, "draw_start": 6870.043143941, "submit_done": 6870.078787086, "events": 4, "x": 588, "y": 562}
+{"kernel_time": 1746310245.305822, "read_monotonic": 6870.125720772, "draw_start": 6870.1310458, "submit_done": 6870.166894557, "events": 2, "x": 580, "y": 583}
+{"kernel_time": 1746310245.36183, "read_monotonic": 6870.18173052, "draw_start": 6870.217789554, "submit_done": 6870.253625283, "events": 2, "x": 572, "y": 609}
+{"kernel_time": 1746310245.485833, "read_monotonic": 6870.305733418, "draw_start": 6870.30593927, "submit_done": 6870.342319633, "events": 2, "x": 570, "y": 613}
+{"kernel_time": 1746310245.569823, "read_monotonic": 6870.389720655, "draw_start": 6870.395044304, "submit_done": 6870.431064482, "events": 2, "x": 541, "y": 644}
+{"kernel_time": 1746310245.65382, "read_monotonic": 6870.473722027, "draw_start": 6870.484163264, "submit_done": 6870.519902039, "events": 2, "x": 518, "y": 675}
+{"kernel_time": 1746310245.717822, "read_monotonic": 6870.53771767, "draw_start": 6870.573743738, "submit_done": 6870.609436636, "events": 1, "x": 505, "y": 687}
+{"kernel_time": 1746310245.841827, "read_monotonic": 6870.661726888, "draw_start": 6870.661915861, "submit_done": 6870.69770519, "events": 2, "x": 484, "y": 694}
+{"kernel_time": 1746310245.905823, "read_monotonic": 6870.725722974, "draw_start": 6870.751544543, "submit_done": 6870.787191879, "events": 2, "x": 471, "y": 701}
+{"kernel_time": 1746310246.153822, "read_monotonic": 6870.97372674, "draw_start": 6871.014880875, "submit_done": 6871.050876574, "events": 1, "x": 483, "y": 680}
+{"kernel_time": 1746310246.277841, "read_monotonic": 6871.097744845, "draw_start": 6871.103155675, "submit_done": 6871.139004943, "events": 2, "x": 484, "y": 677}
+{"kernel_time": 1746310246.369826, "read_monotonic": 6871.189731724, "draw_start": 6871.189954604, "submit_done": 6871.225913878, "events": 2, "x": 502, "y": 656}
+{"kernel_time": 1746310246.377877, "read_monotonic": 6871.226335386, "draw_start": 6871.277820617, "submit_done": 6871.313546223, "events": 2, "x": 504, "y": 653}
+{"kernel_time": 1746310246.789828, "read_monotonic": 6871.60972957, "draw_start": 6871.625305841, "submit_done": 6871.661215176, "events": 2, "x": 496, "y": 661}
+{"kernel_time": 1746310246.853819, "read_monotonic": 6871.673724407, "draw_start": 6871.714876924, "submit_done": 6871.751252487, "events": 1, "x": 494, "y": 665}
+{"kernel_time": 1746310246.977821, "read_monotonic": 6871.797720019, "draw_start": 6871.803050708, "submit_done": 6871.839081416, "events": 2, "x": 491, "y": 670}
+{"kernel_time": 1746310247.033827, "read_monotonic": 6871.853725717, "draw_start": 6871.889782302, "submit_done": 6871.925463077, "events": 2, "x": 488, "y": 675}
+{"kernel_time": 1746310247.62187, "read_monotonic": 6872.447865507, "draw_start": 6872.499450553, "submit_done": 6872.535171532, "events": 4, "x": 486, "y": 671}
+{"kernel_time": 1746310251.433847, "read_monotonic": 6876.253757194, "draw_start": 6876.259135877, "submit_done": 6876.294839415, "events": 1, "x": 485, "y": 671}
+{"kernel_time": 1746310251.453861, "read_monotonic": 6876.295311508, "draw_start": 6876.346763187, "submit_done": 6876.38235456, "events": 1, "x": 484, "y": 671}
+{"time": "2025-05-03T22:08:02+0000", "event": "app_start", "backend": "fpga", "bitstream": "artifacts/hardware/hdmi_full/lesion.bit", "images": "data/demo"}
+{"time": "2025-05-03T22:08:17+0000", "event": "hdmi_started", "width": 1280, "height": 720, "refresh_hz": 60, "hardware_id": "abe0c39aea79af7e"}
+{"time": "2025-05-03T22:08:17+0000", "event": "frame_requested", "path": "data/demo/ISIC_0000231.jpg", "parameter_version": 1, "parameters": {"threshold": 0.45, "opening": true, "closing": true, "largest": true, "fill": true, "gaussian": false}, "force_inference": false}
+{"time": "2025-05-03T22:08:17+0000", "event": "mouse_connected", "device": "/dev/input/event0"}
+{"time": "2025-05-03T22:08:21+0000", "event": "frame_complete", "frame_id": 1, "parameter_version": 1, "model_id": "6d085046c29974f6", "backend": "fpga-int8", "timing": {"inference_ms": 3621.355305000179, "cached_inference_ms": 3621.355305000179, "network_reused": false, "postprocess_ms": 419.61005400025897, "processing_ms": 4519.328811999912}, "path": "data/demo/ISIC_0000231.jpg", "parameters": {"threshold": 0.45, "opening": true, "closing": true, "largest": true, "fill": true, "gaussian": false}}
+{"time": "2025-05-03T22:10:49+0000", "event": "frame_requested", "path": "data/demo/ISIC_0000231.jpg", "parameter_version": 2, "parameters": {"threshold": 0.45, "opening": false, "closing": true, "largest": true, "fill": true, "gaussian": false}, "force_inference": false}
+{"time": "2025-05-03T22:10:49+0000", "event": "ui_action", "key": "opening", "x": 486, "y": 671, "path": "data/demo/ISIC_0000231.jpg", "parameter_version": 2, "frame_id": null, "parameters": {"threshold": 0.45, "opening": false, "closing": true, "largest": true, "fill": true, "gaussian": false}, "alpha": 0.25, "view": 0, "selected": false}
+{"time": "2025-05-03T22:10:50+0000", "event": "frame_complete", "frame_id": 2, "parameter_version": 2, "model_id": "6d085046c29974f6", "backend": "fpga-int8", "timing": {"inference_ms": 0.0, "cached_inference_ms": 3621.355305000179, "network_reused": true, "postprocess_ms": 276.59915699950943, "processing_ms": 414.5768919997863}, "path": "data/demo/ISIC_0000231.jpg", "parameters": {"threshold": 0.45, "opening": false, "closing": true, "largest": true, "fill": true, "gaussian": false}}
+10526 S     0.0 sudo -n env XILINX_XRT=/usr PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software /usr/local/share/pynq-venv/bin/python3 -u -m [01;31m[Klesion_fpga.app[m[K --backend fpga --bitstream artifacts/hardware/hdmi_full/lesion.bit --images data/demo --output artifacts/board_runs --latency-log record/section7_20260930/mouse_latency.jsonl
+10531 Ss+   0.0 sudo -n env XILINX_XRT=/usr PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software /usr/local/share/pynq-venv/bin/python3 -u -m [01;31m[Klesion_fpga.app[m[K --backend fpga --bitstream artifacts/hardware/hdmi_full/lesion.bit --images data/demo --output artifacts/board_runs --latency-log record/section7_20260930/mouse_latency.jsonl
+10532 RLl  48.6 /usr/local/share/pynq-venv/bin/python3 -u -m [01;31m[Klesion_fpga.app[m[K --backend fpga --bitstream artifacts/hardware/hdmi_full/lesion.bit --images data/demo --output artifacts/board_runs --latency-log record/section7_20260930/mouse_latency.jsonl
+[?2004hxilinx@pynq:~/lesion_fpga$ 

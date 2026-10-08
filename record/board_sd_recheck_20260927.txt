@@ -1,0 +1,42 @@
+echo CHECK_START; uptime; uname -r; findmnt -n -o SOURCE,FSTYPE,OPTIONS /; df -h / /boot; cat /sys/fs/ext4/mmcblk0p2/errors_count 2>/dev/null; dmesg | grep -E 'EXT4-fs|mmc|I/O error' | tail -n 18; ls -ld /boot/lesion_deploy_20260927 ~/lesion_fpga 2>/dev/null; echo CHECK_END
+[?2004lCHECK_START
+ 16:47:54 up 4 min,  1 user,  load average: 0.39, 0.80, 0.40
+6.6.10-xilinx-v2024.1-g3c0eca68c652
+/dev/mmcblk0p2 ext4   rw,relatime
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        31G  5.9G   23G  21% /
+/dev/mmcblk0p1  130M  8.0M  122M   7% /boot
+0
+[   40.229189] mmc0: SDHCI controller on e0100000.mmc [e0100000.mmc] using ADMA
+[   40.296596] mmc0: new high speed SDHC card at address 0001
+[   40.301911] mmcblk0: mmc0:0001 asdfg 31.3 GiB
+[   40.307622]  mmcblk0: p1 p2
+[   40.407682] EXT4-fs (mmcblk0p2): mounted filesystem 63b8b04d-af08-419a-a9dc-16f374e283dc r/w with ordered data mode. Quota mode: disabled.
+[   54.062491] EXT4-fs (mmcblk0p2): resizing filesystem from 2001940 to 8171520 blocks
+[   57.381242] EXT4-fs (mmcblk0p2): resized filesystem to 8171520
+CHECK_END
+[?2004hxilinx@pynq:~$ 
+
+
+
+python3 -c "import base64;exec(base64.b64decode('aW1wb3J0IG9zLHRlbXBmaWxlLGhhc2hsaWIsaW1wb3J0bGliCnA9Tm9uZQp0cnk6CiBkYXRhPW9zLnVyYW5kb20oOCoxMDI0KjEwMjQpCiBmZCxwPXRlbXBmaWxlLm1rc3RlbXAocHJlZml4PSdzZF9jaGVja18nLGRpcj1vcy5wYXRoLmV4cGFuZHVzZXIoJ34nKSkKIHdpdGggb3MuZmRvcGVuKGZkLCd3YicpIGFzIGY6CiAgZi53cml0ZShkYXRhKTsgZi5mbHVzaCgpOyBvcy5mc3luYyhmLmZpbGVubygpKQogd2l0aCBvcGVuKHAsJ3JiJykgYXMgZjogcmVzdWx0PWYucmVhZCgpCiBhc3NlcnQgaGFzaGxpYi5zaGEyNTYocmVzdWx0KS5kaWdlc3QoKT09aGFzaGxpYi5zaGEyNTYoZGF0YSkuZGlnZXN0KCkKIHByaW50KCdTRF9XUklURV9GU1lOQ19SRUFEXzhNaUJfUEFTUycsZmx1c2g9VHJ1ZSkKZmluYWxseToKIGlmIHA6IG9zLnVubGluayhwKQpmb3IgbmFtZSBpbiBbJ3B5bnEnLCdudW1weScsJ1BJTCcsJ2N2MicsJ2V2ZGV2J106CiB0cnk6CiAgbT1pbXBvcnRsaWIuaW1wb3J0X21vZHVsZShuYW1lKTsgcHJpbnQobmFtZSxnZXRhdHRyKG0sJ19fdmVyc2lvbl9fJywnaW1wb3J0IE9LJyksZmx1c2g9VHJ1ZSkKIGV4Y2VwdCBFeGNlcHRpb24gYXMgZTogcHJpbnQobmFtZSx0eXBlKGUpLl9fbmFtZV9fLHN0cihlKSxmbHVzaD1UcnVlKQpwcmludCgnUFJPQkVfQ09NUExFVEUnLGZsdXNoPVRydWUp'))"
+[?2004l
+SD_WRITE_FSYNC_READ_8MiB_PASS
+
+
+
+
+
+
+
+cat /sys/fs/ext4/mmcblk0p2/errors_count; dmesg | grep -E 'EXT4-fs error|I/O error|Delayed block' | tail -n 3; echo FINAL_CHECK_DONE
+
+python3 -c "import pynq,numpy,PIL,cv2,evdev; print('DEPS_OK',pynq.__version__,numpy.__version__,PIL.__version__,cv2.__version__)"; cat /sys/fs/ext4/mmcblk0p2/errors_count; dmesg | grep -E 'EXT4-fs error|I/O error|Delayed block' | tail -n 3; echo FINAL_CHECK_DONE
+[?2004l
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'evdev'
+
+0
+FINAL_CHECK_DONE
+[?2004hxilinx@pynq:~$ 

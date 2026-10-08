@@ -1,0 +1,29 @@
+[Unit]
+Description=PYNQ-Z2 lesion segmentation HDMI application
+Wants=bootpy.service clear_pl_statefile.service
+After=local-fs.target bootpy.service clear_pl_statefile.service
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/xilinx/lesion_fpga
+Environment=XILINX_XRT=/usr
+Environment=PYTHONPATH=/home/xilinx/lesion_fpga/.board_deps:/home/xilinx/lesion_fpga/software
+Environment=PYTHONUNBUFFERED=1
+ExecStartPre=/usr/bin/test -r /home/xilinx/lesion_fpga/artifacts/hardware/hdmi_full/lesion.bit
+ExecStartPre=/usr/bin/test -r /home/xilinx/lesion_fpga/artifacts/hardware/hdmi_full/lesion.hwh
+ExecStartPre=/usr/bin/test -r /home/xilinx/lesion_fpga/artifacts/hardware/hdmi_full/hardware_manifest.json
+ExecStart=/usr/local/share/pynq-venv/bin/python3 -u -m lesion_fpga.app --backend fpga --bitstream /home/xilinx/lesion_fpga/artifacts/hardware/hdmi_full/lesion.bit --images /home/xilinx/lesion_fpga/data/demo --output /home/xilinx/lesion_fpga/artifacts/board_runs
+Restart=on-failure
+RestartSec=3
+KillSignal=SIGINT
+SuccessExitStatus=SIGINT 130
+TimeoutStopSec=60
+UMask=0022
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

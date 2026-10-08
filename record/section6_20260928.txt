@@ -1,0 +1,229 @@
+cd ~/lesion_fpga; source scripts/board_env.sh; sudo -n env PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -c "import base64;exec(base64.b64decode('ZnJvbSBsZXNpb25fZnBnYS5jb21tb24gaW1wb3J0IFJPT1QKZnJvbSBsZXNpb25fZnBnYS5xdWFudGl6YXRpb24gaW1wb3J0IE1vZGVsUGFja2FnZQpmcm9tIGxlc2lvbl9mcGdhLmJhY2tlbmRzIGltcG9ydCBQeW5xQmFja2VuZApiPVB5bnFCYWNrZW5kKE1vZGVsUGFja2FnZShST09ULydhcnRpZmFjdHMvbW9kZWxzL2Jhc2VsaW5lJyksUk9PVC8nYXJ0aWZhY3RzL2hhcmR3YXJlL2xlc2lvbi5iaXQnKQp0cnk6CiBwcmludCgnQUJJIFBBU1MgMHgxMDAnLGZsdXNoPVRydWUpCiBwcmludCgnaGFyZHdhcmVfaWQnLGIuaGFyZHdhcmVfaWQsZmx1c2g9VHJ1ZSkKIHByaW50KCdhcmVuYV9ieXRlcycsYi5hcmVuYS5uYnl0ZXMsJ3BhcmFtc19ieXRlcycsYi5wYXJhbXMubmJ5dGVzLGZsdXNoPVRydWUpCiBwcmludChiLmlwLnJlZ2lzdGVyX21hcCxmbHVzaD1UcnVlKQpmaW5hbGx5OmIuY2xvc2UoKQ=='))" > record/board_abi_20260928.txt 2>&1; echo ABI_STATUS=$?; cat record/board_abi_20260928.txt; echo ABI_END
+[?2004l
+ABI_STATUS=1
+/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/device.py:56: UserWarning: No devices found, is the XRT environment sourced?
+  warnings.warn(
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 4, in <module>
+  File "/home/xilinx/lesion_fpga/software/lesion_fpga/backends.py", line 82, in __init__
+    self.overlay=Overlay(str(bitstream))
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/overlay.py", line 318, in __init__
+    super().__init__(bitfile_name, dtbo, partial=False, device=device)
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/bitstream.py", line 88, in __init__
+    device = Device.active_device
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/device.py", line 71, in active_device
+    raise RuntimeError("No Devices Found")
+RuntimeError: No Devices Found
+ABI_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+ls /opt/xilinx/xrt/setup.sh /sys/class/fpga_manager /dev/dri 2>/dev/null; printenv | grep -E 'XILINX|XRT|LD_LIBRARY'; sed -n '1,145p' /usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/embedded_device.py | head -n 80; grep -n -E 'probe|XRT|xrt|lib' /usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/xrt_device.py | head -n 18; echo DIAG_END
+[?2004l/dev/dri:
+by-path  card0  renderD128
+
+/sys/class/fpga_manager:
+fpga0
+[01;31m[KXILINX[m[K_[01;31m[KXRT[m[K=/usr
+# Copyright (C) 2022 Xilinx, Inc
+# SPDX-License-Identifier: BSD-3-Clause
+
+import os
+import pickle
+import struct
+from pathlib import Path
+import datetime
+import platform
+
+import numpy as np
+from pynqmetadata.frontends import Metadata
+
+from ..metadata.runtime_metadata_parser import RuntimeMetadataParser
+from .xrt_device import XrtDevice, XrtMemory
+from .global_state import GlobalState, save_global_state
+from .global_state import initial_global_state_file_boot_check, load_global_state
+from .global_state import bitstream_hash, global_state_file_exists, clear_global_state
+
+DEFAULT_XCLBIN = (Path(__file__).parent / "default.xclbin").read_bytes()
+
+class CacheMetadataError(Exception):
+    """ An exception that is raised when there is no cached metadata """
+    pass
+
+def _unify_dictionaries(hwh_parser, xclbin_parser):
+    """Merges the XRT specific info from the xclbin file into
+    the HWH parser
+
+    """
+    mem_by_address = {v["base_address"]: v for k, v in xclbin_parser.mem_dict.items()}
+    for k, v in hwh_parser.mem_dict.items():
+        if v.get("phys_addr", None) in mem_by_address:
+            hwh_parser.mem_dict[k].update(mem_by_address[v["phys_addr"]])
+            del mem_by_address[v["phys_addr"]]
+    for v in mem_by_address.values():
+        hwh_parser.mem_dict[v["tag"]] = v
+
+
+def parse_bit_header(bit_data):
+    """The method to parse the header of a bitstream.
+
+    The returned dictionary has the following keys:
+    "design": str, the Vivado project name that generated the bitstream;
+    "version": str, the Vivado tool version that generated the bitstream;
+    "part": str, the Xilinx part name that the bitstream targets;
+    "date": str, the date the bitstream was compiled on;
+    "time": str, the time the bitstream finished compilation;
+    "length": int, total length of the bitstream (in bytes);
+    "data": binary, binary data in .bit file format
+
+    Returns
+    -------
+    Dict
+        A dictionary containing the header information.
+
+    Note
+    ----
+    Implemented based on: https://blog.aeste.my/?p=2892
+
+    """
+    finished = False
+    offset = 0
+    contents = bit_data
+    bit_dict = {}
+
+    # Strip the (2+n)-byte first field (2-bit length, n-bit data)
+    length = struct.unpack(">h", contents[offset : offset + 2])[0]
+    offset += 2 + length
+
+    # Strip a two-byte unknown field (usually 1)
+    offset += 2
+
+    # Strip the remaining headers. 0x65 signals the bit data field
+    while not finished:
+        desc = contents[offset]
+        offset += 1
+
+        if desc != 0x65:
+            length = struct.unpack(">h", contents[offset : offset + 2])[0]
+20:    import pyxrt
+21:    libc = ctypes.CDLL("libc.so.6")
+22:    libc.munmap.argtypes = [ctypes.c_void_p, ctypes.c_size_t]
+23:    libc.munmap.restype = ctypes.c_int
+46:_xrt_errors = {
+52:def _format_xrt_error(err):
+54:    if err in _xrt_errors:
+55:        errstring += "/" + _xrt_errors[err]
+59:def _xrt_allocate(shape, dtype, device, memidx, cacheable=0, pointer=None, cache=None):
+92:    libc.munmap(ctypes.cast(ptr, ctypes.c_void_p), length)
+124:        buf = _xrt_allocate(shape, dtype, self.device, self.idx, **kwargs)
+157:    Wraps an execution buffer used by XRT to schedule the execution of
+184:    """XRT Streaming Connection
+228:    def _probe_(cls):
+229:        # XrtDevice has been deprecated. This probe will now always return an empty list.
+232:    _probe_priority_ = 200
+234:    def __init__(self, index, tag="xrt{}"):
+251
+:        self.handle = pyxrt.device(self._index)
+DIAG_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+
+
+
+sudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -c 'from lesion_fpga.common import ROOT; from lesion_fpga.quantization import ModelPackage; from lesion_fpga.backends import PynqBackend; b=PynqBackend(ModelPackage(ROOT/"artifacts/models/baseline"),ROOT/"artifacts/hardware/lesion.bit"); print("ABI_PASS",b.hardware_id,b.arena.nbytes,b.params.nbytes,flush=True); print(b.ip.register_map,flush=True); b.close()' > record/board_abi_20260928.txt 2>&1; echo ABI_STATUS=$?; cat record/board_abi_20260928.txt; echo ABI_END
+[?2004l
+ABI_STATUS=1
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/xilinx/lesion_fpga/software/lesion_fpga/backends.py", line 82, in __init__
+    self.overlay=Overlay(str(bitstream))
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/overlay.py", line 322, in __init__
+    self.device.set_bitfile_name(self.bitfile_name)
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/device.py", line 118, in set_bitfile_name
+    self.parser = self.get_bitfile_metadata(self.bitfile_name)
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/embedded_device.py", line 693, in get_bitfile_metadata
+    parser = _get_bitstream_handler(bitfile_name).get_parser(partial=partial)
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/pl_server/embedded_device.py", line 269, in get_parser
+    parser = RuntimeMetadataParser(Metadata(input=self._filepath))
+  File 
+"/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynqmetadata/frontends/metadata.py", line 45, in Metadata
+    raise UnknownInputFileExtension(f"{input} is not a valid input")
+pynqmetadata.frontends.metadata.UnknownInputFileExtension: /home/xilinx/lesion_fpga/artifacts/hardware/lesion.bit is not a valid input
+ABI_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+python3 -c 'from pathlib import Path; import json,hashlib; p=Path.home()/"lesion_fpga"; h=p/"artifacts/hardware"; (h/"archive").mkdir(exist_ok=True); (h/"lesion.xsa").rename(h/"archive/lesion.xsa"); f=h/"hardware_manifest.json"; m=json.loads(f.read_text()); m["files"]["archive/lesion.xsa"]=m["files"].pop("lesion.xsa"); f.write_text(json.dumps(m,indent=2)); f=p/"release_manifest.json"; m=json.loads(f.read_text()); m["files"]["artifacts/hardware/archive/lesion.xsa"]=m["files"].pop("artifacts/hardware/lesion.xsa"); m["files"]["artifacts/hardware/hardware_manifest.json"]=hashlib.sha256((h/"hardware_manifest.json").read_bytes()).hexdigest(); f.write_text(json.dumps(m,indent=2))'
+[?2004lsudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -c 'from lesion_fpga.common import ROOT; from lesion_fpga.quantization import ModelPackage; from lesion_fpga.backends import PynqBackend; b=PynqBackend(ModelPackage(ROOT/"artifacts/models/baseline"),ROOT/"artifacts/hardware/lesion.bit"); print("ABI_PASS",b.hardware_id,b.arena.nbytes,b.params.nbytes,flush=True); print(b.ip.register_map,flush=True); b.close()' > record/board_abi_20260928.txt 2>&1; echo ABI_STATUS=$?; cat record/board_abi_20260928.txt; echo ABI_END
+[?2004hxilinx@pynq:~/lesion_fpga$ sudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -c 'from lesion_fpga.common import ROOT; from lesion_fpga.quantization import ModelPackage; from lesion_fpga.backends import PynqBackend; b=PynqBackend(ModelPackage(ROOT/"artifacts/models/baseline"),ROOT/"artifacts/hardware/lesion.bit"); print("ABI_PASS",b.hardware_id,b.arena.nbytes,b.params.nbytes,flush=True); print(b.ip.register_map,flush=True); b.close()' > record/board_abi_20260928.txt 2>&1; echo ABI_STATUS=$?; cat record/board_abi_20260928.txt; echo ABI_END
+[?2004l
+ABI_STATUS=1
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/xilinx/lesion_fpga/software/lesion_fpga/backends.py", line 89, in __init__
+    regs=self.ip.description['registers']
+AttributeError: 'DefaultIP' object has no attribute 'description'
+ABI_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+python3 -c 'from pathlib import Path; import json,hashlib; p=Path.home()/"lesion_fpga"; f=p/"software/lesion_fpga/backends.py"; s=f.read_text(); old="regs=self.ip.description["+chr(39)+"registers"+chr(39)+"]"; new="regs=self.overlay.ip_dict["+chr(39)+"lesion_accel_0"+chr(39)+"]["+chr(39)+"registers"+chr(39)+"]"; assert old in s; f.write_text(s.replace(old,new)); m=json.loads((p/"release_manifest.json").read_text()); m["files"]["software/lesion_fpga/backends.py"]=hashlib.sha256(f.read_bytes()).hexdigest(); (p/"release_manifest.json").write_text(json.dumps(m,indent=2))'
+[?2004lsudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -c 'from lesion_fpga.common import ROOT; from lesion_fpga.quantization import ModelPackage; from lesion_fpga.backends import PynqBackend; b=PynqBackend(ModelPackage(ROOT/"artifacts/models/baseline"),ROOT/"artifacts/hardware/lesion.bit"); print("ABI_PASS",b.hardware_id,b.arena.nbytes,b.params.nbytes,flush=True); print(b.ip.register_map,flush=True); b.close()' > record/board_abi_20260928.txt 2>&1; echo ABI_STATUS=$?; cat record/board_abi_20260928.txt; echo ABI_END
+[?2004hxilinx@pynq:~/lesion_fpga$ sudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" -c 'from lesion_fpga.common import ROOT; from lesion_fpga.quantization import ModelPackage; from lesion_fpga.backends import PynqBackend; b=PynqBackend(ModelPackage(ROOT/"artifacts/models/baseline"),ROOT/"artifacts/hardware/lesion.bit"); print("ABI_PASS",b.hardware_id,b.arena.nbytes,b.params.nbytes,flush=True); print(b.ip.register_map,flush=True); b.close()' > record/board_abi_20260928.txt 2>&1; echo ABI_STATUS=$?; cat record/board_abi_20260928.txt; echo ABI_END
+[?2004l
+ABI_STATUS=0
+ABI_PASS 8a111a4f13c4f851 5008640 3076
+RegisterMap {
+  CTRL = Register(AP_START=0, AP_DONE=0, AP_IDLE=1, AP_READY=0, RESERVED_1=0, AUTO_RESTART=0, RESERVED_2=0, INTERRUPT=0, RESERVED_3=0),
+  GIER = Register(Enable=0, RESERVED=0),
+  IP_IER = Register(CHAN0_INT_EN=0, CHAN1_INT_EN=0, RESERVED_0=0),
+  IP_ISR = Register(CHAN0_INT_ST=0, CHAN1_INT_ST=0, RESERVED_0=0),
+  ap_return = Register(ap_return=256),
+  arena_1 = Register(arena=write-only),
+  arena_2 = Register(arena=write-only),
+  params_1 = Register(params=write-only),
+  params_2 = Register(params=write-only)
+}
+ABI_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+tar -xzf ~/lesion_offline/section6_validation.tar.gz -C ~/lesion_fpga && sudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" scripts/compare_layers.py --fpga > record/compare_fpga_console.txt 2>&1; echo LAYER_STATUS=$?; tail -n 6 record/compare_fpga_console.txt; echo LAYER_END
+[?2004ltar: artifacts/data_manifest.json: time stamp 2026-09-22 15:27:37.0627036 is 43797345.822426353 s in the future
+tar: data/ISBI2016_ISIC_Part1_Training_Data/ISBI2016_ISIC_Part1_Training_Data/ISIC_0000002.jpg: time stamp 2026-09-22 14:29:24.122545 is 43793852.877677525 s in the future
+tar: data/ISBI2016_ISIC_Part1_Training_GroundTruth/ISBI2016_ISIC_Part1_Training_GroundTruth/ISIC_0000002_Segmentation.png: time stamp 2026-09-22 14:27:37.0172532 is 43793745.770281596 s in the future
+
+LAYER_STATUS=0
+{'model_id': '6d085046c29974f6', 'backend': 'fpga-int8', 'image': 'ISIC_0000002', 'pass': True, 'layers': [{'layer': 'input', 'shape': [3, 128, 128], 'different_elements': 0, 'max_abs': 0}, {'layer': 'e0a', 'shape': [16, 128, 128], 'different_elements': 0, 'max_abs': 0}, {'layer': 'e0b', 'shape': [16, 128, 128], 'different_elements': 0, 'max_abs': 0}, {'layer': 'p0', 'shape': [16, 64, 64], 'different_elements': 0, 'max_abs': 0}, {'layer': 'e1a', 'shape': [32, 64, 64], 'different_elements': 0, 'max_abs': 0}, {'layer': 'e1b', 'shape': [32, 64, 64], 'different_elements': 0, 'max_abs': 0}, {'layer': 'p1', 'shape': [32, 32, 32], 'different_elements': 0, 'max_abs': 0}, {'layer': 'e2a', 'shape': [64, 32, 32], 'different_elements': 0, 'max_abs': 0}, {'layer': 'e2b', 'shape': [64, 32, 32], 'different_elements': 0, 'max_abs': 0}, {'layer': 'p2', 'shape': [64, 16, 16], 'different_elements': 0, 'max_abs': 0}, {'layer': 'e3a', 'shape': [128, 16, 16], 'different_elements': 0, 'max_abs': 0}, {'layer': 'e3b', 'shape': [128, 16, 16], 'different_elements': 0, 'max_abs': 0}, {'layer': 'u2', 'shape': [128, 32, 32], 'different_elements': 0, 'max_abs': 0}, {'layer': 'c2', 'shape': [192, 32, 32], 'different_elements': 0, 'max_abs': 0}, {'layer': 'd2a', 'shape': [64, 32, 32], 'different_elements': 0, 'max_abs': 0}, {'layer': 'd2b', 'shape': [64, 32, 32], 'different_elements': 0, 'max_abs': 0}, {'layer': 'u1', 'shape': [64, 64, 64], 'different_elements': 0, 'max_abs': 0}, {'layer': 'c1', 'shape': [96, 64, 64], 'different_elements': 0, 'max_abs': 0}, {'layer': 'd1a', 'shape': [32, 64, 64], 'different_elements': 0, 'max_abs': 0}, {'layer': 'd1b', 'shape': [32, 64, 64], 'different_elements': 0, 'max_abs': 0}, {'layer': 'u0', 'shape': [32, 128, 128], 'different_elements': 0, 'max_abs': 0}, {'layer': 'c0', 'shape': [48, 128, 128], 'different_elements': 0, 'max_abs': 0}, {'layer': 'd0a', 'shape': [16, 128, 128], 'different_elements': 0, 'max_abs': 0}, {'layer': 'd0b', 'shape': [16, 128, 128], 'different_elements': 0, 'max_abs': 0}, {'layer': 'head', 'shape': [1, 128, 128], 'different_elements': 0, 'max_abs': 0}]}
+LAYER_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+sudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" scripts/verify_board_cases.py --fpga --images data/demo --output artifacts/section6_fpga_20260928 > record/cases_fpga_console.txt 2>&1; echo CASES_STATUS=$?; tail -n 15 record/cases_fpga_console.txt; echo CASES_END
+[?2004l
+tail -n 16 record/cases_fpga_console.txt; echo STATUS_END
+
+tail -n 12 record/cases_fpga_console.txt; ps -eo pid,stat,etime,pcpu,comm | grep -E 'python|sudo'; echo PROGRESS_END
+[?2004lCASE_PASS ISIC_0000271.jpg c5610df88a580efee9058ba86f0eec698986aadbc85cc6379f05c6103f57c416
+CASE_PASS ISIC_0001186.jpg 14749dc3cd52a3be6dfa5b7c4dbb7b4d13d4f9aa8b95e7ff0d6889162768288a
+CASE_PASS ISIC_0001242.jpg 04422a45b2933aa989c2a07ce7b8e08e40a1dbaea361af252f28277785754bd8
+CASE_PASS ISIC_0001427.jpg 05d1a73be9ff59a1eb9323b82d9ee4248ef54ed088278aaca5d1fe4ea90197f1
+CASE_PASS ISIC_0003728.jpg a586acb20acde2f6a779f92d11546cc26ff13727117c4bb78d1bd01cfa6edce4
+CASE_PASS ISIC_0009956.jpg d1e834bd580d17d9b3314b6d857f966cdbbc5bd750031edcd03290c7a0bb07ea
+CASE_PASS ISIC_0010238.jpg 854f14df9d49155e978a2ed357f31c55a2dbd86845c947b625c4ae029a86f553
+CASE_PASS ISIC_0010463.jpg 0721d03d300c48421bef62a67f8e0896afd694e7aa0b49d433ea68b4232a448e
+CASE_PASS ISIC_0011152.jpg c24b3ab4e7fe59b5c9451e348041b7f04ed480002c8884042f75f77090b5795e
+CASE_PASS ISIC_0011213.jpg d326dae6a4315e4cd068e46805f171d3cfeed74857788654ea41c58a0ac6c907
+CASE_PASS ISIC_0011363.jpg 1ab4c93394fdd42338a260f127d93438d7dcac2ccc3949490f638e41f8a775d2
+CASES_COMPLETE 12
+  733 S       01:00:35  0.0 [01;31m[Kpython[m[K3
+PROGRESS_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+
+
+
+
+python3 -c 'from pathlib import Path; from PIL import Image; p=Path("artifacts/section6_portrait_input"); p.mkdir(exist_ok=True); s=Path("data/demo"); pairs=[("ISIC_0000231.jpg","portrait.jpg"),("ISIC_0000231_Segmentation.png","portrait_Segmentation.png")]; [(Image.open(s/a).transpose(Image.ROTATE_90).save(p/b,format="PNG")) for a,b in pairs]'
+[?2004lsudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" scripts/verify_board_cases.py --fpga --images artifacts/section6_portrait_input --output artifacts/section6_fpga_portrait_20260928 > record/portrait_console.txt 2>&1; echo PORTRAIT_STATUS=$?; cat record/portrait_console.txt; echo PORTRAIT_END
+
+[?2004hxilinx@pynq:~/lesion_fpga$ sudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" scripts/verify_board_cases.py --fpga --images artifacts/section6_portrait_input --output artifacts/section6_fpga_portrait_20260928 > record/portrait_console.txt 2>&1; echo PORTRAIT_STATUS=$?; cat record/portrait_console.txt; echo PORTRAIT_END
+[?2004lPORTRAIT_STATUS=1
+sudo: a password is required
+PORTRAIT_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 
+cd ~/lesion_fpga; source scripts/board_env.sh; sudo -n env XILINX_XRT=/usr PYTHONPATH="$PYTHONPATH" "$BOARD_PY" scripts/verify_board_cases.py --fpga --images artifacts/section6_portrait_input --output artifacts/section6_fpga_portrait_20260928 > record/portrait_console.txt 2>&1; cat record/portrait_console.txt; echo PORTRAIT_END
+[?2004l
+CASE_PASS portrait.jpg 8f9141d82ce2c4a45efdd2da7df17f8873d10421de960f87417af66a1aae18c1
+CASES_COMPLETE 1
+PORTRAIT_END
+[?2004hxilinx@pynq:~/lesion_fpga$ 

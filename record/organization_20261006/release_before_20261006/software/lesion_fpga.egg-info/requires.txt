@@ -1,0 +1,12 @@
+numpy>=1.24
+Pillow>=10
+opencv-python-headless>=4.8
+
+[board]
+evdev>=1.7
+
+[test]
+pytest>=8
+
+[train]
+torch>=2.2

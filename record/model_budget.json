@@ -1,0 +1,7 @@
+{
+  "arena_bytes": 5008640,
+  "weight_bytes": 486592,
+  "feature_bytes": 4374528,
+  "macs": 667942912,
+  "note": "Allocation budget, not measured FPGA resource use or bandwidth"
+}

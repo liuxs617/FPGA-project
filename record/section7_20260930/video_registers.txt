@@ -1,0 +1,6 @@
+sudo -n env XILINX_XRT=/usr /usr/local/share/pynq-venv/bin/python3 -c 'from pynq import MMIO; print("DYNCLK",[hex(MMIO(0x44a20000,4096).read(i)) for i in range(0,32,4)]); print("VTC",[hex(MMIO(0x44a30000,4096).read(i)) for i in (0,4,0x60,0x64,0x68,0x6c,0x70,0x74,0x78,0x7c)]); print("VDMA",[hex(MMIO(0x44a00000,4096).read(i)) for i in (0,4,0x50,0x54,0x58)])' > record/section7_20260930/video_registers.txt 2>&1
+[?2004l[?2004hxilinx@pynq:~/lesion_fpga$ cat record/section7_20260930/video_registers.txt
+[?2004lDYNCLK ['0x1', '0x1', '0x41', '0x69a', '0x0', '0x20c4', '0xcfafa401', '0xa300ff']
+VTC ['0x3f7ef06', '0x13000', '0x2d00500', '0x4', '0x2', '0x7f', '0x672', '0x2ee02ee', '0x596056e', '0x5000500']
+VDMA ['0x11089', '0x11000', '0x2d0', '0xf00', '0x1000f00']
+[?2004hxilinx@pynq:~/lesion_fpga$ 
